@@ -163,8 +163,8 @@
 		<num_code>75</num_code>
 		<description>The building was originally built to house the Christian Association. This building now houses The Center for Undergraduate Research and Fellowships (CURF), Ben Franklin Scholars, University Scholars, Makuu, La Casa Latina, The Pan Asian American Community House (PAACH) and Student Performing Arts.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0900</open><close>2100</close><tag>1</tag></hours-regular>
+		<hours-weekend><open>0900</open><close>2100</close><tag>1</tag></hours-weekend>
 		<nicknames>The Arts, Research and Culture House</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0075-Arch.pdf</pennaccessLink>
 	</location>
@@ -289,8 +289,8 @@
 		<num_code>532</num_code>
 		<description>Part of the mixed-use complex on Walnut Street, the Penn Bookstore is Penn's anchor retail??store located at 36th and Walnut Streets. The Penn Bookstore is operated by Barnes and Noble and serves Penn and the surrounding University City community.?? The PennCard Center and the Penn Computer Connection are located on the second level.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0900</open><close>2200</close><tag>1</tag></hours-regular>
+		<hours-weekend><open>0900</open><close>2200</close><tag>1</tag></hours-weekend>
 		<nicknames>Sansom Common, Barnes &amp; Noble Bookstore, Penn Bookstore</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0532-Bookstore.pdf</pennaccessLink>
 	</location>
@@ -317,8 +317,8 @@
 		<num_code>241</num_code>
 		<description>The Carolyn Lynch Laboratory provides research space for faculty in the Department of Biology.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours:</hours_regular>
-		<hours_other>Hours:</hours_other>
+		<hours_regular></hours_regular>
+		<hours_other></hours_other>
 		<nicknames>Life Sciences, Lynch Biology Laboratory</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0241-LynchLab.pdf</pennaccessLink>
 	</location>
@@ -331,11 +331,9 @@
 		<num_code>460</num_code>
 		<description>The carriage house that is part of the original Potts House complex with ornamental brick, slate roof is an important representation of wealthy suburb of Victorian era.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? There is a key-card reader and telephone at each entrance, for after-hour access.</hours_regular>
-		<hours_other>Hours: 
-? There is a key-card reader and telephone at each entrance, for after-hour access.</hours_other>
-		<nicknames>LGBT, Lesbian Gay Bisexual Transgender Center, Potts House</nickname>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
+		<nicknames>LGBT, LGBT Center, Lesbian Gay Bisexual Transgender Center, Potts House</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0460-CarriageHouse.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -529,8 +527,8 @@
 		<num_code>80</num_code>
 		<description>This modern building, designed as part of the 1971 expansion of campus, provides a link between a garage at the south end and a dining hall at the north. Slope-topped light wells, and cantilevered stairs on the exterior recall the sculptural late work of LeCorbusier. The facade has been altered by a metal, bowed front that was added in 1987-8 by Research Planning Associates whose members included Maria Romanach, the daughter of the late Mario Romanach, designer of the building.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0700</open><close>0200</close></hours-regular>
+		<hours-weekend><open>0700</open><close>2100</close><tag>3</tag></hours-weekend>
 		<nicknames>1920 Commons, Dining Service, Dining Commons, Class of 1920 Dining Commons</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0080-1920Commons.pdf</pennaccessLink>
 	</location>
@@ -557,8 +555,8 @@
 		<num_code>90</num_code>
 		<description>The four Superblock low rises, recall the original scheme of the 1963 master plan for low rise quadrangles, but are planned more with an eye toward modern housing projects than traditional academic quadrangles. The shift to brick was intended to link the complex to the surrounding community.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames>CL25, Gregory College House, Modern Languages Residential Program, 1925 House, Low Rise West</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0090-1925Gregory.pdf</pennaccessLink>
 	</location>
@@ -599,10 +597,8 @@
 		<num_code>310</num_code>
 		<description>Claudia Cohen Hall, opened for use by the University's Medical School in 1874, was the second building constructed by the University on its West Philadelphia campus, following by two years the construction of College Hall, located directly to its east. Thomas W. Richards who also supplied the design for College Hall designed this building. After the School of Medicine moved to the Medical Laboratories Building (now the John Morgan Building) on Hamilton Walk, the building was known as Logan Hall, in memory of James Logan, William Penn's colonial secretary and a founding trustee of the College of Philadelphia, the University's predecessor institution and it became the home of the Wharton School. After the completion of Vance Hall, the Wharton School's last programs left Logan Hall and the building became the home of several School of Arts and Sciences departments as well as University Life and other administrative offices.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? Cohen Hall is open to the public: Monday through Friday, 8:00am to 10:00pm.</hours_regular>
-		<hours_other>Hours: 
-? Cohen Hall is open to the public: Monday through Friday, 8:00am to 10:00pm.</hours_other>
+		<hours-regular><open>0800</open><close>2200</close></hours-regular>
+		<hours-weekend><open>0800</open><close>2200</close><tag>1</tag></hours-weekend>
 		<nicknames>Logan Hall, Medical School</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0310-CohenHall.pdf</pennaccessLink>
 	</location>
@@ -615,12 +611,8 @@
 		<num_code>95</num_code>
 		<description>College Hall was the first building on the West Philadelphia campus. Designed by Thomas Webb Richards, a professor of drawing and architecture, the building housed almost all of the college functions, including the library, classrooms, laboratories and offices. In recent years, the building has been the home of the President, Provost, School of Arts and Sciences, the Department of History and the Undergraduate Admissions Office. The building's significance in the history of collegiate architecture has been recognized by U.S. Department of Interior by placing it on the National Registry of Historic Places and in the University of Pennsylvania Historic District.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? College Hall is open to the public: Monday through Friday, 7:00am to 6:30pm. 
-? For assistance, call 215-573-9465.</hours_regular>
-		<hours_other>Hours: 
-? College Hall is open to the public: Monday through Friday, 7:00am to 6:30pm. 
-? For assistance, call 215-573-9465.</hours_other>
+		<hours-regular><open>0700</open><close>1830</close></hours-regular>
+		<hours-weekend><open>0700</open><close>1800</close><tag>1</tag></hours-weekend>
 		<nicknames></nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0095-CollegeHall.pdf</pennaccessLink>
 	</location>
@@ -633,12 +625,8 @@
 		<num_code>100</num_code>
 		<description>A powerful medieval image, dark red in color and strongly punctuated by repeated gables and a fenestrated arcade on the ground floor. The building houses a variety of Wharton programs. This building was originally designed for Phi Kappa Psi, by Frank Rommel (1897) and Francis A. Gugert (1895), who were both members of the fraternity.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? Colonial Penn Center is open: Monday through Friday, 7:00 a.m. to 6:00 p.m. 
-? The building is closed: Weekends and holidays.</hours_regular>
-		<hours_other>Hours: 
-? Colonial Penn Center is open: Monday through Friday, 7:00 a.m. to 6:00 p.m. 
-? The building is closed: Weekends and holidays.</hours_other>
+		<hours-regular><open>0700</open><close>1800</close></hours-regular>
+		<hours-weekend><open>0700</open><close>1800</close><tag>1</tag></hours-weekend>
 		<nicknames>Leonard Davis Institute, Colonial Penn, Phi Kappa Psi Fraternity</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0100-ColonialPenn.pdf</pennaccessLink>
 	</location>
@@ -679,22 +667,8 @@
 		<num_code>510</num_code>
 		<description>The original wing is a red brick structure that is adjacent to Shoemaker Green next to the Palestra. The addition is in a more modern style, and faces Walnut Street. DRL is home to the Department of Mathematics, the Department of Physics and Astronomy, and the Multi-Media and Educational Technology Services center. DRL contains the Mathematics, Physics and Astronomy Library. The building is named after David Rittenhouse (1731-1796), who was professor of astronomy at Penn, the first director of the United States Mint, and president of the American Philosophical Society.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
- 
-    * David Rittenhouse Laboratory is open to the public: Monday through Thursday, 7:00am to 
-11:00pm and Friday, 7:00am to 6:00pm. 
-    * Math Physics Library: Monday through Thursday, 9:00am to 11:00pm and Friday, 9:00am to 
-7:00pm. (SS: 12noon to 10:00pm) 
-    * MMS: Monday through Thursday, 8:00am to 9:00pm and Friday, 8:00am to 4:30pm. (SS: 
-12noon to 6:00pm)</hours_regular>
-		<hours_other>Hours: 
- 
-    * David Rittenhouse Laboratory is open to the public: Monday through Thursday, 7:00am to 
-11:00pm and Friday, 7:00am to 6:00pm. 
-    * Math Physics Library: Monday through Thursday, 9:00am to 11:00pm and Friday, 9:00am to 
-7:00pm. (SS: 12noon to 10:00pm) 
-    * MMS: Monday through Thursday, 8:00am to 9:00pm and Friday, 8:00am to 4:30pm. (SS: 
-12noon to 6:00pm)</hours_other>
+		<hours-regular><open>0700</open><close>2300</close></hours-regular>
+		<hours-weekend><open>0700</open><close>1800</close><tag>1</tag></hours-weekend>
 		<nicknames>Rittenhouse Labs, DRL, Rittenhouse, David Rittenhouse Laboratory, Benjamin Franklin Lab</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0510-DRL.pdf</pennaccessLink>
 	</location>
@@ -763,8 +737,8 @@
 		<num_code>115</num_code>
 		<description>One of four Superblock low rises, that recall the original scheme of the 1963 master plan for low rise quadrangles, but planned more with an eye toward modern housing projects than traditional academic quadrangles. The shift to brick was intended to link the complex to the surrounding community.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames>DUBS, W. E. B.  Du Bois Residence Center, Du Bois House, Low Rise North</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0115-DuBois.pdf</pennaccessLink>
 	</location>
@@ -783,7 +757,7 @@
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0120-Duhring.pdf</pennaccessLink>
 	</location>
 	<location>
-		<name>Dunning Coaches&#039</name>
+		<name>Dunning Coaches</name>
 		<address>231 South 33rd Street, Philadelphia PA, 19104</address>
 		<lat>39.951</lat>
 		<lng>-75.190399</lng>
@@ -861,10 +835,8 @@
 		<num_code>145</num_code>
 		<description>Originally the home of utopian industrialist Samuel Fels, this handsome Georgian house is part of a mansion group on Walnut Street that recalls the early twentieth century character of the region before Penn's post war growth, altered in 1921 by Magaziner &amp;, Eberhard and enlarged with the Annex by Barney and Banwell in 1956.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? Fels Institute is open to the public: Monday through Friday, 9:00am to 5:00pm.</hours_regular>
-		<hours_other>Hours: 
-? Fels Institute is open to the public: Monday through Friday, 9:00am to 5:00pm.</hours_other>
+		<hours-regular><open>0900</open><close>1700</close></hours-regular>
+		<hours-weekend><open>0900</open><close>1700</close><tag>1</tag></hours-weekend>
 		<nicknames>Fels Center, Fels Institute, Fox Leadership Hall</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0145-Fels.pdf</pennaccessLink>
 	</location>
@@ -891,8 +863,8 @@
 		<num_code>170</num_code>
 		<description>This historic library, a National Historic Landmark, is the major masterpiece of Philadelphia's most important Victorian architect, Frank Furness. Combining genius in planning and form, it is a seminal library design that expresses function while merging the imagery of cathedral and railroad station. Additions in 1916, 1922, and 1931, Restored from 1986-91 by Venturi, Scott Brown and Associates. The 1931 McGoodwin addition is home to the Arthur Ross Gallery.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0830</open><close>1730</close></hours-regular>
+		<hours-weekend><open>0830</open><close>1730</close><tag>1</tag></hours-weekend>
 		<nicknames>Furness, Furness Library, Fine Arts Library, Furness Building, Univ. of Pennsylvania Library</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0170-FisherFineArts.pdf</pennaccessLink>
 	</location>
@@ -961,8 +933,8 @@
 		<num_code>7280</num_code>
 		<description>The Fresh Grocer is the anchor of a diverse mix of retail, dining and entertainment establishments along the 40th Street retail corridor. The grocery store serves the Penn and surrounding communities.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>1</tag></hours-weekend>
 		<nicknames>Garage 40</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7280-FreshGrocer_0.pdf</pennaccessLink>
 	</location>
@@ -1101,8 +1073,8 @@
 		<num_code>205</num_code>
 		<description>During the 1960s, Penn planning looked in two directions, toward contextualism in the work of the Philadelphia School, and toward confrontation in the work of most of the architects from outside of the region. These three residential towers take the latter, more conventionally modern course, in a great vertical T-plan slab of poured-in-place concrete that seems to grow larger at the top, recalling modernism's heroic age. The buildings were designed by G. Holmes Perkins, dean of the Graduate School of Fine Arts, and Professor of Design Mario Romanach.??This residence is named for Gaylord Probasco Harnwell, President of the University, 1953 to 1970.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames>HARN, Harnwell House, High East, High Rise East</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0205-Harnwell.pdf</pennaccessLink>
 	</location>
@@ -1115,8 +1087,8 @@
 		<num_code>210</num_code>
 		<description>During the 1960s, Penn planning looked in two directions, toward contextualism in the work of the Philadelphia School, and toward confrontation in the work of most of the architects from outside of the region. These three residential towers take the latter, more conventionally modern course, in a great vertical T-plan slab of poured-in-place concrete that seems to grow larger at the top, recalling modernism's heroic age. The buildings were designed by G. Holmes Perkins, dean of the Graduate School of Fine Arts, and Professor of Design Mario Romanach.?? This residence is named for Charles Custis Harrison, Provost of the University, 1894 to 1910.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames>HARS, W. Welsh Harrison House, High Rise South, High South</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0210-Harrison.pdf</pennaccessLink>
 	</location>
@@ -1157,8 +1129,8 @@
 		<num_code>225</num_code>
 		<description>With its sunny interior court, perimeter fence, and fortified moat entrance, Hill poetically evoked an age when women were still protected and Penn acted in the role of in loco parentis. Hill College House is named for Robert Hill (1889).</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames>HILL, Robert C. Hill Residence Hall, Hill Hall, Hill House, Hill College House</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0225-HillHouse.pdf</pennaccessLink>
 	</location>
@@ -1199,8 +1171,8 @@
 		<num_code>515</num_code>
 		<description>The home of Penn Hillel, the center for Jewish life at the University of Pennsylvania.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0900</open><close>1900</close><tag>1</tag></hours-regular>
+		<hours-weekend><open>0900</open><close>1900</close><tag>1</tag></hours-weekend>
 		<nicknames></nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0515-HillelSteinhardt.pdf</pennaccessLink>
 	</location>
@@ -1241,26 +1213,8 @@
 		<num_code>240</num_code>
 		<description>The Hospital of the University of Pennsylvania (HUP) is world-renowned for its clinical and research excellence, forging the way for newer and better ways to diagnose and treat illnesses and disorders. Its long and rich history of top-notch patient care began more than two centuries ago with the founding of the <a href="http://www.med.upenn.edu/" target="_blank">nation's first medical school</a>, the University of Pennsylvania. Since 1765 when it first opened its doors, Penn has been dedicated to the training of physicians and the discovery and implementation of new medical knowledge.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-1. The Ravdin Entrance is open from 5am to 7pm daily. 
-2. The Gates Entrance is open from 7 am to 7 pm, Monday to Friday. Closed weekends and 
-holidays. 
-3. The Founders Entrance is open from 7 am to 7 pm, Monday to Friday. Closed weekends 
-and holidays. 
-4. The Penn Tower Bridge is open 5:30 am to 10 pm, Monday to Friday and 9 am to 9 pm, 
-Saturday and Sunday. 
- 
-The Emergency Entrance is open 24 hours.</hours_regular>
-		<hours_other>Hours: 
-1. The Ravdin Entrance is open from 5am to 7pm daily. 
-2. The Gates Entrance is open from 7 am to 7 pm, Monday to Friday. Closed weekends and 
-holidays. 
-3. The Founders Entrance is open from 7 am to 7 pm, Monday to Friday. Closed weekends 
-and holidays. 
-4. The Penn Tower Bridge is open 5:30 am to 10 pm, Monday to Friday and 9 am to 9 pm, 
-Saturday and Sunday. 
- 
-The Emergency Entrance is open 24 hours.</hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames></nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0240-HUP.pdf</pennaccessLink>
 	</location>
@@ -1273,8 +1227,8 @@ The Emergency Entrance is open 24 hours.</hours_other>
 		<num_code>245</num_code>
 		<description>America's first college union building, it was designed by William C. Hays and Milton Medary in a student competition, altered by Robert Rhodes McGoodwin in 1936, and again by Venturi, Scott Brown in 2000.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>1100</open><close>2000</close></hours-regular>
+		<hours-weekend><open>1100</open><close>1900</close><tag>1</tag></hours-weekend>
 		<nicknames>Student Union Building, Office of Student Life </nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0245-HoustonHall.pdf</pennaccessLink>
 	</location>
@@ -1301,16 +1255,8 @@ The Emergency Entrance is open 24 hours.</hours_other>
 		<num_code>617</num_code>
 		<description>With 324,000 square feet, 48 classrooms, 57 group study rooms, lecture halls, auditoriums and conference rooms &amp;mdash,Jon M. Huntsman Hall is one of the most sophisticated large-scale instructional centers of any educational institution in the world. With its warm natural finishes of wood, brick and stone, reflecting the historic significance of surrounding buildings on the University campus, it connects Wharton to the world.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? Huntsman Hall is open 24 hours - 7 days per week during the Fall and Spring Semesters. 
-? Summer Hours: The building is open 7 days per week from 7:00 a.m. ? 10:00 p.m. 
-? A valid Penn Card is required for access on weekends, holidays and after 7:00 p.m. weekdays. 
-? Holiday hours - to be announced.</hours_regular>
-		<hours_other>Hours: 
-? Huntsman Hall is open 24 hours - 7 days per week during the Fall and Spring Semesters. 
-? Summer Hours: The building is open 7 days per week from 7:00 a.m. ? 10:00 p.m. 
-? A valid Penn Card is required for access on weekends, holidays and after 7:00 p.m. weekdays. 
-? Holiday hours - to be announced.</hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames></nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0617-HuntsmanHall.pdf</pennaccessLink>
 	</location>
@@ -1351,14 +1297,8 @@ The Emergency Entrance is open 24 hours.</hours_other>
 		<num_code>253</num_code>
 		<description>A distinctly modern building that matches the avant-garde gallery inside.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? Wednesday through Friday, 12pm - 8pm 
-? Saturday and Sunday, 11am - 5pm 
-? Monday and Tuesday, closed.</hours_regular>
-		<hours_other>Hours: 
-? Wednesday through Friday, 12pm - 8pm 
-? Saturday and Sunday, 11am - 5pm 
-? Monday and Tuesday, closed.</hours_other>
+		<hours-regular><open>1200</open><close>2000</close><tag>1</tag></hours-regular>
+		<hours-weekend><open>1100</open><close>1700</close><tag>3</tag></hours-weekend>
 		<nicknames>ICA</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0253-ICA.pdf</pennaccessLink>
 	</location>
@@ -1371,8 +1311,8 @@ The Emergency Entrance is open 24 hours.</hours_other>
 		<num_code>7002</num_code>
 		<description>International Housing. This 14-story??building also houses the University of Pennsylvania Office of International Programs, which contains International Student and Scholar Services and Penn Abroad.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0900</open><close>1700</close></hours-regular>
+		<hours-weekend><open>0900</open><close>1700</close><tag>1</tag></hours-weekend>
 		<nicknames></nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7002-InternationalHouse.pdf</pennaccessLink>
 	</location>
@@ -1413,10 +1353,8 @@ The Emergency Entrance is open 24 hours.</hours_other>
 		<num_code>415</num_code>
 		<description>Built as the Phi Delta Theta fraternity house, the building was remodeled in 1924 as University of Pennsylvania offices and again in 1994 when it was adapted and enlarged by Tony Atkins for the History of Art Program.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? The Jaffe Building is open Monday through Friday, 8:30am to 5:30pm.</hours_regular>
-		<hours_other>Hours: 
-? The Jaffe Building is open Monday through Friday, 8:30am to 5:30pm.</hours_other>
+		<hours-regular><open>0830</open><close>1730</close></hours-regular>
+		<hours-weekend><open>0830</open><close>1730</close><tag>1</tag></hours-weekend>
 		<nicknames>3400 Walnut, Elliot and Roslyn Jaffe History of Art Building, Jaffe</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0415-Jaffe.pdf</pennaccessLink>
 	</location>
@@ -1527,8 +1465,8 @@ The Emergency Entrance is open 24 hours.</hours_other>
 		<num_code>270</num_code>
 		<description>King's Court is composed of three connected, five???story apartment blocks, each with symmetrical facades. Each facade is divided into regular registers, articulated by symmetrically placed protruding, three???sided metal clad bays, which begin above the ground floor level.?? The principal facades (on Chestnut and 36th Streets) are ornamented with a limestone base, stringcourses at the second and fifth floors, surrounds include Doric pilasters supporting an entablature above the building name.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames>KCEH, Kings Court, ( Kings Court/English House )</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0270-KingsCourt.pdf</pennaccessLink>
 	</location>
@@ -1541,12 +1479,8 @@ The Emergency Entrance is open 24 hours.</hours_other>
 		<num_code>280</num_code>
 		<description>This building was funded by the federal government as a part of increasing scientific research in the 1960&amp;rsquo,s.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? The Laboratory for Research on the Structure of Matter is open to the public: Monday through 
-Friday, 8:30am to 5:30pm.</hours_regular>
-		<hours_other>Hours: 
-? The Laboratory for Research on the Structure of Matter is open to the public: Monday through 
-Friday, 8:30am to 5:30pm.</hours_other>
+		<hours-regular><open>0830</open><close>1730</close></hours-regular>
+		<hours-weekend><open>0830</open><close>1730</close><tag>1</tag></hours-weekend>
 		<nicknames>LRSM</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0280-LRSM.pdf</pennaccessLink>
 	</location>
@@ -1559,16 +1493,8 @@ Friday, 8:30am to 5:30pm.</hours_other>
 		<num_code>284</num_code>
 		<description>The building houses the Institute of Management and International Studies and the Fischer real Estate Program. It is a post-modern reflection of the historic materials of the campus with strip windows to denote its modern date.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? Lauder-Fischer Hall is open Monday through Friday from 7:00 a.m. - 7:00 p.m., during the Fall 
-and Spring Semesters. 
-? Summer Hours: The building is open Monday through Friday from 7:00 a.m. ? 7:00 p.m. 
-? The building is closed on weekends and holidays.</hours_regular>
-		<hours_other>Hours: 
-? Lauder-Fischer Hall is open Monday through Friday from 7:00 a.m. - 7:00 p.m., during the Fall 
-and Spring Semesters. 
-? Summer Hours: The building is open Monday through Friday from 7:00 a.m. ? 7:00 p.m. 
-? The building is closed on weekends and holidays.</hours_other>
+		<hours-regular><open>0700</open><close>1900</close></hours-regular>
+		<hours-weekend><open>0700</open><close>1900</close><tag>1</tag></hours-weekend>
 		<nicknames></nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0284-LauderFischer.pdf</pennaccessLink>
 	</location>
@@ -1581,14 +1507,8 @@ and Spring Semesters.
 		<num_code>73</num_code>
 		<description>Constructed as the Pennsylvania Railroad Freight Building in 1929, in a restrained Art Deco style, the first floor is sheathed in limestone with the upper stories clad in buff colored brick with limestone details. Rising six stories above a track level, the building was originally designed as a combination freight station, warehouse and showroom, and is characterized by immense massing, typical of industrial architecture. The structure was renovated and converted into condominium apartments, with a massive open courtyard carved from the interior, by the firm of Bower Lewis Thrower Architects in 2001.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? The offices of Facilities & Real Estate Services are open to the public: Monday through Friday, 
-8:00am to 5:00pm. There is a push pad activated automatic door leading from the 
-elevator lobby into the reception area.</hours_regular>
-		<hours_other>Hours: 
-? The offices of Facilities & Real Estate Services are open to the public: Monday through Friday, 
-8:00am to 5:00pm. There is a push pad activated automatic door leading from the 
-elevator lobby into the reception area.</hours_other>
+		<hours-regular><open>0800</open><close>1700</close></hours-regular>
+		<hours-weekend><open>0800</open><close>1700</close><tag>1</tag></hours-weekend>
 		<nicknames>GE Building, Pennsylvania Railroad Freight Building</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0073-LeftBank.pdf</pennaccessLink>
 	</location>
@@ -1601,12 +1521,8 @@ elevator lobby into the reception area.</hours_other>
 		<num_code>290</num_code>
 		<description>A handsome variation on the later seventeenth-century themes of Cope and Stewardson's Towne and Medical Buildings.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? Leidy Laboratories is open to the public: Monday through Friday, 7:30am to 8:30pm. However, 
-the upper floors are card access only after 6:00pm.</hours_regular>
-		<hours_other>Hours: 
-? Leidy Laboratories is open to the public: Monday through Friday, 7:30am to 8:30pm. However, 
-the upper floors are card access only after 6:00pm.</hours_other>
+		<hours-regular><open>0730</open><close>2030</close></hours-regular>
+		<hours-weekend><open>0730</open><close>2030</close><tag>1</tag></hours-weekend>
 		<nicknames>Leidy Labs, Leidy, Biology Labs, Zoology Laboratory</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0290-Leidy.pdf</pennaccessLink>
 	</location>
@@ -1619,12 +1535,8 @@ the upper floors are card access only after 6:00pm.</hours_other>
 		<num_code>365</num_code>
 		<description>Originally part of the Foulke and Long Institute along with the adjacent Morgan Building, and later incorporated into the University, this was the plainer of the two buildings, and it is set back slightly, marking the hierarchy within the original Institute. The Lerner Center has been completely renovated with a restoration of the original historic facade, while completely demolishing and rebuilding the interior and adding an expanded facility between Chancellor and Smith Walks, that reflects the modern needs of the Music Department.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? The Music Building is open to the public: Monday through Thursday, 9:00am to 8:00pm and on 
-Friday, 9:00am to 4:30pm.</hours_regular>
-		<hours_other>Hours: 
-? The Music Building is open to the public: Monday through Thursday, 9:00am to 8:00pm and on 
-Friday, 9:00am to 4:30pm.</hours_other>
+		<hours-regular><open>0900</open><close>2000</close></hours-regular>
+		<hours-weekend><open>0900</open><close>1630</close><tag>1</tag></hours-weekend>
 		<nicknames>Music Building, Foulke Long Institute</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0365-Music.pdf</pennaccessLink>
 	</location>
@@ -1637,8 +1549,8 @@ Friday, 9:00am to 4:30pm.</hours_other>
 		<num_code>293</num_code>
 		<description>The Melvin J. and Claire Levine Hall was dedicated on April 9, 2003. The 51,000 sq. ft. addition, combined with the 43,000 sq. ft. of the former Graduate Research Wing, conveniently links the Towne and Moore Buildings and is now home to the Department of Computer and Information Science and the Weiss Tech House.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0800</open><close>1900</close><tag>1</tag></hours-regular>
+		<hours-weekend><open>0800</open><close>1900</close><tag>1</tag></hours-weekend>
 		<nicknames></nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0293-Levine.pdf</pennaccessLink>
 	</location>
@@ -1735,12 +1647,8 @@ Friday, 9:00am to 4:30pm.</hours_other>
 		<num_code>9847</num_code>
 		<description></description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? 3619 Locust Walk is open to the public: Monday through Friday, 7:00am to 5:00pm. 
-? The building is locked 24 hours, Saturday through Sunday.</hours_regular>
-		<hours_other>Hours: 
-? 3619 Locust Walk is open to the public: Monday through Friday, 7:00am to 5:00pm. 
-? The building is locked 24 hours, Saturday through Sunday.</hours_other>
+		<hours-regular><open>0700</open><close>1700</close></hours-regular>
+		<hours-weekend><open>0700</open><close>1700</close><tag>1</tag></hours-weekend>
 		<nicknames>formerly Phi Gamma Delta House</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA9847-Locust3619.pdf</pennaccessLink>
 	</location>
@@ -1781,15 +1689,8 @@ Friday, 9:00am to 4:30pm.</hours_other>
 		<num_code>7015</num_code>
 		<description>The University Archives and Records Center is located in this building, as well as ,the Curator of the University Art Collection and several other offices and spaces leased to Penn. This building is considered a part of the University City Science Center.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? The University Archives is open to the public: Monday through Friday, 9:30am to 4:30.  
-? The Penn Dental Center is open 8 a.m. to 5 p.m. Monday through Friday and 
-8 a.m. to 5 p.m. two Saturdays per month. Call 215.573.8400 for more information.</hours_regular>
-		<hours_other>Hours: 
-? The University Archives is open to the public: Monday through Friday, 9:30am to 4:30.  
-? The Penn Dental Center is open 8 a.m. to 5 p.m. Monday through Friday and 
-8 a.m. to 5 p.m. two Saturdays per month. Call 215.573.8400 for more information.</hours_other>
-		<nicknames>University Archives</nickname>
+		<hours-regular><open>0800</open><close>1700</close></hours-regular>
+		<hours-weekend><open>0800</open><close>1700</close><tag>1</tag></hours-weekend>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7015_3401Market.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1801,10 +1702,8 @@ Friday, 9:00am to 4:30pm.</hours_other>
 		<num_code>7003</num_code>
 		<description>This building is home to The College of Liberal and Professional Studies and contains some offices and departments of The School of Arts and Sciences. (This building is partially leased to the University and not a University owned bldg.)</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? 3440 Market Street is open to the public: Monday through Friday, 7:00am to 6:30pm.</hours_regular>
-		<hours_other>Hours: 
-? 3440 Market Street is open to the public: Monday through Friday, 7:00am to 6:30pm.</hours_other>
+		<hours-regular><open>0700</open><close>1830</close></hours-regular>
+		<hours-weekend><open>0700</open><close>1830</close><tag>1</tag></hours-weekend>
 		<nicknames>College of General Studies</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7003-3440Market.pdf</pennaccessLink>
 	</location>
@@ -1915,22 +1814,8 @@ Friday, 9:00am to 4:30pm.</hours_other>
 		<num_code>510</num_code>
 		<description>The original wing is a red brick structure that is adjacent to Shoemaker Green next to the Palestra. The addition is in a more modern style, and faces Walnut Street. DRL is home to the Department of Mathematics, the Department of Physics and Astronomy, and the Multi-Media and Educational Technology Services center. DRL contains the Mathematics, Physics and Astronomy Library. The building is named after David Rittenhouse (1731-1796), who was professor of astronomy at Penn, the first director of the United States Mint, and president of the American Philosophical Society.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
- 
-    * David Rittenhouse Laboratory is open to the public: Monday through Thursday, 7:00am to 
-11:00pm and Friday, 7:00am to 6:00pm. 
-    * Math Physics Library: Monday through Thursday, 9:00am to 11:00pm and Friday, 9:00am to 
-7:00pm. (SS: 12noon to 10:00pm) 
-    * MMS: Monday through Thursday, 8:00am to 9:00pm and Friday, 8:00am to 4:30pm. (SS: 
-12noon to 6:00pm)</hours_regular>
-		<hours_other>Hours: 
- 
-    * David Rittenhouse Laboratory is open to the public: Monday through Thursday, 7:00am to 
-11:00pm and Friday, 7:00am to 6:00pm. 
-    * Math Physics Library: Monday through Thursday, 9:00am to 11:00pm and Friday, 9:00am to 
-7:00pm. (SS: 12noon to 10:00pm) 
-    * MMS: Monday through Thursday, 8:00am to 9:00pm and Friday, 8:00am to 4:30pm. (SS: 
-12noon to 6:00pm)</hours_other>
+		<hours-regular><open>0700</open><close>2300</close></hours-regular>
+		<hours-weekend><open>0700</open><close>1800</close><tag>1</tag></hours-weekend>
 		<nicknames>DRL, DRLB</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0510-DRLL.pdf</pennaccessLink>
 	</location>
@@ -1943,8 +1828,8 @@ Friday, 9:00am to 4:30pm.</hours_other>
 		<num_code>320</num_code>
 		<description>One of four Superblock low rises, that recall the original scheme of the 1963 master plan for low rise quadrangles, but planned more with an eye toward modern housing projects than traditional academic quadrangles. The shift to brick was intended to link the complex to the surrounding community.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames>MAYR, Mayer, Mayer Hall, Harold C. Mayer  Hall</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0320-MayerHall.pdf</pennaccessLink>
 	</location>
@@ -1971,10 +1856,8 @@ Friday, 9:00am to 4:30pm.</hours_other>
 		<num_code>325</num_code>
 		<description>An academic classrooms building, which also houses the Population Study Centers Library, the Social Science Data Center and the Career Services Library.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-?The McNeil Building is open to the public: Monday through Friday, 7:00am to 8:30pm.</hours_regular>
-		<hours_other>Hours: 
-?The McNeil Building is open to the public: Monday through Friday, 7:00am to 8:30pm.</hours_other>
+		<hours-regular><open>0700</open><close>2030</close></hours-regular>
+		<hours-weekend><open>0700</open><close>2030</close><tag>1</tag></hours-weekend>
 		<nicknames>McNeil, Robert Lincoln McNeil Building, Leonard Lauder Career Center, Career Services</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0325-McNeil.pdf</pennaccessLink>
 	</location>
@@ -1987,10 +1870,8 @@ Friday, 9:00am to 4:30pm.</hours_other>
 		<num_code>230</num_code>
 		<description>Founded in 1978 by Richard S. Dunn, emeritus professor of American history, the McNeil Center specializes in the histories and cultures of North America before 1850. The Barra Foundation and Robert L. McNeil Jr. gave a donation to make this home for the Center possible.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? MCEAS is open to the public: Monday through Friday, 9:00am to 5:00pm.</hours_regular>
-		<hours_other>Hours: 
-? MCEAS is open to the public: Monday through Friday, 9:00am to 5:00pm.</hours_other>
+		<hours-regular><open>0900</open><close>1700</close></hours-regular>
+		<hours-weekend><open>0900</open><close>1700</close><tag>1</tag></hours-weekend>
 		<nicknames>MCEAS</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0230-McNeilEAS.pdf</pennaccessLink>
 	</location>
@@ -2031,12 +1912,8 @@ Friday, 9:00am to 4:30pm.</hours_other>
 		<num_code>4350</num_code>
 		<description>Murphy Field is the southern-most parcel of the athletic fields collectively known as River Fields. Murphy Field contains Penn's baseball playing field (Meiklejohn Stadium) and the Module 7 Utility Building.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? A fence around the facility is normally locked and the stadium is open only during Penn Athletic 
-sporting events.</hours_regular>
-		<hours_other>Hours: 
-? A fence around the facility is normally locked and the stadium is open only during Penn Athletic 
-sporting events.</hours_other>
+		<hours-regular></hours-regular>
+		<hours-weekend></hours-weekend>
 		<nicknames>Meiklejohn Stadium</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA4350-Meiklejohn.pdf</pennaccessLink>
 	</location>
@@ -2077,8 +1954,8 @@ sporting events.</hours_other>
 		<num_code>345</num_code>
 		<description>Altered in 1926 by Paul Cret, this building housed the first working multi-purpose Electronic Numerical Integrator And Computer (ENIAC) that was the first modern computer.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames>Moore, Moore School, Moore School of Electrical Engineering, Pepper Musical Instruments</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0345-Moore.pdf</pennaccessLink>
 	</location>
@@ -2189,8 +2066,8 @@ sporting events.</hours_other>
 		<num_code>247</num_code>
 		<description>Ground has been broken on Hill Field. The proposed New College House on Hill Field is Penn???s first-ever residential building specifically designed as a college house, the University???s residential system that brings together undergraduates, faculty, staff, and graduate students to form shared communities within the larger campus context. Completion is expected in 2016.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames></nickname>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
@@ -2483,8 +2360,8 @@ sporting events.</hours_other>
 		<num_code>9677</num_code>
 		<description>Penn Park is 24 acres of athletic fields and open space located to the east of Penn's academic campus. The program of the University's Department of Recreation and Intercollegiate Athletics includes 2 synthetic turf athletic fields, the Dunning-Cohen Champions Field with a seasonal air structure and the James "Ace", Adams Field, a multi-purpose stadium and the 12-court Hamlin Tennis Center. South Field is an informal, natural grass playing field. A surface parking lot occupies the area closest to Lower Walnut Street. Raised landforms support a circulation system of pathways leading to pedestrian bridges that link Penn Park to Walnut Street, the River Fields across the Weave Bridge, and the main campus, via the Goldie Paley Bridge at Franklin Field.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames></nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA9677-PennPark.pdf</pennaccessLink>
 	</location>
@@ -2581,10 +2458,8 @@ sporting events.</hours_other>
 		<num_code>2020</num_code>
 		<description>The Ruth and Raymond Perelman Center for Advanced Medicine opened in October of 2008, houses the Abramson Cancer Center, radiation oncology, cardiovascular medicine and an outpatient surgical pavilion. The Roberts Proton Therapy Center is located within the Perelman Center.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? The Main Entrance is open 24 hours.</hours_regular>
-		<hours_other>Hours: 
-? The Main Entrance is open 24 hours.</hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames></nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA2020-PCAM.pdf</pennaccessLink>
 	</location>
@@ -2625,8 +2500,8 @@ sporting events.</hours_other>
 		<num_code>176</num_code>
 		<description>The David Pottruck Health and Fitness Center is an additional 65,000 sq. ft. of dedicated recreational space, to combine with the existing 94,640 sq. ft. of Gimbel Gymnasium, which creates a new multi-purpose activity area designed for campus sport totaling 159,640 sq. ft. The center will is a state of the art recreation facility serving the Penn Community. The program elements provided by the facility are important components in the delivery of services anticipated by recreation users in informal recreation, sport clubs, fitness and wellness, intramural sport, and instructional classes.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0600</open><close>2330</close></hours-regular>
+		<hours-weekend><open>0600</open><close>2100</close><tag>3</tag></hours-weekend>
 		<nicknames></nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0176-Pottruck.pdf</pennaccessLink>
 	</location>
@@ -2667,8 +2542,8 @@ sporting events.</hours_other>
 		<num_code>490</num_code>
 		<description>The nation's leading collegiate architects who here established the courtyards and character that romanticized college education designed this important ensemble of dormitory buildings. Additions to the complex were constructed in 1899, 1905, 1908, 1911 and 1928.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames>The Quad , Quad Dorms, RIEP, Riepe College House, WARE, Ware College House, FSHS, Fisher Hassenfeld College House</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0490-Quadrangle.pdf</pennaccessLink>
 	</location>
@@ -2681,8 +2556,8 @@ sporting events.</hours_other>
 		<num_code>7066</num_code>
 		<description>Mixed use student housing . A University ground lease property.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames></nickname>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
@@ -2737,12 +2612,8 @@ sporting events.</hours_other>
 		<num_code>0</num_code>
 		<description>Athletic Fields consisting of the Rhodes Soccer Stadium and Field, the Ellen Vagelos C'90 Field Hockey Field and the Mondschein Throwing Complex.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? Gates and fences around all facilities are normally locked and stadium access and seating is 
-only open and available during specific Penn Athletic sporting events.</hours_regular>
-		<hours_other>Hours: 
-? Gates and fences around all facilities are normally locked and stadium access and seating is 
-only open and available during specific Penn Athletic sporting events.</hours_other>
+		<hours_regular></hours_regular>
+		<hours_other></hours_other>
 		<nicknames>Stewart Field</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0545-StewartField_0.pdf</pennaccessLink>
 	</location>
@@ -2755,8 +2626,8 @@ only open and available during specific Penn Athletic sporting events.</hours_ot
 		<num_code>220</num_code>
 		<description>During the 1960s, Penn planning looked in two directions, toward contextualism in the work of the Philadelphia School, and toward confrontation in the work of most of the architects from outside of the region. These three residential towers take the latter, more conventionally modern course, in a great vertical T-plan slab of poured-in-place concrete that seems to grow larger at the top, recalling modernism's heroic age. The buildings were designed by G. Holmes Perkins, dean of the Graduate School of Fine Arts, and Professor of Design Mario Romanach.?? This residence is named for Judith Seitz Rodin, President of the University, 1994 to 2004.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames>RODN, High North, High Rise North, Hamilton House, Rodin</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0220-RodinCollegeHouse.pdf</pennaccessLink>
 	</location>
@@ -2965,10 +2836,8 @@ only open and available during specific Penn Athletic sporting events.</hours_ot
 		<num_code>246</num_code>
 		<description><strong>The Krishna P. Singh Center for Nanotechnology</strong> is a cross-disciplinary effort of SEAS and SAS, to facilitate the collaboration and exchange of knowledge that characterizes nanotechnology research. The building contains microscopy labs, a 10,000 sq. ft. clean room, a top floor forum for events and symposia and a new landscaped courtyard along Walnut Street.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-?</hours_regular>
-		<hours_other>Hours: 
-?</hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames>Nano Tech, Singh Nanotechnology Center</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0246-Nano_1.pdf</pennaccessLink>
 	</location>
@@ -2981,8 +2850,8 @@ only open and available during specific Penn Athletic sporting events.</hours_ot
 		<num_code>456</num_code>
 		<description>Skirkanich Hall promotes enhanced connection between the School of Engineering and Applied Sciences (SEAS) and the greater Penn academic community. This new facility provides an opportunity to unite formerly disparate spaces and give the SEAS a dramatic and welcoming front door. Equally important to embracing the campus is the intimacy of the Quain courtyard between the four buildings, Levine, Towne, Skirkanich, and Moore.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames></nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0456-Skirkanich.pdf</pennaccessLink>
 	</location>
@@ -3009,12 +2878,8 @@ only open and available during specific Penn Athletic sporting events.</hours_ot
 		<num_code>475</num_code>
 		<description>Part of a quadrangle of understated academic buildings that draped contextual brickwork with pilaster like concrete piers that recalled the Beaux-arts training of the architect.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? Solomon Labs is open to the public: Monday through Friday, 8:00am to 6:00pm.  
-? Summer hours are M-F, 9:00am to 5:00pm.</hours_regular>
-		<hours_other>Hours: 
-? Solomon Labs is open to the public: Monday through Friday, 8:00am to 6:00pm.  
-? Summer hours are M-F, 9:00am to 5:00pm.</hours_other>
+		<hours-regular><open>0800</open><close>1800</close></hours-regular>
+		<hours-weekend><open>0800</open><close>1800</close><tag>1</tag></hours-weekend>
 		<nicknames>Solomon Labs, Psychology Labs, Psych Labs, Soc. Science</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0475-SolomonLabs.pdf</pennaccessLink>
 	</location>
@@ -3083,20 +2948,8 @@ only open and available during specific Penn Athletic sporting events.</hours_ot
 		<num_code>535</num_code>
 		<description>The Wharton School moved to Dietrich Hall from overcrowded quarters in Logan Hall. The New York architectural firm of McKim, Mead &amp;, White which designed many of Columbia University&amp;rsquo,s facilities, designed the building. By the early 1980s, growth in Wharton School programs created a strong need for additional facilities. The University asked the firm of Warner Burns, Toane and Lunde (also from New York) to prepare designs for renovating the original building and for an addition. Behind the new facade, the original Dietrich facade is largely intact on the interior and retains the limestone panel on which was inscribed Dietrich Hall. The addition sides and rear retain the detailing of the original building, which overlaid a slightly orange brick with limestone trim and organized windows into vertical bands in the fashion of contemporary design. The original building honored D. Wellington Dietrich, uncle of H. Richard Dietrich and Daniel W. Dietrich, Wharton graduates and benefactors of the University. The 1983 renovation and addition honors Saul Steinberg, CEO of the Reliance Group Holdings and University graduate, trustee and donor of the facility.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? Steinberg Hall - Dietrich Hall is open Monday through Friday, from 7:00 a.m. - 10:00 p.m., during 
-the Fall and Spring Semesters. 
-? Weekends: The building is open weekends, from 8:00 a.m. ? 5:00 p.m. 
-? Summer Hours: The building is open Monday through Friday, from 7:00 a.m. ? 7:00 p.m. 
-? Summer weekends: The building is open from 8:00 a.m. ? 5:00 p.m. 
-? The building is closed on holidays.</hours_regular>
-		<hours_other>Hours: 
-? Steinberg Hall - Dietrich Hall is open Monday through Friday, from 7:00 a.m. - 10:00 p.m., during 
-the Fall and Spring Semesters. 
-? Weekends: The building is open weekends, from 8:00 a.m. ? 5:00 p.m. 
-? Summer Hours: The building is open Monday through Friday, from 7:00 a.m. ? 7:00 p.m. 
-? Summer weekends: The building is open from 8:00 a.m. ? 5:00 p.m. 
-? The building is closed on holidays.</hours_other>
+		<hours-regular><open>0700</open><close>2200</close></hours-regular>
+		<hours-weekend><open>0800</open><close>1700</close><tag>3</tag></hours-weekend>
 		<nicknames>Steinberg-Dietrich, Dietrich Hall</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0535-SteinbergDietrich.pdf</pennaccessLink>
 	</location>
@@ -3137,10 +2990,8 @@ the Fall and Spring Semesters.
 		<num_code>550</num_code>
 		<description>Part of a quadrangle of understated academic buildings that draped contextual brickwork with pilaster like concrete piers that recalled the Beaux-arts training of the architect. Second floor redesigned to accommodate the Political Science department in 1980.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? Stiteler Hall is open to the public: Monday through Friday, 8:00am to 6:00pm.</hours_regular>
-		<hours_other>Hours: 
-? Stiteler Hall is open to the public: Monday through Friday, 8:00am to 6:00pm.</hours_other>
+		<hours-regular><open>0800</open><close>1800</close></hours-regular>
+		<hours-weekend><open>0800</open><close>1800</close><tag>1</tag></hours-weekend>
 		<nicknames>Stietler, Steitler, Social Science I, Joint Use Building</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0550-StitelerHall.pdf</pennaccessLink>
 	</location>
@@ -3153,8 +3004,8 @@ the Fall and Spring Semesters.
 		<num_code>555</num_code>
 		<description>Following the lines that had originally been proposed for the superblock developments, the architects designed Stouffer as a low-rise, complex, and ironic recasting of the Quad in modern idiom, but with a reference to Jane Jacobs urbanism with the retail along Spruce Street. It is one of the best buildings of the early modern phase of the campus.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames>STOU, Stouffer Commons, Stouffer Triangle, Stouffer Dorms, Housing and Conference Services, SDS</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0555-StoufferCollege.pdf</pennaccessLink>
 	</location>
@@ -3167,8 +3018,8 @@ the Fall and Spring Semesters.
 		<num_code>7044</num_code>
 		<description>Penn Student Health Services occupies the entire level of Suite 100. (Not a University-owned building.)</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0800</open><close>1930</close><tag>1</tag></hours-regular>
+		<hours-weekend><open>0800</open><close>1730</close><tag>2</tag></hours-weekend>
 		<nicknames>Penn Student Health Services</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7044-3535MarketStudentHealth.pdf</pennaccessLink>
 	</location>
@@ -3223,8 +3074,8 @@ the Fall and Spring Semesters.
 		<num_code>570</num_code>
 		<description>The Towne Building is one of the Cope and Stewardson designs that established the architectural character of the University's large laboratory buildings such as Leidy Laboratories and the John Morgan Building. The design is styled in the manner of English classicism of the seventeenth century with clear references to the work of Christopher Wren. It is a major feature of Smith Walk and 33rd Street. When opened in 1906, it housed the machine shops and related facilities used to train students in modern industrial practice. It remains the home of the School of Engineering and Applied Science administrative offices and of several of its departments. Towne houses the SEAS Library. The building is named to honor the memory of the Philadelphia industrialist, trustee and donor, John Henry Towne.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames>Towne, Towne School, Towne School of Engineering</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0570-Towne.pdf</pennaccessLink>
 	</location>
@@ -3265,8 +3116,8 @@ the Fall and Spring Semesters.
 		<num_code>580</num_code>
 		<description>Vaguely Grecian in its massive colonnade, but screened by brick panels whose small windows recall the historic tradition of the French library, Van Pelt is a major presence on the campus and is the University's main library. Within this facility is the Van Pelt Library, the Lippincott Library @ Wharton, the Music Library and the Kislak Center for Special Collections, Rare Book &amp;, Manuscripts.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0830</open><close>0000</close></hours-regular>
+		<hours-weekend><open>1000</open><close>2100</close><tag>3</tag></hours-weekend>
 		<nicknames>, Charles Patterson Van Pelt Library, Van Pelt, Lippincott , The Charles Patterson Van Pelt Library, Graduate Library and Center for Graduate Studies LIPP </nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0580-VanPeltLibrary.pdf</pennaccessLink>
 	</location>
@@ -3293,8 +3144,8 @@ the Fall and Spring Semesters.
 		<num_code>585</num_code>
 		<description>One of four Superblock low rises, that recall the original scheme of the 1963 master plan for low rise quadrangles, but planned more with an eye toward modern housing projects than traditional academic quadrangles. The shift to brick was intended to link the complex to the surrounding community.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular></hours_regular>
-		<hours_other></hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
 		<nicknames>VANP, Van Pelt Manor, Low Rise South, Van Pelt College House</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0585-VanPeltManor.pdf</pennaccessLink>
 	</location>
@@ -3307,18 +3158,8 @@ the Fall and Spring Semesters.
 		<num_code>590</num_code>
 		<description>Built to house the Wharton School's, graduate education program, the building represents an important stage of the Philadelphia School in expressing the structural frame while simplifying the external volume</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? Vance Hall is open Monday through Friday, 7:00 a.m. - 9:00 p,m, during the Fall and Spring 
-Semesters. 
-? Weekends: The building is open from 8:00 a.m. ? 5:00 p.m. 
-? Summer Hours: The building is open Monday through Friday, from 7:00 a.m. ? 7:00 p.m. 
-? The building is closed on holidays.</hours_regular>
-		<hours_other>Hours: 
-? Vance Hall is open Monday through Friday, 7:00 a.m. - 9:00 p,m, during the Fall and Spring 
-Semesters. 
-? Weekends: The building is open from 8:00 a.m. ? 5:00 p.m. 
-? Summer Hours: The building is open Monday through Friday, from 7:00 a.m. ? 7:00 p.m. 
-? The building is closed on holidays.</hours_other>
+		<hours-regular><open>0700</open><close>2100</close></hours-regular>
+		<hours-weekend><open>0800</open><close>1700</close><tag>1</tag></hours-weekend>
 		<nicknames>Vance, Wharton Grad, Henry T. Vance Hall</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0590-VanceHall.pdf</pennaccessLink>
 	</location>
@@ -3401,14 +3242,8 @@ Semesters.
 		<num_code>416</num_code>
 		<description>Post-modern reversal of Penn's traditional brick and limestone trim for a commercial and academic support facility.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? The School of Arts & Sciences has classrooms located within 3401 Walnut, which are open to 
-the public: Monday through Friday. A Wing is open from 7:00am to 7:00pm. B & C Wings 
-are open from 7:00am to 6:00pm.</hours_regular>
-		<hours_other>Hours: 
-? The School of Arts & Sciences has classrooms located within 3401 Walnut, which are open to 
-the public: Monday through Friday. A Wing is open from 7:00am to 7:00pm. B & C Wings 
-are open from 7:00am to 6:00pm.</hours_other>
+		<hours-regular><open>0700</open><close>1900</close></hours-regular>
+		<hours-weekend><open>0700</open><close>1900</close><tag>1</tag></hours-weekend>
 		<nicknames></nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0416-Walnut3401.pdf</pennaccessLink>
 	</location>
@@ -3421,10 +3256,8 @@ are open from 7:00am to 6:00pm.</hours_other>
 		<num_code>420</num_code>
 		<description>A late Victorian double house rehabilitated as office space, preserves its distinctive porch as well as a rich interior. Refurbished in the early 1980s to house School Arts and Sciences academic programs, the Center for the Study of Black Literature and Culture and most recently, the home of the Center for Programs in Contemporary Writing.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? 3808 Walnut & 3810 Walnut are open to the public: Monday through Friday, 9:00am to 5:00pm.</hours_regular>
-		<hours_other>Hours: 
-? 3808 Walnut & 3810 Walnut are open to the public: Monday through Friday, 9:00am to 5:00pm.</hours_other>
+		<hours-regular><open>0900</open><close>1700</close></hours-regular>
+		<hours-weekend><open>0900</open><close>1700</close><tag>1</tag></hours-weekend>
 		<nicknames>Eisenlohr Annex,  Eisenlohr Hall Annex</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0420-Walnut3808-10.pdf</pennaccessLink>
 	</location>
@@ -3437,10 +3270,8 @@ are open from 7:00am to 6:00pm.</hours_other>
 		<num_code>7039</num_code>
 		<description>Part of a series of altered brick twins originally built by Frank Furness.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? 3809 Walnut is locked by a PennCard access system.</hours_regular>
-		<hours_other>Hours: 
-? 3809 Walnut is locked by a PennCard access system.</hours_other>
+		<hours-regular><open>0000</open><close>2359</close></hours-regular>
+		<hours-weekend><open>0000</open><close>2359</close><tag>1</tag></hours-weekend>
 		<nicknames>&lt;a href=&#039;http://www.sas.upenn.edu/jerrylee/&#039;&gt; Jerry Lee Center of Criminology &lt;/a&gt;</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7039-Walnut3809.pdf</pennaccessLink>
 	</location>
@@ -3565,12 +3396,8 @@ are open from 7:00am to 6:00pm.</hours_other>
 		<num_code>620</num_code>
 		<description>The School of Arts &amp;, ,Sciences occupies most of the building, and a part of the Perelman Quadrangle, the Silfen Study Center and Williams Cafe are located on the plaza level.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours_regular>Hours: 
-? Williams Hall is open to the public: Monday through Thursday, 7:00am to 10:00pm and Friday, 
-4:00am to 5:00pm.</hours_regular>
-		<hours_other>Hours: 
-? Williams Hall is open to the public: Monday through Thursday, 7:00am to 10:00pm and Friday, 
-4:00am to 5:00pm.</hours_other>
+		<hours-regular><open>0700</open><close>2200</close></hours-regular>
+		<hours-weekend><open>0400</open><close>1700</close><tag>1</tag></hours-weekend>
 		<nicknames>Williams, Edwin B. &amp; Leonore R. Williams Humanities and Language Hall</nickname>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0620-WilliamsHall.pdf</pennaccessLink>
 	</location>
