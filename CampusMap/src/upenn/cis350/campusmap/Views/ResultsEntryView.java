@@ -52,6 +52,15 @@ public class ResultsEntryView extends TextView{
 		addressView.draw(canvas);
 	}
 	
+	@Override
+	public boolean onTouchEvent(MotionEvent e){
+		if(e.getAction() == MotionEvent.ACTION_DOWN){
+			layout.setBackgroundColor(color.holo_blue_bright);
+			layout.setAlpha((float) 0.7);
+		}
+		return true;
+	}
+	
 	public String getAddress(){
 		return (String)addressView.getText();
 	}
