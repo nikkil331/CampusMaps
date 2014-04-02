@@ -10,8 +10,8 @@
 		<description>Built as the West Philadelphia Title and Trust Company, this 9-story building merges art deco modernism with the classicism of Paul Cret, a teacher of the architects when they studied at Penn.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>West Philadelphia Title and Trust Company</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>West Philadelphia Title and Trust Company</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0650-36thStreet-133South.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -24,8 +24,8 @@
 		<description>Dorm-style student housing with significant amenities.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>The Axis</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>The Axis</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -38,8 +38,8 @@
 		<description>A mid-century Victorian suburban Gothic mansion, designed as the Psi Upsilon fraternity by the father of one of its members, this was the first of the great fraternities on campus. Its design adapted the towers and details of Cope and Stewardson's academic Gothic, but in the limestone that initially had been projected for the new turn-of-the-century campus.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>The Castle, Psi Upsilon (Tau) -  Fraternity</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>The Castle, Psi Upsilon (Tau) -  Fraternity</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA9865-36thStreet-250South.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -52,8 +52,8 @@
 		<description>Home of the Christian Association.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Westminster House</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Westminster House</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0537-Christian.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -66,8 +66,8 @@
 		<description>The Vice President for University Life offices, on the second floor, consist of four DASP Programs: Veteran's Upward Bound, High School Upward Bound, Educational Opportunity Center and Talent Search. An assortment of commercial and retail shops front 40th Street on the ground level.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0105-Shops-40th.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -80,8 +80,8 @@
 		<description>The 1928 Anatomy-Chemistry Wing addition added significant laboratory facilities to the Medical School. Funded by the Rockefeller Foundation, it was designed by the successors to Cope and Stewardson. A saw-toothed wall marks the point where an additional quad was planned for a second phase of construction.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Anatomy Chemistry, Anatomy Chemistry Wing</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Anatomy Chemistry, Anatomy Chemistry Wing</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0005-AnatomyChem.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -94,8 +94,8 @@
 		<description>Andrew Mutch Building of the Presbyterian Medical Center of the University of Pennsylvania Health Care System.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -108,8 +108,8 @@
 		<description>The Annenberg Center consists of four theaters arrayed around a central lobby and grand stair that links each of the parts of the building.?? The theaters are relatively spartan, with ceilings defined by the structure of the roofs while the exterior massing rather simply describes the various interior spaces.??</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Annenberg Center, Annenberg Center for Communication, Annenberg Center for Communication Arts and Sciences</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Annenberg Center, Annenberg Center for Communication, Annenberg Center for Communication Arts and Sciences</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0010-AnnenbergCntr.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -122,8 +122,8 @@
 		<description>The Annenberg Public Policy Center of the University of Pennsylvania performs research in the fields of political communication, information and society, media and the developing child, health communication and adolescent risk. The Policy Center's goal is to provide expert analysis that brings these issues into focus.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>APPC</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>APPC</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0045-AnnenbergPPC.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -136,8 +136,8 @@
 		<description>The Annenberg School is a good example of 1960's classic modern architecture, altered and extended by Mitchell/Giurgola Architects in 1987 in a way that acknowledged the character of the original building, but with the richer urban flavor of the architects best work. In 1999 MGA Partners, the successor firm to Mitchell/Giurgola, added two stories to the original building and, as part of the University's effort to enliven Walnut Street, reoriented the building to Walnut Street by adding more glass area to the north facade and creating a new Walnut Street main entrance.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Annenberg, Annenberg School, ASC</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Annenberg, Annenberg School, ASC</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0015-AnnenbergSchool.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -150,8 +150,8 @@
 		<description>The Annenberg School is a good example of 1960's classic modern architecture, altered and extended by Mitchell/Giurgola Architects in 1987 in a way that acknowledged the character of the original building, but with the richer urbanistic flavor of the architects best work. In 1999 MGA Partners, the successor firm to Mitchell/Giurgola, added two stories to the original building and, as part of the University's effort to enliven Walnut Street, reoriented the building to Walnut Street by adding more glass area to the north facade and creating a new Walnut Street main entrance.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0015-AnnenbergSchoolL.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -163,9 +163,9 @@
 		<num_code>75</num_code>
 		<description>The building was originally built to house the Christian Association. This building now houses The Center for Undergraduate Research and Fellowships (CURF), Ben Franklin Scholars, University Scholars, Makuu, La Casa Latina, The Pan Asian American Community House (PAACH) and Student Performing Arts.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0900</open><close>2100</close><tag>1</tag></hours-regular>
-		<hours-weekend><open>0900</open><close>2100</close><tag>1</tag></hours-weekend>
-		<nicknames>The Arts, Research and Culture House</nickname>
+		<hours_regular><open>0900</open><close>2100</close><tag>1</tag></hours_regular>
+		<hours_weekend><open>0900</open><close>2100</close><tag>1</tag></hours_weekend>
+		<nicknames>The Arts, Research and Culture House</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0075-Arch.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -178,8 +178,8 @@
 		<description>The Architectural Archives of the University of Pennsylvania preserves the works of more than 400 designers from the 18th century to the present. The research collections in the Archives are available to faculty, students, and scholars for independent study as well as to support teaching in the University of Pennsylvania and other institutions. The archives facility in the lower level of the Fisher Fine Arts Building houses the Kroiz exhibition gallery, a specialized library, reading room, and seminar room, as well as storage and processing facilities.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Kahn Archives,  Kahn Collection</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Kahn Archives,  Kahn Collection</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -192,8 +192,8 @@
 		<description>Located within the Fisher Fine Arts Library</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Ross Gallery, ARG</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Ross Gallery, ARG</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -206,8 +206,8 @@
 		<description>??</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0286-TanenbaumL.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -220,8 +220,8 @@
 		<description>The Robert Wood Johnson Pavilion was the first phase of the growth of the Medical School and houses the Biomedical Library, classrooms and offices in a building whose brick facade and mansard-like slate screen for the cooling towers recalls the surrounding campus.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0260-JohnsonPavilionL.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -234,8 +234,8 @@
 		<description>Designed by Perkins + Will, with Francis, Cauffman, Foley, Hoffmann Architects, the building is one of the largest on campus, containing nearly ten acres of work space. The windows on the east, west, and south sides are inset in a ???honeycomb??? pattern; there are vast areas of glass on the north side of the building as well as portions of the south and east sides.?? Second-story bridges connect to adjacent buildings from the west wing of the tower and the northern end of the book store annex.??</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Biomedical Research Building 2, BRBII/III, BRB2</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Biomedical Research Building 2, BRBII/III, BRB2</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0022-BRB2.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -248,8 +248,8 @@
 		<description>The culmination of Penn's first Landscape Master Plan, a large scale, cohesive landscaping of the West Philadelphia Campus Core.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>College Hall Green, The Green</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>College Hall Green, The Green</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA5300-LevyPark.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -262,8 +262,8 @@
 		<description>Built as housing for the nursing students of Philadelphia General Hospital, the building is differentiated from contemporary structures at Penn in the choice of color.?? The Beaux-Arts roots of the design reflect the training its architects received in Paul Cret???s Penn atelier before World War I.?? The building now houses office and work space for the Perelman School of Medicine.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Centenary Hall, Blockley, Nurses Dormitory for the Philadelphia General Hospital</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Centenary Hall, Blockley, Nurses Dormitory for the Philadelphia General Hospital</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0030-Blockley.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -276,8 +276,8 @@
 		<description>Located along Kelly Drive, Boathouse Row was created in 1858.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA9102-Boathouse.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -289,9 +289,9 @@
 		<num_code>532</num_code>
 		<description>Part of the mixed-use complex on Walnut Street, the Penn Bookstore is Penn's anchor retail??store located at 36th and Walnut Streets. The Penn Bookstore is operated by Barnes and Noble and serves Penn and the surrounding University City community.?? The PennCard Center and the Penn Computer Connection are located on the second level.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0900</open><close>2200</close><tag>1</tag></hours-regular>
-		<hours-weekend><open>0900</open><close>2200</close><tag>1</tag></hours-weekend>
-		<nicknames>Sansom Common, Barnes &amp; Noble Bookstore, Penn Bookstore</nickname>
+		<hours_regular><open>0900</open><close>2200</close><tag>1</tag></hours_regular>
+		<hours_weekend><open>0900</open><close>2200</close><tag>1</tag></hours_weekend>
+		<nicknames>Sansom Common, Barnes &amp; Noble Bookstore, Penn Bookstore</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0532-Bookstore.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -304,8 +304,8 @@
 		<description>The Burrison Gallery is located in the University Club at Penn on the 2nd floor of The Inn at Penn, 3611 Walnut Street Philadelphia, Pennsylvania.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>University Club at Penn</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>University Club at Penn</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -318,8 +318,8 @@
 		<description>The Carolyn Lynch Laboratory provides research space for faculty in the Department of Biology.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Life Sciences, Lynch Biology Laboratory</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Life Sciences, Lynch Biology Laboratory</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0241-LynchLab.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -331,9 +331,9 @@
 		<num_code>460</num_code>
 		<description>The carriage house that is part of the original Potts House complex with ornamental brick, slate roof is an important representation of wealthy suburb of Victorian era.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames>LGBT, LGBT Center, Lesbian Gay Bisexual Transgender Center, Potts House</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames>LGBT, LGBT Center, Lesbian Gay Bisexual Transgender Center, Potts House</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0460-CarriageHouse.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -346,8 +346,8 @@
 		<description>Part of a quadrangle of understated academic buildings that draped contextual brickwork with pilaster like concrete piers that recall the Beaux-arts training of the architect.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>School of Social Policy &amp; Practice, SP2, School of Social Work, Social Sciences I</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>School of Social Policy &amp; Practice, SP2, School of Social Work, Social Sciences I</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0050-Caster.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -360,8 +360,8 @@
 		<description>Environmental Health and Radiation Safety.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Environmental Health &amp; Radiation Safety, Betatron Building, Tandem Accelerator Laboratory</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Environmental Health &amp; Radiation Safety, Betatron Building, Tandem Accelerator Laboratory</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0565-Chancellor3216.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -374,8 +374,8 @@
 		<description>Located in the former Skinner Hall, overlooking Walnut Street across from the University Bookstore, the state-of-the-art facility has been named The Charles Addams Fine Arts Hall in memory of the former Penn student and world-renowned cartoonist, Charles Addams (1912-1988). The building houses student works and studios for fine arts students.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Addams Hall, Skinner Hall</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Addams Hall, Skinner Hall</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0525-AddamsHall_1.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -388,8 +388,8 @@
 		<description>Located on the corner of 33rd and Spruce Streets, this, the only surviving wing of the original chemistry complex, is the only building on campus designed by Paul Cret, Penn professor of design from 1903-1929.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Cret Wing, Cret Labs, 1941 Wing, 1941 Building, Cret</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Cret Wing, Cret Labs, 1941 Wing, 1941 Building, Cret</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0060-ChemCret.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -402,8 +402,8 @@
 		<description>Located along 33rd Street, this wing was designed by Elizabeth Rottenberg, Penn</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Chem 58, Chemistry Lab Wing, 1961 Wing, 1959 Wing, 1958 Building, Harrison Laboratories Addition</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Chem 58, Chemistry Lab Wing, 1961 Wing, 1959 Wing, 1958 Building, Harrison Laboratories Addition</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0065-Chem1958.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -416,8 +416,8 @@
 		<description>A massive reinforced-concrete frame in filled with panels of Flemish-bond brickwork to convey the serious purpose of modern scientific work. The 1973 Wing contains the Chemistry Library.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Chem 73, New Chem, 1973 Building, Harrison Laboratories</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Chem 73, New Chem, 1973 Building, Harrison Laboratories</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0070-Chem1973.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -430,8 +430,8 @@
 		<description>A massive reinforced-concrete frame infilled with panels of Flemish-bond brickwork to convey the serious purpose of modern scientific work. The 1973 Wing contains the Chemistry Library.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0070-Chem1973L.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -444,8 +444,8 @@
 		<description>Highrise apartment building.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7008-ChestnutHall.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -458,8 +458,8 @@
 		<description>The Penn Fund is located on the 1st floor, the Almanac is located on the 2nd Floor and the Pennsylvania Gazette is on the 3rd floor.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA9090-Literacy.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -472,8 +472,8 @@
 		<description>HUP Offices. This building has a triangular footprint, with a central elevator tower and small lobbies opening into loft floors.?? The original building had four stories; recent additions are of two additional stories with a metal-clad system more or less replicating the lower limestone.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>HUP Offices</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>HUP Offices</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0071-Chestnut3930.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -486,8 +486,8 @@
 		<description>This building contains the LIFE program (Living Independently For Elders) and several offices of The School of Nursing and Penn Nursing Science. This building is leased to the University.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>LIFE Building</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>LIFE Building</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7290-LIFE.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -500,8 +500,8 @@
 		<description>A state-of-the art theater has 6 stadium style auditoriums complete with leather seats, Dolby Digital Sound, and wall-to-wall screens. Other amenities include an Elite Services desk offering concierge-type services, a Media Immersion Room, a Lounge with cafe and terrace seating, alternating music zones throughout the cinema complex, and validated parking.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Rave Motion Pictures University City 6</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Rave Motion Pictures University City 6</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7279-Cinema.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -514,8 +514,8 @@
 		<description>Originally a suburban house, later serving as St. Mary's Rectory, and now serving the University, the VPUL Civic Housesupports student volunteer involvement and work in the public interest.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Civic House</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Civic House</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0405-CivicHouse.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -527,9 +527,9 @@
 		<num_code>80</num_code>
 		<description>This modern building, designed as part of the 1971 expansion of campus, provides a link between a garage at the south end and a dining hall at the north. Slope-topped light wells, and cantilevered stairs on the exterior recall the sculptural late work of LeCorbusier. The facade has been altered by a metal, bowed front that was added in 1987-8 by Research Planning Associates whose members included Maria Romanach, the daughter of the late Mario Romanach, designer of the building.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0700</open><close>0200</close></hours-regular>
-		<hours-weekend><open>0700</open><close>2100</close><tag>3</tag></hours-weekend>
-		<nicknames>1920 Commons, Dining Service, Dining Commons, Class of 1920 Dining Commons</nickname>
+		<hours_regular><open>0700</open><close>0200</close></hours_regular>
+		<hours_weekend><open>0700</open><close>2100</close><tag>3</tag></hours_weekend>
+		<nicknames>1920 Commons, Dining Service, Dining Commons, Class of 1920 Dining Commons</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0080-1920Commons.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -542,8 +542,8 @@
 		<description>The Penn Ice Rink at the Class of 1923 Arena has been serving the Penn and local communities for over thirty years. The Rink is home to Penn and Drexel Men and Women College Teams, as well as numerous high school and middle school teams throughout the Philadelphia area.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0085-1923IceRink.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -555,9 +555,9 @@
 		<num_code>90</num_code>
 		<description>The four Superblock low rises, recall the original scheme of the 1963 master plan for low rise quadrangles, but are planned more with an eye toward modern housing projects than traditional academic quadrangles. The shift to brick was intended to link the complex to the surrounding community.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames>CL25, Gregory College House, Modern Languages Residential Program, 1925 House, Low Rise West</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames>CL25, Gregory College House, Modern Languages Residential Program, 1925 House, Low Rise West</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0090-1925Gregory.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -570,8 +570,8 @@
 		<description>Pedestrian bridge on Locust Walk, spanning 38th Street, to link the campus core with the residences.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Women&#039;s Walkway and the Class of 1949 Generational Bridge at 38th Street</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Women&#039;s Walkway and the Class of 1949 Generational Bridge at 38th Street</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0800-1949Bridge.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -584,8 +584,8 @@
 		<description>This building represents the Venturi model for the laboratory as a loft-type space provided with regular illumination on the perimeter, with the upper story reserved for mechanical equipment as indicated by oversized grills.?? The walls are covered with a decorative tile that mimics the Penn Flemish-bond brickwork but with an additional mango-colored header inserted in the slightly oversized elements.?? The upper story is fronted with a University seal a full story high.?? The package is slick and taut, a sort of modern shingle-style surface that follows the office mode of the ???Decorated Shed.???</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>CRB</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>CRB</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0092-CRB.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -597,9 +597,9 @@
 		<num_code>310</num_code>
 		<description>Claudia Cohen Hall, opened for use by the University's Medical School in 1874, was the second building constructed by the University on its West Philadelphia campus, following by two years the construction of College Hall, located directly to its east. Thomas W. Richards who also supplied the design for College Hall designed this building. After the School of Medicine moved to the Medical Laboratories Building (now the John Morgan Building) on Hamilton Walk, the building was known as Logan Hall, in memory of James Logan, William Penn's colonial secretary and a founding trustee of the College of Philadelphia, the University's predecessor institution and it became the home of the Wharton School. After the completion of Vance Hall, the Wharton School's last programs left Logan Hall and the building became the home of several School of Arts and Sciences departments as well as University Life and other administrative offices.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0800</open><close>2200</close></hours-regular>
-		<hours-weekend><open>0800</open><close>2200</close><tag>1</tag></hours-weekend>
-		<nicknames>Logan Hall, Medical School</nickname>
+		<hours_regular><open>0800</open><close>2200</close></hours_regular>
+		<hours_weekend><open>0800</open><close>2200</close><tag>1</tag></hours_weekend>
+		<nicknames>Logan Hall, Medical School</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0310-CohenHall.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -611,9 +611,9 @@
 		<num_code>95</num_code>
 		<description>College Hall was the first building on the West Philadelphia campus. Designed by Thomas Webb Richards, a professor of drawing and architecture, the building housed almost all of the college functions, including the library, classrooms, laboratories and offices. In recent years, the building has been the home of the President, Provost, School of Arts and Sciences, the Department of History and the Undergraduate Admissions Office. The building's significance in the history of collegiate architecture has been recognized by U.S. Department of Interior by placing it on the National Registry of Historic Places and in the University of Pennsylvania Historic District.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0700</open><close>1830</close></hours-regular>
-		<hours-weekend><open>0700</open><close>1800</close><tag>1</tag></hours-weekend>
-		<nicknames></nickname>
+		<hours_regular><open>0700</open><close>1830</close></hours_regular>
+		<hours_weekend><open>0700</open><close>1800</close><tag>1</tag></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0095-CollegeHall.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -625,9 +625,9 @@
 		<num_code>100</num_code>
 		<description>A powerful medieval image, dark red in color and strongly punctuated by repeated gables and a fenestrated arcade on the ground floor. The building houses a variety of Wharton programs. This building was originally designed for Phi Kappa Psi, by Frank Rommel (1897) and Francis A. Gugert (1895), who were both members of the fraternity.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0700</open><close>1800</close></hours-regular>
-		<hours-weekend><open>0700</open><close>1800</close><tag>1</tag></hours-weekend>
-		<nicknames>Leonard Davis Institute, Colonial Penn, Phi Kappa Psi Fraternity</nickname>
+		<hours_regular><open>0700</open><close>1800</close></hours_regular>
+		<hours_weekend><open>0700</open><close>1800</close><tag>1</tag></hours_weekend>
+		<nicknames>Leonard Davis Institute, Colonial Penn, Phi Kappa Psi Fraternity</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0100-ColonialPenn.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -640,8 +640,8 @@
 		<description>Cupp Pavilion of the Presbyterian Medical Center of the University of Pennsylvania Health Care System.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -654,8 +654,8 @@
 		<description>The Cyclotron Facility has been expanded with additional GMP lab space and a new cyclotron.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0103-Cyclotron.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -667,9 +667,9 @@
 		<num_code>510</num_code>
 		<description>The original wing is a red brick structure that is adjacent to Shoemaker Green next to the Palestra. The addition is in a more modern style, and faces Walnut Street. DRL is home to the Department of Mathematics, the Department of Physics and Astronomy, and the Multi-Media and Educational Technology Services center. DRL contains the Mathematics, Physics and Astronomy Library. The building is named after David Rittenhouse (1731-1796), who was professor of astronomy at Penn, the first director of the United States Mint, and president of the American Philosophical Society.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0700</open><close>2300</close></hours-regular>
-		<hours-weekend><open>0700</open><close>1800</close><tag>1</tag></hours-weekend>
-		<nicknames>Rittenhouse Labs, DRL, Rittenhouse, David Rittenhouse Laboratory, Benjamin Franklin Lab</nickname>
+		<hours_regular><open>0700</open><close>2300</close></hours_regular>
+		<hours_weekend><open>0700</open><close>1800</close><tag>1</tag></hours_weekend>
+		<nicknames>Rittenhouse Labs, DRL, Rittenhouse, David Rittenhouse Laboratory, Benjamin Franklin Lab</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0510-DRL.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -682,8 +682,8 @@
 		<description>Large-scale dental facility, related in style to Cope &amp;, Stewardson's buildings, but with a frieze of dental tortures. The building recognizes the contribution of one of the great characters of the nineteenth century, Thomas Evans, dentist to the royalty of Europe, who gave a fortune and the site of his home to Penn for a dental institute and museum. The Evans building contains the Leon Levy Library and is entered through the Schattner Center entrance on 40thh Street.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0140-EvansL.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -696,8 +696,8 @@
 		<description>Part of the Van Pelt Library, but better adapted to the evolving style of the campus, with more than a nod to Kahn's work at the Richards Medical Research Labs and a hint of GBQC contextualism in the Pender Lab, it has been much altered by the closing and removal of its entrance.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>The Dietrich Graduate Library Center</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>The Dietrich Graduate Library Center</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -710,8 +710,8 @@
 		<description>This is the main chapel - part of a group of modern gothic buildings that make up the campus of the former Philadelphia Divinity School of the Protestant Episcopal Church. , It reaches three stories in height to a spire over an exquisite double set of stairs from the street.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>West Campus, Divinity Site, Philadelphia Divinity School</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>West Campus, Divinity Site, Philadelphia Divinity School</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA9201-DivMainChapel.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -724,8 +724,8 @@
 		<description>A Penn ground lease facility. There are 290 market based, residential apartments with 23,000 square feet of retail space on the ground floor.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -737,9 +737,9 @@
 		<num_code>115</num_code>
 		<description>One of four Superblock low rises, that recall the original scheme of the 1963 master plan for low rise quadrangles, but planned more with an eye toward modern housing projects than traditional academic quadrangles. The shift to brick was intended to link the complex to the surrounding community.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames>DUBS, W. E. B.  Du Bois Residence Center, Du Bois House, Low Rise North</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames>DUBS, W. E. B.  Du Bois Residence Center, Du Bois House, Low Rise North</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0115-DuBois.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -752,8 +752,8 @@
 		<description>The Duhring Wing is a six-story addition to the Furness Building of rectangular plan.?? The Wing is lit by slim vertical windows on all floors.?? The windows are grouped on the east and west facades in triplets flanked by pairs.?? A crown of the building is defined by a terra cotta cornice above the top story.?? A parapet with battlement???like sections continues the ornament of the original building's tower.?? The north and south facades feature buttresses which rise to the fourth floor. The entire interior was rebuilt with the removal of the library in the 1960s and the conversion of the?? building to offices.??</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Duhring Wing of the Furness Building</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Duhring Wing of the Furness Building</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0120-Duhring.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -766,8 +766,8 @@
 		<description>One of several significant Trumbauer-designed buildings on campus, this one sought to respond to the style of Day and Klauder's adjacent Weightman Hall, but with greater flamboyance typical of the Trumbauer oeuvre.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>White Training House</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>White Training House</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0615-Dunning.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -780,8 +780,8 @@
 		<description>??</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -794,8 +794,8 @@
 		<description>A large-scale dental facility, related in style to Cope &amp;, Stewardson's buildings, but with a frieze of dental tortures. The building recognizes the contribution of one of the great characters of the nineteenth century, Thomas Evans, dentist to the royalty of Europe, who gave a fortune and the site of his home to Penn for a dental institute and museum. The Evans building contains the Leon Levy Library and is entered through the Schattner Center entrance on 40thh Street.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>The Thomas W. Evans Museum &amp; Dental Institute, Evans Institute, School of Dental Medicine, Evans Dental, Dental Medicine</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>The Thomas W. Evans Museum &amp; Dental Institute, Evans Institute, School of Dental Medicine, Evans Dental, Dental Medicine</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0140-Evans.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -808,8 +808,8 @@
 		<description>Construction has begun on Evo at Cira Center South, a housing project targeted toward graduate and professional students, located at 30th and Chestnut Streets on a site leased from the University. The building, a joint project of Brandywine Realty Trust, Campus Crest, and Harrison Street Real Estate Capital, will offer an 850-bed, upscale housing option opening in fall 2014. The tower, designed by architect Erdy McHenry in consultation with Cira master plan architect Cesar Pelli, is expected to achieve LEED Gold certification.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Cira Center South</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Cira Center South</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -822,8 +822,8 @@
 		<description>Claire M. Fagin Hall pays tribute to Claire Fagin's remarkable lifelong achievements in nursing and her exemplary leadership at Penn as both the Dean of Nursing and Interim President of the University.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Nursing Education Building, School of Nursing, NEB, Tri-NEB, Nursing School, 420 Guardian Drive</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Nursing Education Building, School of Nursing, NEB, Tri-NEB, Nursing School, 420 Guardian Drive</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0385-Fagin.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -835,9 +835,9 @@
 		<num_code>145</num_code>
 		<description>Originally the home of utopian industrialist Samuel Fels, this handsome Georgian house is part of a mansion group on Walnut Street that recalls the early twentieth century character of the region before Penn's post war growth, altered in 1921 by Magaziner &amp;, Eberhard and enlarged with the Annex by Barney and Banwell in 1956.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0900</open><close>1700</close></hours-regular>
-		<hours-weekend><open>0900</open><close>1700</close><tag>1</tag></hours-weekend>
-		<nicknames>Fels Center, Fels Institute, Fox Leadership Hall</nickname>
+		<hours_regular><open>0900</open><close>1700</close></hours_regular>
+		<hours_weekend><open>0900</open><close>1700</close><tag>1</tag></hours_weekend>
+		<nicknames>Fels Center, Fels Institute, Fox Leadership Hall</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0145-Fels.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -850,8 +850,8 @@
 		<description>The unusual plan of Bennett Hall, with the main facade on the beveled corner, is dictated by its unusual site at the juncture of three streets (Walnut, 34th, and the diagonal of the former Woodland Avenue).?? Because of the slope of the site, the building goes from four to six stories.?? The principal facade is symmetrical with a central tower articulated by decorative buttresses rising to corner spires above the main entrance.?? The tower is flanked by two???story windows below a battlement at the roof line.?? The side facades are marked by regularly placed fenestration with quoined surrounds rising to large, gabled dormers.?? The second and fourth floors are articulated by limestone water tables. Originally built as Bennett College, the first facility built for women at the University;?? including classrooms, a library, a gymnasium and a student union, is an important landmark to the campus. The building was generously renovated and upgraded in 2005 and re-opened in 2006 as Fisher-Bennett Hall. Currently the English Department, English Language Programs, Music Department and Cinema Studies are the major occupants of this building.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Bennett, Bennett College</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Bennett, Bennett College</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0025-FisherBennett.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -863,9 +863,9 @@
 		<num_code>170</num_code>
 		<description>This historic library, a National Historic Landmark, is the major masterpiece of Philadelphia's most important Victorian architect, Frank Furness. Combining genius in planning and form, it is a seminal library design that expresses function while merging the imagery of cathedral and railroad station. Additions in 1916, 1922, and 1931, Restored from 1986-91 by Venturi, Scott Brown and Associates. The 1931 McGoodwin addition is home to the Arthur Ross Gallery.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0830</open><close>1730</close></hours-regular>
-		<hours-weekend><open>0830</open><close>1730</close><tag>1</tag></hours-weekend>
-		<nicknames>Furness, Furness Library, Fine Arts Library, Furness Building, Univ. of Pennsylvania Library</nickname>
+		<hours_regular><open>0830</open><close>1730</close></hours_regular>
+		<hours_weekend><open>0830</open><close>1730</close><tag>1</tag></hours_weekend>
+		<nicknames>Furness, Furness Library, Fine Arts Library, Furness Building, Univ. of Pennsylvania Library</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0170-FisherFineArts.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -878,8 +878,8 @@
 		<description>The Bob and Penny Fox Art Gallery, located on the ground floor of Claudia Cohen Hall, serves as an exhibit space for student, faculty and staff artists. Local and international artists and organizations have also exhibited in the gallery.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -892,8 +892,8 @@
 		<description>Commissioned from the Pennsylvania General State Authority, A cruciform plan with red brick facades, interrupted by modern fenestration.?? The eighth story is differentiated by its concrete surface and entire absence of windows, the only opening being an immense doorway above which is a hoist.??</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0155-FranklinBuilding.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -906,8 +906,8 @@
 		<description>Former toy factory converted to use as administrative offices, Facilities Services zone shops and academic swing space.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Franklin Annex, Piling Building</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Franklin Annex, Piling Building</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0160-FranklinAnnex.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -920,8 +920,8 @@
 		<description>This U???shaped stadium is one of the main campus landmarks, occupying nearly the entire block on which it sits, and facing the main part of the campus.?? The exterior articulation denotes two superimposed rows of stands.?? The ornament of the exterior consists primarily of the grandeur of its large and heroic form, featuring high, open arcades.?? The curved end section is set off from the sides by concave arched sections.?? Cast stone quoin???like bands mark the exterior.?? The stadium is crowned by a northern Italian style, brick, battlemented parapet.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Franklin Field Stadium</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Franklin Field Stadium</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0165-FranklinField.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -933,9 +933,9 @@
 		<num_code>7280</num_code>
 		<description>The Fresh Grocer is the anchor of a diverse mix of retail, dining and entertainment establishments along the 40th Street retail corridor. The grocery store serves the Penn and surrounding communities.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>1</tag></hours-weekend>
-		<nicknames>Garage 40</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>1</tag></hours_weekend>
+		<nicknames>Garage 40</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7280-FreshGrocer_0.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -948,8 +948,8 @@
 		<description>This addition to the Law School houses faculty offices, student lounges, and classrooms. The entry to all Penn Law facilities is located at 3501 Sansom Street.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Law School Addiiton,  Roberts Hall</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Law School Addiiton,  Roberts Hall</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0285-GittisHall.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -962,8 +962,8 @@
 		<description>The Glenolden Education and Research Facility is located on 17 acres in Delaware County, near the Philadelphia Airport. The main building is 3 stories, 97,000 square feet, with 7 additional outbuildings.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA2550-Glenolden.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -976,8 +976,8 @@
 		<description>Named for Dr. David Goddard, a bioscientist who led Penn???s post-World War I renaissance in the bio scientists, and served as a Provost during the Harnwell presidency.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>David Goddard Laboratories, Biology Building, Bio Labs, Biology Tower, Richards Tower D</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>David Goddard Laboratories, Biology Building, Bio Labs, Biology Tower, Richards Tower D</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0180-Goddard.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -990,8 +990,8 @@
 		<description>Arched truss, pedestrian bridge linking the walk along the north side of Franklin Field to the Levy Tennis Pavilion and Penn Park.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Athletics Pedestrian Bridge, Blue Bridge, Paley Bridge</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Athletics Pedestrian Bridge, Blue Bridge, Paley Bridge</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0801-PaleyBridge.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1004,8 +1004,8 @@
 		<description>Golkin Hall, designed by architects Kennedy &amp;??Violich. The approximately $30 million, 40,000-square-foot Sansom Street Project follows a multi-year, $18 million, top-to-bottom renovation of three of Penn Law's interconnected buildings. As a result of those renovations, the Law School's classrooms and the??Biddle Library are state of the art. New faculty offices facilitate scholarship and student advising, collaborative-study rooms are available for teams of students, and the Gittis Clinic and student groups benefit from improved meeting space.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0288-GolkinHall.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1018,8 +1018,8 @@
 		<description>Architects, Geddes, Brecher, Qualls and Cunningham, inserted a screen of glass between two massive brick structures, bringing attention to the Engineering Complex.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Grad Research, GRW</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Grad Research, GRW</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0185-GRW.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1032,8 +1032,8 @@
 		<description>This is part of a quadrangle of academic buildings that draped contextual brickwork with pilaster like concrete piers that recalled the Beaux-arts training of the architect. The building has received a complete interior renovation in 2001 and a reconstruction of the northeast corner, by the architectural firm of Ewing, Cole, Cherry &amp;, Brott, to create a new entry and presence on Walnut Street.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Education, Grad Ed, GSE</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Education, Grad Ed, GSE</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0130-GradEd.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1046,8 +1046,8 @@
 		<description>Known as Penn's "South Bank",??this 23-acre property contains space for various University uses and future redevelopment. Buildings 6192 and 6272 , house Penn Parking and Transportation's vehicle operations and maintenance facilities. The Penn Vet, Working Dog Center is located in Building 6179.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>South Bank, former DuPont Marshall Research Labs</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>South Bank, former DuPont Marshall Research Labs</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1060,8 +1060,8 @@
 		<description>Greenfield Intercultural Center is probably the oldest building on the Penn Campus and a survivor from the pre???horse car days, when West Philadelphia was a village separate from the city.?? The house is thus of significance to the area.?? It was altered in 1911 by Edward Paxon, and a front porch was removed in 1937.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Intercultural Center</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Intercultural Center</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0195-Greenfield.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1073,9 +1073,9 @@
 		<num_code>205</num_code>
 		<description>During the 1960s, Penn planning looked in two directions, toward contextualism in the work of the Philadelphia School, and toward confrontation in the work of most of the architects from outside of the region. These three residential towers take the latter, more conventionally modern course, in a great vertical T-plan slab of poured-in-place concrete that seems to grow larger at the top, recalling modernism's heroic age. The buildings were designed by G. Holmes Perkins, dean of the Graduate School of Fine Arts, and Professor of Design Mario Romanach.??This residence is named for Gaylord Probasco Harnwell, President of the University, 1953 to 1970.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames>HARN, Harnwell House, High East, High Rise East</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames>HARN, Harnwell House, High East, High Rise East</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0205-Harnwell.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1087,9 +1087,9 @@
 		<num_code>210</num_code>
 		<description>During the 1960s, Penn planning looked in two directions, toward contextualism in the work of the Philadelphia School, and toward confrontation in the work of most of the architects from outside of the region. These three residential towers take the latter, more conventionally modern course, in a great vertical T-plan slab of poured-in-place concrete that seems to grow larger at the top, recalling modernism's heroic age. The buildings were designed by G. Holmes Perkins, dean of the Graduate School of Fine Arts, and Professor of Design Mario Romanach.?? This residence is named for Charles Custis Harrison, Provost of the University, 1894 to 1910.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames>HARS, W. Welsh Harrison House, High Rise South, High South</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames>HARS, W. Welsh Harrison House, High Rise South, High South</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0210-Harrison.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1102,8 +1102,8 @@
 		<description>Originally built to house the University's Dental School, Seeler's handsome, red, design marks the shift towards the medieval past that would characterize the campus under Provost Charles Custis Harrison.?? In 1969, it was renovated to accommodate School of Arts and Sciences programs, including the Institute for Environmental Studies.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>F. V. Hayden Building, Old Fine Arts, Dental Hall, School of Architecture</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>F. V. Hayden Building, Old Fine Arts, Dental Hall, School of Architecture</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0215-Hayden.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1116,8 +1116,8 @@
 		<description>Highline Park is a small field used for organized recreation and club sports (PennRec). , ,</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Highline Green, Left Bank Green</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Highline Green, Left Bank Green</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1129,9 +1129,9 @@
 		<num_code>225</num_code>
 		<description>With its sunny interior court, perimeter fence, and fortified moat entrance, Hill poetically evoked an age when women were still protected and Penn acted in the role of in loco parentis. Hill College House is named for Robert Hill (1889).</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames>HILL, Robert C. Hill Residence Hall, Hill Hall, Hill House, Hill College House</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames>HILL, Robert C. Hill Residence Hall, Hill Hall, Hill House, Hill College House</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0225-HillHouse.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1144,8 +1144,8 @@
 		<description>School of Veterinary Medicine Teaching and Research Facility and home to the Veterinary Library.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0630-HillPavilion.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1158,8 +1158,8 @@
 		<description>A gateway to the University of Pennsylvania campus. Landscaping and lighting accentuate a poplar-lined, curving brick walkway integrated with 125 Years, an environmental sculpture by Jenny Holzer along the axis of Woodland Walk. The northwest delta of the field, bounded by 34th and Chestnut Streets and Woodland Walk, is currently the construction site for a new College House.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Hill Field</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Hill Field</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1171,9 +1171,9 @@
 		<num_code>515</num_code>
 		<description>The home of Penn Hillel, the center for Jewish life at the University of Pennsylvania.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0900</open><close>1900</close><tag>1</tag></hours-regular>
-		<hours-weekend><open>0900</open><close>1900</close><tag>1</tag></hours-weekend>
-		<nicknames></nickname>
+		<hours_regular><open>0900</open><close>1900</close><tag>1</tag></hours_regular>
+		<hours_weekend><open>0900</open><close>1900</close><tag>1</tag></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0515-HillelSteinhardt.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1186,8 +1186,8 @@
 		<description>A fieldhouse structure. The Annex takes its name from the Hollenback Center in front of it, which was named for "Big Bill" Hollenback, an All American football player from the undefeated 1908 team.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Fieldhouse</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Fieldhouse</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0150-HollenbackAnnex.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1200,8 +1200,8 @@
 		<description>Originally built as a Power Plant in 1924, The William M. Hollenback Center currently houses office space and the NROTC. ,</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Hollenback, ROTC Building, The William M. Hollenback Center, Power Plant</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Hollenback, ROTC Building, The William M. Hollenback Center, Power Plant</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0235-HollenbackCenter.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1213,9 +1213,9 @@
 		<num_code>240</num_code>
 		<description>The Hospital of the University of Pennsylvania (HUP) is world-renowned for its clinical and research excellence, forging the way for newer and better ways to diagnose and treat illnesses and disorders. Its long and rich history of top-notch patient care began more than two centuries ago with the founding of the <a href="http://www.med.upenn.edu/" target="_blank">nation's first medical school</a>, the University of Pennsylvania. Since 1765 when it first opened its doors, Penn has been dedicated to the training of physicians and the discovery and implementation of new medical knowledge.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames></nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0240-HUP.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1227,9 +1227,9 @@
 		<num_code>245</num_code>
 		<description>America's first college union building, it was designed by William C. Hays and Milton Medary in a student competition, altered by Robert Rhodes McGoodwin in 1936, and again by Venturi, Scott Brown in 2000.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>1100</open><close>2000</close></hours-regular>
-		<hours-weekend><open>1100</open><close>1900</close><tag>1</tag></hours-weekend>
-		<nicknames>Student Union Building, Office of Student Life </nickname>
+		<hours_regular><open>1100</open><close>2000</close></hours_regular>
+		<hours_weekend><open>1100</open><close>1900</close><tag>1</tag></hours_weekend>
+		<nicknames>Student Union Building, Office of Student Life </nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0245-HoustonHall.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1242,8 +1242,8 @@
 		<description>A Penn ground lease facility. A collaboration of Penn Praxis from the School of Design, The University of Pennsylvania and Teres Holdings, which constructed and manages the building. There are 101 market based, residential apartments and 35,000 square feet of retail space on three levels.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1255,9 +1255,9 @@
 		<num_code>617</num_code>
 		<description>With 324,000 square feet, 48 classrooms, 57 group study rooms, lecture halls, auditoriums and conference rooms &amp;mdash,Jon M. Huntsman Hall is one of the most sophisticated large-scale instructional centers of any educational institution in the world. With its warm natural finishes of wood, brick and stone, reflecting the historic significance of surrounding buildings on the University campus, it connects Wharton to the world.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames></nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0617-HuntsmanHall.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1270,8 +1270,8 @@
 		<description>The building was named for Sydney Hutchinson (1888), a trustee and former football and baseball player for the University. In 2013 the building and facilities are reopened with substantial upgrades and modernized as the Tse Ping - Cheng Cheung Ling Sports Center. The revised facility provides practice space for the Penn Basketball, Fencing, Golf, Gymnastics and Rowing programs.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>The Sydney Emlen Hutchinson Gymnasium, Hutch, Tse Cheng Sports Center</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>The Sydney Emlen Hutchinson Gymnasium, Hutch, Tse Cheng Sports Center</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0250-Hutchinson.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1284,8 +1284,8 @@
 		<description>A luxury hotel in the core of campus. It is located in the middle of the mixed-use complex on Walnut Street, with entrances are located off of Sansom and Walnut Streets.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0531-InnAtPenn.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1297,9 +1297,9 @@
 		<num_code>253</num_code>
 		<description>A distinctly modern building that matches the avant-garde gallery inside.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>1200</open><close>2000</close><tag>1</tag></hours-regular>
-		<hours-weekend><open>1100</open><close>1700</close><tag>3</tag></hours-weekend>
-		<nicknames>ICA</nickname>
+		<hours_regular><open>1200</open><close>2000</close><tag>1</tag></hours_regular>
+		<hours_weekend><open>1100</open><close>1700</close><tag>3</tag></hours_weekend>
+		<nicknames>ICA</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0253-ICA.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1311,9 +1311,9 @@
 		<num_code>7002</num_code>
 		<description>International Housing. This 14-story??building also houses the University of Pennsylvania Office of International Programs, which contains International Student and Scholar Services and Penn Abroad.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0900</open><close>1700</close></hours-regular>
-		<hours-weekend><open>0900</open><close>1700</close><tag>1</tag></hours-weekend>
-		<nicknames></nickname>
+		<hours_regular><open>0900</open><close>1700</close></hours_regular>
+		<hours_weekend><open>0900</open><close>1700</close><tag>1</tag></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7002-InternationalHouse.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1326,8 +1326,8 @@
 		<description>The Iron Gate Theater is a secular performance venue located within a national historic landmark building that also houses the Tabernacle Church and the Christian Association.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Tabernacle Presbyterian Church</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Tabernacle Presbyterian Church</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1340,8 +1340,8 @@
 		<description>The survival of the academic Gothic into the late 1920s demonstrated the power of tradition and the force of Henry Adams exposition of medieval civilization in Mont Saint Michel and Chartres on Horace Trumbauer, a Philadelphia architect favored by some members of the city's emerging wealthy class in the early 20th century, and a national representative of the Wideners and the Dukes.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Irvine, William B. Irvine Auditorium</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Irvine, William B. Irvine Auditorium</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0255-IrvineAud.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1353,9 +1353,9 @@
 		<num_code>415</num_code>
 		<description>Built as the Phi Delta Theta fraternity house, the building was remodeled in 1924 as University of Pennsylvania offices and again in 1994 when it was adapted and enlarged by Tony Atkins for the History of Art Program.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0830</open><close>1730</close></hours-regular>
-		<hours-weekend><open>0830</open><close>1730</close><tag>1</tag></hours-weekend>
-		<nicknames>3400 Walnut, Elliot and Roslyn Jaffe History of Art Building, Jaffe</nickname>
+		<hours_regular><open>0830</open><close>1730</close></hours_regular>
+		<hours_weekend><open>0830</open><close>1730</close><tag>1</tag></hours_weekend>
+		<nicknames>3400 Walnut, Elliot and Roslyn Jaffe History of Art Building, Jaffe</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0415-Jaffe.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1368,8 +1368,8 @@
 		<description>The Philadelphia architectural firm of Cope and Stewardson designed nine campus buildings between 1892 and 1912 and did much to give Penn a unified architectural presence. John Morgan has similarities to the other Cope and Stewardson campus buildings of similar function, such as Towne Building and the Leidy Labs. The conventions of the Cope and Stewardson vocabulary are continued here in the irregular quoins, which surround the windows and articulate the corners of the buildings. A parapet articulates the roofline with a limestone balustrade over the regular registers of the facade. The main (north) facade, on Hamilton Walk, is symmetrically composed, with two protruding end pavilions and a central entrance pavilion. The central pavilion is faced in limestone. It terminates in a tower of rectangular plan above the roof-line. A limestone balustrade crowns the tower with obelisks at the corners. The building is fenestrated by large, rectilinear, grouped windows. On the rear (south) of the building is a centrally placed one story octagonal space, now connected to the Anatomy/Chemistry Wing, which originally served as an operating theater. The principal interior spaces of historic interest are the central corridor, grand stair and main cross-corridor. These spaces retain the historic character of the Cope and Stewardson interior with plaster cornices and marble wainscoting, now richly hung with portraits that indicate the historic importance of the school and the building. There are the remains of the marble wainscoting and marble pilasters of the great, two-story reading room of the library in the center, beyond the main stair.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Med Labs, Old Med, Old Med Labs, Medical School, Morgan-Lewis-Shippen  Medical Building, Perelman Med</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Med Labs, Old Med, Old Med Labs, Medical School, Morgan-Lewis-Shippen  Medical Building, Perelman Med</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0335-JohnMorgan.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1382,8 +1382,8 @@
 		<description>The Robert Wood Johnson Pavilion was the first phase of the growth of the Medical School and houses the Biomedical Library, classrooms and offices in a building whose brick facade and mansard-like slate screen for the cooling towers recalls the surrounding campus.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Johnson, Robert Wood Johnson Pavilion</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Johnson, Robert Wood Johnson Pavilion</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0260-JohnsonPavilion.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1396,8 +1396,8 @@
 		<description>The Henry A. Jordan M'62 Medical Education Center. Scheduled to open in 2014, the Henry Jordan Center is being built adjacent to the 5th and 6th floors of the Ruth and Raymond Perelman Center for Advanced Medicine. Also physically connected to the Smilow Center for Translational Research, the Jordan Center will be among the first medical educational spaces in the nation to be integrated into an active clinical and research facility.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1410,8 +1410,8 @@
 		<description>Conversion of former surface parking lot into a half acre green plaza,??designed to exceed 95% storm water surface permeability.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Spruce Plaza</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Spruce Plaza</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1424,8 +1424,8 @@
 		<description>A densely-planted botanical garden with trees, shrubs, flowers, ground cover, and grass; mulched paths and slate steps; wood and iron benches; branches, railroad ties, Belgian block, is a green space named the James G. Kaskey Memorial Garden. The garden and pond was originally created under the direction of Provost Harrison as part of the great transformation of the campus in the 1890s.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Botanical Garden, Bio Pond</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Botanical Garden, Bio Pond</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0040-KaskeyPark.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1438,8 +1438,8 @@
 		<description>Off-campus Center associated with the School of Arts and Sciences.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1452,8 +1452,8 @@
 		<description>One of a pair of surviving Gothic cottages by Samuel Sloan, one of the most important Philadelphia architects of the mid???nineteenth century whose practice had national impact, this building is less altered on the exterior than its neighbor and thus preserves more of its original character.?? This pair is among the few survivors of a small suburban development by S.A. Harrison.?? The buildings recall the essentially rural nature of the area which began to transform after the middle of the 19th century.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>S. A. Harrison Development, Kelly Writers House</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>S. A. Harrison Development, Kelly Writers House</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0055-KellyWriters.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1465,9 +1465,9 @@
 		<num_code>270</num_code>
 		<description>King's Court is composed of three connected, five???story apartment blocks, each with symmetrical facades. Each facade is divided into regular registers, articulated by symmetrically placed protruding, three???sided metal clad bays, which begin above the ground floor level.?? The principal facades (on Chestnut and 36th Streets) are ornamented with a limestone base, stringcourses at the second and fifth floors, surrounds include Doric pilasters supporting an entablature above the building name.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames>KCEH, Kings Court, ( Kings Court/English House )</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames>KCEH, Kings Court, ( Kings Court/English House )</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0270-KingsCourt.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1479,9 +1479,9 @@
 		<num_code>280</num_code>
 		<description>This building was funded by the federal government as a part of increasing scientific research in the 1960&amp;rsquo,s.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0830</open><close>1730</close></hours-regular>
-		<hours-weekend><open>0830</open><close>1730</close><tag>1</tag></hours-weekend>
-		<nicknames>LRSM</nickname>
+		<hours_regular><open>0830</open><close>1730</close></hours_regular>
+		<hours_weekend><open>0830</open><close>1730</close><tag>1</tag></hours_weekend>
+		<nicknames>LRSM</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0280-LRSM.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1493,9 +1493,9 @@
 		<num_code>284</num_code>
 		<description>The building houses the Institute of Management and International Studies and the Fischer real Estate Program. It is a post-modern reflection of the historic materials of the campus with strip windows to denote its modern date.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0700</open><close>1900</close></hours-regular>
-		<hours-weekend><open>0700</open><close>1900</close><tag>1</tag></hours-weekend>
-		<nicknames></nickname>
+		<hours_regular><open>0700</open><close>1900</close></hours_regular>
+		<hours_weekend><open>0700</open><close>1900</close><tag>1</tag></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0284-LauderFischer.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1507,9 +1507,9 @@
 		<num_code>73</num_code>
 		<description>Constructed as the Pennsylvania Railroad Freight Building in 1929, in a restrained Art Deco style, the first floor is sheathed in limestone with the upper stories clad in buff colored brick with limestone details. Rising six stories above a track level, the building was originally designed as a combination freight station, warehouse and showroom, and is characterized by immense massing, typical of industrial architecture. The structure was renovated and converted into condominium apartments, with a massive open courtyard carved from the interior, by the firm of Bower Lewis Thrower Architects in 2001.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0800</open><close>1700</close></hours-regular>
-		<hours-weekend><open>0800</open><close>1700</close><tag>1</tag></hours-weekend>
-		<nicknames>GE Building, Pennsylvania Railroad Freight Building</nickname>
+		<hours_regular><open>0800</open><close>1700</close></hours_regular>
+		<hours_weekend><open>0800</open><close>1700</close><tag>1</tag></hours_weekend>
+		<nicknames>GE Building, Pennsylvania Railroad Freight Building</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0073-LeftBank.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1521,9 +1521,9 @@
 		<num_code>290</num_code>
 		<description>A handsome variation on the later seventeenth-century themes of Cope and Stewardson's Towne and Medical Buildings.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0730</open><close>2030</close></hours-regular>
-		<hours-weekend><open>0730</open><close>2030</close><tag>1</tag></hours-weekend>
-		<nicknames>Leidy Labs, Leidy, Biology Labs, Zoology Laboratory</nickname>
+		<hours_regular><open>0730</open><close>2030</close></hours_regular>
+		<hours_weekend><open>0730</open><close>2030</close><tag>1</tag></hours_weekend>
+		<nicknames>Leidy Labs, Leidy, Biology Labs, Zoology Laboratory</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0290-Leidy.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1535,9 +1535,9 @@
 		<num_code>365</num_code>
 		<description>Originally part of the Foulke and Long Institute along with the adjacent Morgan Building, and later incorporated into the University, this was the plainer of the two buildings, and it is set back slightly, marking the hierarchy within the original Institute. The Lerner Center has been completely renovated with a restoration of the original historic facade, while completely demolishing and rebuilding the interior and adding an expanded facility between Chancellor and Smith Walks, that reflects the modern needs of the Music Department.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0900</open><close>2000</close></hours-regular>
-		<hours-weekend><open>0900</open><close>1630</close><tag>1</tag></hours-weekend>
-		<nicknames>Music Building, Foulke Long Institute</nickname>
+		<hours_regular><open>0900</open><close>2000</close></hours_regular>
+		<hours_weekend><open>0900</open><close>1630</close><tag>1</tag></hours_weekend>
+		<nicknames>Music Building, Foulke Long Institute</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0365-Music.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1549,9 +1549,9 @@
 		<num_code>293</num_code>
 		<description>The Melvin J. and Claire Levine Hall was dedicated on April 9, 2003. The 51,000 sq. ft. addition, combined with the 43,000 sq. ft. of the former Graduate Research Wing, conveniently links the Towne and Moore Buildings and is now home to the Department of Computer and Information Science and the Weiss Tech House.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0800</open><close>1900</close><tag>1</tag></hours-regular>
-		<hours-weekend><open>0800</open><close>1900</close><tag>1</tag></hours-weekend>
-		<nicknames></nickname>
+		<hours_regular><open>0800</open><close>1900</close><tag>1</tag></hours_regular>
+		<hours_weekend><open>0800</open><close>1900</close><tag>1</tag></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0293-Levine.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1564,8 +1564,8 @@
 		<description>Named for Dr. Leon Levy, an alumnus from the School of Dental Medicine, the building houses the Penn Dental Medicine's basic science departments, including the Center for Oral Health Research, lecture and seminar rooms, faculty and departmental offices, and research laboratories.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Levy Labs, Levy, Levy Oral Health, Leon Levy Oral Health Sciences Building</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Levy Labs, Levy, Levy Oral Health, Leon Levy Oral Health Sciences Building</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0295-LevyDental.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1578,8 +1578,8 @@
 		<description>??</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Levy Tennis, Tennis Pavilions, Robert  P. Levy Tennis Pavillion</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Levy Tennis, Tennis Pavilions, Robert  P. Levy Tennis Pavillion</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0300-LevyTennis.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1592,8 +1592,8 @@
 		<description>Survived from the middle class suburbs that once lined this street, Locust House was renovated in 1996 by Voith &amp;, Mactavish Architects. A porch was added to the structure and the interior space converted to administrative offices.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Penn Women&#039;s Center , Chaplin&#039;s House</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Penn Women&#039;s Center , Chaplin&#039;s House</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA9883-LocustHouse.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1606,8 +1606,8 @@
 		<description>The Jerome Fisher Program in Management Technology is located on the first floor and The African American Resource Center is on the second floor.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Jerome Fisher Program in Management Technology</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Jerome Fisher Program in Management Technology</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0390-Locust3537.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1620,8 +1620,8 @@
 		<description>A Victorian double house converted to University offices. It describes the largely removed urban character of the area before Penn arrived in the 1870s.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0395-Locust3609-11.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1634,8 +1634,8 @@
 		<description>Home to the Graduate Student Center and the Religious Activities Common.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>The Veranda</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>The Veranda</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA9855-Locust3615.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1647,9 +1647,9 @@
 		<num_code>9847</num_code>
 		<description></description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0700</open><close>1700</close></hours-regular>
-		<hours-weekend><open>0700</open><close>1700</close><tag>1</tag></hours-weekend>
-		<nicknames>formerly Phi Gamma Delta House</nickname>
+		<hours_regular><open>0700</open><close>1700</close></hours_regular>
+		<hours_weekend><open>0700</open><close>1700</close><tag>1</tag></hours_weekend>
+		<nicknames>formerly Phi Gamma Delta House</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA9847-Locust3619.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1662,8 +1662,8 @@
 		<description>Administrative swing space and not open to the public.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1676,8 +1676,8 @@
 		<description>Madel Pew Myrin Pavilion of the Presbyterian Medical Center of the University of Pennsylvania Health Care System.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1689,8 +1689,8 @@
 		<num_code>7015</num_code>
 		<description>The University Archives and Records Center is located in this building, as well as ,the Curator of the University Art Collection and several other offices and spaces leased to Penn. This building is considered a part of the University City Science Center.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0800</open><close>1700</close></hours-regular>
-		<hours-weekend><open>0800</open><close>1700</close><tag>1</tag></hours-weekend>
+		<hours_regular><open>0800</open><close>1700</close></hours_regular>
+		<hours_weekend><open>0800</open><close>1700</close><tag>1</tag></hours_weekend>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7015_3401Market.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1702,9 +1702,9 @@
 		<num_code>7003</num_code>
 		<description>This building is home to The College of Liberal and Professional Studies and contains some offices and departments of The School of Arts and Sciences. (This building is partially leased to the University and not a University owned bldg.)</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0700</open><close>1830</close></hours-regular>
-		<hours-weekend><open>0700</open><close>1830</close><tag>1</tag></hours-weekend>
-		<nicknames>College of General Studies</nickname>
+		<hours_regular><open>0700</open><close>1830</close></hours_regular>
+		<hours_weekend><open>0700</open><close>1830</close><tag>1</tag></hours_weekend>
+		<nicknames>College of General Studies</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7003-3440Market.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1717,8 +1717,8 @@
 		<description>The home of Penn's Student Health Service, this large office building, located within the area of University City Science Center, is occupied by several Penn Medicine and Hospital of the University of Pennsylvania and other medical entities and offices. Student Health Service occupies the entire level of Suite 100. (Not a University-owned building.)</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7044-3535Market.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1731,8 +1731,8 @@
 		<description>This building is partially leased to the University and is used by The School of Arts and Sciences, which includes the Linguistic Data Consortium , (Not a University owned bldg.)</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1745,8 +1745,8 @@
 		<description>The School of Arts and Sciences External Affairs occupies the entire 2nd floor. (Not a University owned building)</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>SAS External Affairs</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>SAS External Affairs</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/pa7027-3615market.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1759,8 +1759,8 @@
 		<description>This building is partially leased to the University and is used by The School of Arts and Sciences. (Not a University owned bldg.)</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Randall M. Whaley Building</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Randall M. Whaley Building</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1773,8 +1773,8 @@
 		<description>This building is partially leased to the University and is used by Penn Clinical Practices and Radiology. (Not a University owned bldg.)</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1787,8 +1787,8 @@
 		<description>This building is partially leased to the University and is used by The School of Arts and Sciences and Penn Medicine (Penn Presbyterian medical Center). (Not a University owned bldg.)</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1801,8 +1801,8 @@
 		<description>3910 Building of the Presbyterian Medical Center of the University of Pennsylvania Health Care System.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1814,9 +1814,9 @@
 		<num_code>510</num_code>
 		<description>The original wing is a red brick structure that is adjacent to Shoemaker Green next to the Palestra. The addition is in a more modern style, and faces Walnut Street. DRL is home to the Department of Mathematics, the Department of Physics and Astronomy, and the Multi-Media and Educational Technology Services center. DRL contains the Mathematics, Physics and Astronomy Library. The building is named after David Rittenhouse (1731-1796), who was professor of astronomy at Penn, the first director of the United States Mint, and president of the American Philosophical Society.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0700</open><close>2300</close></hours-regular>
-		<hours-weekend><open>0700</open><close>1800</close><tag>1</tag></hours-weekend>
-		<nicknames>DRL, DRLB</nickname>
+		<hours_regular><open>0700</open><close>2300</close></hours_regular>
+		<hours_weekend><open>0700</open><close>1800</close><tag>1</tag></hours_weekend>
+		<nicknames>DRL, DRLB</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0510-DRLL.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1828,9 +1828,9 @@
 		<num_code>320</num_code>
 		<description>One of four Superblock low rises, that recall the original scheme of the 1963 master plan for low rise quadrangles, but planned more with an eye toward modern housing projects than traditional academic quadrangles. The shift to brick was intended to link the complex to the surrounding community.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames>MAYR, Mayer, Mayer Hall, Harold C. Mayer  Hall</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames>MAYR, Mayer, Mayer Hall, Harold C. Mayer  Hall</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0320-MayerHall.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1843,8 +1843,8 @@
 		<description>Located within the Inn at Penn, 3600 Sansom Street</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1856,9 +1856,9 @@
 		<num_code>325</num_code>
 		<description>An academic classrooms building, which also houses the Population Study Centers Library, the Social Science Data Center and the Career Services Library.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0700</open><close>2030</close></hours-regular>
-		<hours-weekend><open>0700</open><close>2030</close><tag>1</tag></hours-weekend>
-		<nicknames>McNeil, Robert Lincoln McNeil Building, Leonard Lauder Career Center, Career Services</nickname>
+		<hours_regular><open>0700</open><close>2030</close></hours_regular>
+		<hours_weekend><open>0700</open><close>2030</close><tag>1</tag></hours_weekend>
+		<nicknames>McNeil, Robert Lincoln McNeil Building, Leonard Lauder Career Center, Career Services</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0325-McNeil.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1870,9 +1870,9 @@
 		<num_code>230</num_code>
 		<description>Founded in 1978 by Richard S. Dunn, emeritus professor of American history, the McNeil Center specializes in the histories and cultures of North America before 1850. The Barra Foundation and Robert L. McNeil Jr. gave a donation to make this home for the Center possible.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0900</open><close>1700</close></hours-regular>
-		<hours-weekend><open>0900</open><close>1700</close><tag>1</tag></hours-weekend>
-		<nicknames>MCEAS</nickname>
+		<hours_regular><open>0900</open><close>1700</close></hours_regular>
+		<hours_weekend><open>0900</open><close>1700</close><tag>1</tag></hours_weekend>
+		<nicknames>MCEAS</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0230-McNeilEAS.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1885,8 +1885,8 @@
 		<description>Penn Presbyterian Internal Medicine. Not a Penn building.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Penn Center for Primary Care</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Penn Center for Primary Care</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1899,8 +1899,8 @@
 		<description>Medical Office Building of the Presbyterian Medical Center of the University of Pennsylvania Health Care System.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1912,9 +1912,9 @@
 		<num_code>4350</num_code>
 		<description>Murphy Field is the southern-most parcel of the athletic fields collectively known as River Fields. Murphy Field contains Penn's baseball playing field (Meiklejohn Stadium) and the Module 7 Utility Building.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular></hours-regular>
-		<hours-weekend></hours-weekend>
-		<nicknames>Meiklejohn Stadium</nickname>
+		<hours_regular></hours_regular>
+		<hours_weekend></hours_weekend>
+		<nicknames>Meiklejohn Stadium</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA4350-Meiklejohn.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1927,8 +1927,8 @@
 		<description>A blend of Philadelphia School and early modern heroic forms, Meyerson Hall recalls the dynamic era of the Perkins faculty in a concrete framed building crowned by industrial roof skylights recalling LeCorbusiers house for Ozenfant, with Mediterranean sunscreens on the sides.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>School of Design, Fine Arts, Graduate School of Fine Arts Buildings, Fine Arts Building</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>School of Design, Fine Arts, Graduate School of Fine Arts Buildings, Fine Arts Building</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0340-MeyersonHall.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1941,8 +1941,8 @@
 		<description>Leers Weinzapfel Associates competition-winning design for a chilled water plant??creates an attractive gateway presence, while retaining maximum use of the site for a new varsity baseball field. The screen wall around the chiller plant celebrates the industrial nature of the structure while giving it a distinct identity. By day, the corrugated perforated stainless steel screen is a shimmering, silvery object, by night, the building becomes a translucent glowing object. This major element of infrastructure is a memorable, elegant form, set in a vibrant green landscape.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Mod 7</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Mod 7</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA9998-Module7.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1954,9 +1954,9 @@
 		<num_code>345</num_code>
 		<description>Altered in 1926 by Paul Cret, this building housed the first working multi-purpose Electronic Numerical Integrator And Computer (ENIAC) that was the first modern computer.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames>Moore, Moore School, Moore School of Electrical Engineering, Pepper Musical Instruments</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames>Moore, Moore School, Moore School of Electrical Engineering, Pepper Musical Instruments</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0345-Moore.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1969,8 +1969,8 @@
 		<description>Originally this was part of the Foulke and Long Institute, an orphanage. The Morgan Building shares the brick, north Italian vocabulary with other buildings of the Pepper era and plays a major role in defining the character of 34th Street.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Morgan, Nursing, The Morgan Laboratory of Physics, Foulke Long Institute</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Morgan, Nursing, The Morgan Laboratory of Physics, Foulke Long Institute</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0350-Morgan.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -1983,8 +1983,8 @@
 		<description>The Morris Arboretum of the University of Pennsylvania, with its beautiful 92-acre public garden, is located 15 miles from campus, in Philadelphia's Chestnut Hill. It was once a private estate and is listed on the National Register of Historic Places. Today, the Morris Arboretum is a living history museum, and research institution focused on environmental conservation and education, as well as a beautiful garden.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>The Morris Arboretum of the University of Pennsylvania</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>The Morris Arboretum of the University of Pennsylvania</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -1997,8 +1997,8 @@
 		<description>The Academic Wing contains the ,Museum Library and continues the original vocabulary of Museum in modern materials and with strongly related proportional system while remaining true to modern asymmetry.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>University Museum Academic Wing</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>University Museum Academic Wing</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0576-MuseumAcademic.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2011,8 +2011,8 @@
 		<description>The Academic Wing contains the ,Museum Library and continues the original vocabulary of the Museum in modern materials with a strongly related proportional system while remaining true to modern asymmetry.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0576-MuseumAcademicL.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2025,8 +2025,8 @@
 		<description>A team of three prominent Philadelphia architects designed the University Museum, all of who taught on the faculty of the University -- Wilson Eyre, Cope and Stewardson and Frank Miles Day and Brother. Only a portion of the original plan for the Museum was built. The first phase was completed in 1899 and housed the discoveries from an expedition sponsored by the University to the ancient site of Nippur. In 1915, the rotunda, which houses the Harrison Auditorium in the basement, was completed. Charles G. Klauder designed the Coxe Memorial Wing, which opened in 1926 to house the Museum's Egyptian collection. The Sharpe Wing was completed in 1929.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>University of Pennsylvania  Museum of Archaeology &amp; Anthropology, University Museum</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>University of Pennsylvania  Museum of Archaeology &amp; Anthropology, University Museum</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0575-MuseumArchaeology.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2039,8 +2039,8 @@
 		<description>An expansion of the Lynch Laboratories, this new building will provide for the collaboration, exchange, and integration of knowledge that characterizes the study of Biology and Psychology at Penn. The new Neural &amp; Behavioral Sciences facility will will be attached to the south end of the Leidy Laboratories Building and house research laboratories, teaching facilities, and spaces designed for interactions to foster the kind of cross-disciplinary work that increasingly characterizes work in these fields.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2053,8 +2053,8 @@
 		<description>New Bolton Center comprises the George D. Widener Hospital for Large Animals, featuring one of the world's largest equine surgical facilities, the James M. Moran Jr. Critical Care Center, the Marshak Dairy, the Laboratory of Aquatic Animal Medicine and Pathology and one of Pennsylvania's three Animal Diagnostic Laboratories.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2066,9 +2066,9 @@
 		<num_code>247</num_code>
 		<description>Ground has been broken on Hill Field. The proposed New College House on Hill Field is Penn???s first-ever residential building specifically designed as a college house, the University???s residential system that brings together undergraduates, faculty, staff, and graduate students to form shared communities within the larger campus context. Completion is expected in 2016.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames></nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2081,8 +2081,8 @@
 		<description>Non Penn Building</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0375-NewmanCtr.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2095,8 +2095,8 @@
 		<description>Regionally significant basketball arena that recalls the history of the Philadelphia area's Big Five basketball competition, in a building that forms a part of a major athletic precinct.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0450-Palestra.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2109,8 +2109,8 @@
 		<description>Part of the former Philadelphia Divinity School, now occupied by the Parent Infant Center, as a part of the Penn assisted K - 8 Neighborhood School project.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA9206-ParentInfant.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2123,8 +2123,8 @@
 		<description>Public and Permit Parking Garage at 34th &amp; Chestnut Streets.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Parking Garage: 3335 Chestnut Street, Chestnut 34, Garage 37, 3335 Chestnut Street Garage</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Parking Garage: 3335 Chestnut Street, Chestnut 34, Garage 37, 3335 Chestnut Street Garage</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pdfs/pennaccess/PA0433-ParkingGarage37.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2137,8 +2137,8 @@
 		<description>The??Cira??Centre South parking garage provides 2400 permit only parking spaces with 1600 reserved for employees of the??30th??Street IRS??Facility.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pdfs/pennaccess/PA7056-CiraCtrSouth.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2151,8 +2151,8 @@
 		<description>Parking garage for permit holders only.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Parking Garage: 3700 Civic Center Boulevard, Garage 51, Health Sciences Garage</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Parking Garage: 3700 Civic Center Boulevard, Garage 51, Health Sciences Garage</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0424-ParkingGarage51.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2165,8 +2165,8 @@
 		<description>Parking garage for permit holders only.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Parking Garage: 426 Curie Boulevard, Curie Garage, PCHCS Garage, UDAG Garage</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Parking Garage: 426 Curie Boulevard, Curie Garage, PCHCS Garage, UDAG Garage</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2179,8 +2179,8 @@
 		<description></description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>University Museum Garage, Garage 7</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>University Museum Garage, Garage 7</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pdfs/pennaccess/PA0577-ParkingGarage7.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2193,8 +2193,8 @@
 		<description>Public parking garage adjacent and attached to the east end of the Penn Tower.??</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames> Penn Tower Garage</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames> Penn Tower Garage</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pdfs/pennaccess/PA0243-PennTower.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2207,8 +2207,8 @@
 		<description></description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Parking Garage: 3801 Filbert Street, Presbyterian Garage</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Parking Garage: 3801 Filbert Street, Presbyterian Garage</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2221,8 +2221,8 @@
 		<description>Public and permit parking garage at 38th &amp; Spruce Street. Entrance is located off South-bound 38th Street.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Parking Garage: 268 S. 38th Street, Garage Spruce 38, Garage 14</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Parking Garage: 268 S. 38th Street, Garage Spruce 38, Garage 14</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0408-ParkingGarage14.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2235,8 +2235,8 @@
 		<description>A poured-in-place concrete frame supports the parking deck that is screened by freestanding brick panels whose angled planes describe the interior ramps. The exaggerated depiction of the structure, contrasted with Stonehenge-like expressive screen walls, makes this a tour-de-force at a major entrance to the campus.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Parking Garage: 3201 Walnut Street, Garage 26, Lot 26</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Parking Garage: 3201 Walnut Street, Garage 26, Lot 26</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0412-ParkingGarage26.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2249,8 +2249,8 @@
 		<description>Public and permit parking garage with retail shops along Walnut Street and a chiller plant on the roof.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Parking Garage: 119 S 38th Street, Walnut 38, Garage 30, Module 6</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Parking Garage: 119 S 38th Street, Walnut 38, Garage 30, Module 6</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pdfs/pennaccess/PA9999-ParkingGarage30.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2263,8 +2263,8 @@
 		<description></description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Parking Garage: 4009 Walnut Street, Walnut 40, Parking Garage 40</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Parking Garage: 4009 Walnut Street, Walnut 40, Parking Garage 40</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pdfs/pennaccess/PA7280-FreshGrocer.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2277,8 +2277,8 @@
 		<description>Located in what was formerly called The New Ralston House, it is a mixed-use structure that serves the community geriatric needs.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>New Ralston House</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>New Ralston House</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7018-PennCtrRehabCare.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2291,8 +2291,8 @@
 		<description>The Penn Center for Specialty Care will be a modern 11-story tower located at 3737 Market Street to provide patients seamless, integrated care, for same-day specialty consultations, testing and treatment options. This building will add more than 150,000 square feet of outpatient care and surgical space to the Penn Presbyterian Medical Center campus. This state-of-the-art building will house nearly 110 exam rooms, six outpatient operating rooms, and an outpatient radiology center. The Penn Center for Specialty Care will also house the multidisciplinary Penn Musculoskeletal Institute, the first of its kind in Philadelphia. The Penn Musculoskeletal Institute will transform the already exceptional care offered by Penn Orthopaedics, Rheumatology, Physical Medicine and Rehabilitation, Pain Medicine, Musculoskeletal Radiology and Good Shepherd Penn Partners (GSPP).</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2305,8 +2305,8 @@
 		<description>The Penn Children's Center is accessible at 3160 Chestnut Street, Suite 100, in the lower level of the Left Bank.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2319,8 +2319,8 @@
 		<description>The Dental Care Network brings the group practice of the faculty of the University of Pennsylvania School of Dental Medicine to the neighborhood. The Penn Dental Center at the Robert Schattner Center is open 8 a.m. to 5 p.m. Monday through Friday and 8 a.m. to 5 p.m. two Saturdays per month.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Penn Dental at the Robert Schattner Center </nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Penn Dental at the Robert Schattner Center </nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2333,8 +2333,8 @@
 		<description>The Dental Care Network brings the group practice of the faculty of the University of Pennsylvania School of Dental Medicine to the neighborhood. The Penn Dental Center at University City is open 8 a.m. to 5 p.m. Monday through Friday and 8 a.m. to 5 p.m. two Saturdays per month.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7015_3401MarketDental.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2347,8 +2347,8 @@
 		<description>The Penn Libraries off-campus collections in West Deptford, NJ, known as the Libraries Research Annex (LIBRA).</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>LIBRA</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>LIBRA</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA2517-LIBRA.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2360,9 +2360,9 @@
 		<num_code>9677</num_code>
 		<description>Penn Park is 24 acres of athletic fields and open space located to the east of Penn's academic campus. The program of the University's Department of Recreation and Intercollegiate Athletics includes 2 synthetic turf athletic fields, the Dunning-Cohen Champions Field with a seasonal air structure and the James "Ace", Adams Field, a multi-purpose stadium and the 12-court Hamlin Tennis Center. South Field is an informal, natural grass playing field. A surface parking lot occupies the area closest to Lower Walnut Street. Raised landforms support a circulation system of pathways leading to pedestrian bridges that link Penn Park to Walnut Street, the River Fields across the Weave Bridge, and the main campus, via the Goldie Paley Bridge at Franklin Field.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames></nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA9677-PennPark.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2375,8 +2375,8 @@
 		<description>Penn Presbyterian Medical Center Advanced Care Pavilion</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2389,8 +2389,8 @@
 		<description>Offices and clinics of University of Pennsylvania Health System</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0243-PennTower.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2403,8 +2403,8 @@
 		<description>Penn Transit Maintenance Center with restricted access.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2417,8 +2417,8 @@
 		<description>The Penn Transit Operations Center is located at the South Bank.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Penn Transit Ops</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Penn Transit Ops</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2431,8 +2431,8 @@
 		<description>The Clyde F. Barker Penn Transplant House, a "home away from home", designed to help ease the unique economic and emotional stresses for transplant families, is named for the physician who performed the first kidney transplant at HUP in 1966. ,</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2445,8 +2445,8 @@
 		<description>The Working Dog Center at the South Bank provides , program space specifically designed for the study of search-and-rescue dogs, and the training of future working dogs.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA6179-WorkingDog.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2458,9 +2458,9 @@
 		<num_code>2020</num_code>
 		<description>The Ruth and Raymond Perelman Center for Advanced Medicine opened in October of 2008, houses the Abramson Cancer Center, radiation oncology, cardiovascular medicine and an outpatient surgical pavilion. The Roberts Proton Therapy Center is located within the Perelman Center.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames></nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA2020-PCAM.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2473,8 +2473,8 @@
 		<description>Philadelphia Heart Institute of the Presbyterian Medical Center of the University of Pennsylvania Health Care System.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2487,8 +2487,8 @@
 		<description>The Platt Student Performing Arts House provides administrative and production support, rehearsal, performance, and workspace to the member organizations of the Performing Arts Council (PAC). Platt also offers performance-related programming, pre-orientation programs, and training opportunities for the entire campus community, as well as provides opportunities for students to engage the greater Philadelphia community in arts-related service.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2500,9 +2500,9 @@
 		<num_code>176</num_code>
 		<description>The David Pottruck Health and Fitness Center is an additional 65,000 sq. ft. of dedicated recreational space, to combine with the existing 94,640 sq. ft. of Gimbel Gymnasium, which creates a new multi-purpose activity area designed for campus sport totaling 159,640 sq. ft. The center will is a state of the art recreation facility serving the Penn Community. The program elements provided by the facility are important components in the delivery of services anticipated by recreation users in informal recreation, sport clubs, fitness and wellness, intramural sport, and instructional classes.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0600</open><close>2330</close></hours-regular>
-		<hours-weekend><open>0600</open><close>2100</close><tag>3</tag></hours-weekend>
-		<nicknames></nickname>
+		<hours_regular><open>0600</open><close>2330</close></hours_regular>
+		<hours_weekend><open>0600</open><close>2100</close><tag>3</tag></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0176-Pottruck.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2515,8 +2515,8 @@
 		<description>West Philadelphia cigar manufacturer Otto C. Eisenlohr's grandly classical mansion by Horace Trumbauer at the height of his career, renovated into the University president's house in the early 1980s. This elegant French chateau is one of the gems of Trumbauer's career.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Eisenlohr Hall</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Eisenlohr Hall</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0470-PresidentsHouse.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2529,8 +2529,8 @@
 		<description>The building houses the Department of Public Safety for the University of Pennsylvania.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Penn Police</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Penn Police</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7029-PublicSafety.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2542,9 +2542,9 @@
 		<num_code>490</num_code>
 		<description>The nation's leading collegiate architects who here established the courtyards and character that romanticized college education designed this important ensemble of dormitory buildings. Additions to the complex were constructed in 1899, 1905, 1908, 1911 and 1928.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames>The Quad , Quad Dorms, RIEP, Riepe College House, WARE, Ware College House, FSHS, Fisher Hassenfeld College House</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames>The Quad , Quad Dorms, RIEP, Riepe College House, WARE, Ware College House, FSHS, Fisher Hassenfeld College House</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0490-Quadrangle.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2556,9 +2556,9 @@
 		<num_code>7066</num_code>
 		<description>Mixed use student housing . A University ground lease property.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames></nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2571,8 +2571,8 @@
 		<description>This building contains the Ralston Center: Quality of Life in Aging, the Penn Low Vision Center and Geriatric Psychiatry.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0917-RalstonHouse.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2585,8 +2585,8 @@
 		<description>The Richards Labs are composed of a group of connected vertical volumes whose interior functions are expressed by differing exterior treatments.?? The laboratories are marked by corner windows, and supported and separated by cantilevered structural, pre???cast concrete beams, and horizontal bands of brick veneer.?? The mechanical and circulation functions of the building are contained in tall brick???faced towers rising above laboratory sections.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Alfred Newton Richards Medical Research Building,</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Alfred Newton Richards Medical Research Building,</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0500-Richards.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2599,8 +2599,8 @@
 		<description>Home to the University squash courts.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Ringe, Ringe Courts, Squash Courts</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Ringe, Ringe Courts, Squash Courts</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0505-Ringe.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2613,8 +2613,8 @@
 		<description>Athletic Fields consisting of the Rhodes Soccer Stadium and Field, the Ellen Vagelos C'90 Field Hockey Field and the Mondschein Throwing Complex.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Stewart Field</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Stewart Field</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0545-StewartField_0.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2626,9 +2626,9 @@
 		<num_code>220</num_code>
 		<description>During the 1960s, Penn planning looked in two directions, toward contextualism in the work of the Philadelphia School, and toward confrontation in the work of most of the architects from outside of the region. These three residential towers take the latter, more conventionally modern course, in a great vertical T-plan slab of poured-in-place concrete that seems to grow larger at the top, recalling modernism's heroic age. The buildings were designed by G. Holmes Perkins, dean of the Graduate School of Fine Arts, and Professor of Design Mario Romanach.?? This residence is named for Judith Seitz Rodin, President of the University, 1994 to 2004.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames>RODN, High North, High Rise North, Hamilton House, Rodin</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames>RODN, High North, High Rise North, Hamilton House, Rodin</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0220-RodinCollegeHouse.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2641,8 +2641,8 @@
 		<description>The Rosenthal Building is the Spruce Street entrance to the School of Veterinary Medicine Complex.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Rosenthal, Vet School Addition, The Gladys Hall Rosenthal Building</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Rosenthal, Vet School Addition, The Gladys Hall Rosenthal Building</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0520-Rosenthal.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2655,8 +2655,8 @@
 		<description>Presently this space is used by a collaborative of The Foundation Community Arts Initiative, University City District, and University of Pennsylvania to bring the arts and the community together through various performances and venues. This Beaux Arts style building was originally built to house The First Church of Christ Scientist. This is a building of unsurpassed simplicity and elegance.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>First Church of Christ Scientist</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>First Church of Christ Scientist</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0168-Rotunda.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2669,8 +2669,8 @@
 		<description>Matthew J. Ryan Veterinary Hospital of the University of Pennsylvania.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>VHUP, New Small Animal Hospital, Small Animal Hospital, Veterinary Hospital of the University of Pennsylvania</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>VHUP, New Small Animal Hospital, Small Animal Hospital, Veterinary Hospital of the University of Pennsylvania</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0595-RyanVHUP.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2683,8 +2683,8 @@
 		<description>A University assisted public elementary school. The school is located in a park-like setting featuring a playground, a playing field with a grass amphitheater seating area, a rain garden and a science garden.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Penn Alexander School, Sadie Tanner Mossell Alexander University of Pennsylvania Partnership School</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Penn Alexander School, Sadie Tanner Mossell Alexander University of Pennsylvania Partnership School</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA9211-AlexanderSchool.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2697,8 +2697,8 @@
 		<description>Sansom Place East and West are two apartment-style high rises that are the center of Penn's graduate resident community. Penn had recently begun a tradition of hiring modern architects for campus projects. Richard and Dion Neutra were among the Europeans who brought international modernism to the United States in the 1920s. Sansom Place East and West are constructed of rugged materials and stand in contrast to their surroundings in their height.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>SANE, Sansom East, Nichols House, Grad East, Grad Tower, Graduate Tower A</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>SANE, Sansom East, Nichols House, Grad East, Grad Tower, Graduate Tower A</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0380-NicholsSansomEast.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2711,8 +2711,8 @@
 		<description>Sansom Place East and West are two apartment-style high rises that are the center of Penn's graduate resident community. Penn had recently begun a tradition of hiring modern architects for campus projects. Richard and Dion Neutra were among the Europeans who brought international modernism to the United States in the 1920s. Sansom Place East and West are constructed of rugged materials and stand in contrast to their surroundings in their height.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>SANW, Sansom West, Grad Tower, Grad West, Graduate Tower B</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>SANW, Sansom West, Grad Tower, Grad West, Graduate Tower B</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0190-SansomWest.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2725,8 +2725,8 @@
 		<description>3414 is one of a row of buildings, collectively certified as the Sansom Row National Historic District. The group includes, from 3402 to 3436, on the south side of Sansom Street.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0446-Sansom3414.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2739,8 +2739,8 @@
 		<description>These historic buildings are home to apartments and a restaurant.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Doc MaGrogans</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Doc MaGrogans</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0407-LaTerrasse.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2753,8 +2753,8 @@
 		<description>Facilities Services Infrastructure</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>3815 Walnut Street Rear</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>3815 Walnut Street Rear</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2767,8 +2767,8 @@
 		<description>The Center, with it's brick and limestone facade, is the public entrance to the Dental School.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>The Robert Schattner Center for the School of Dental Medicine</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>The Robert Schattner Center for the School of Dental Medicine</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0173-Schattner.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2781,8 +2781,8 @@
 		<description>Scheie Eye Institute of the Presbyterian Medical Center of the University of Pennsylvania Health Care System.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2795,8 +2795,8 @@
 		<description>A 331 room full-service hotel that serves Penn and the Philadelphia community.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7042-Sheraton.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2809,8 +2809,8 @@
 		<description>Shoemaker Green is a public commons, a welcoming open space of lawns, tree-lined walkways, and sitting areas. This new green space is both a destination and a pedestrian route from Locust and Smith Walks in the core of campus to the historic buildings surrounding the space and further eastward to Penn Park. Shoemaker Green's sustainable site management improves water quality and minimizes runoff, reducing the effect of the urban heat island through large green areas, increasing local biodiversity, and improving the overall environment for the community.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA5400-Shoemaker.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2823,8 +2823,8 @@
 		<description>The Law School building is a richly ornamented English Baroque design that recalls the roots of the modern English system of jurisprudence in the seventeenth century. Entry to all Penn Law facilities is located at 3501 Sansom Street.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Law School, Willam Draper Lewis Hall, Lewis Hall</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Law School, Willam Draper Lewis Hall, Lewis Hall</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0305-SilvermanHall.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2836,9 +2836,9 @@
 		<num_code>246</num_code>
 		<description><strong>The Krishna P. Singh Center for Nanotechnology</strong> is a cross-disciplinary effort of SEAS and SAS, to facilitate the collaboration and exchange of knowledge that characterizes nanotechnology research. The building contains microscopy labs, a 10,000 sq. ft. clean room, a top floor forum for events and symposia and a new landscaped courtyard along Walnut Street.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames>Nano Tech, Singh Nanotechnology Center</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames>Nano Tech, Singh Nanotechnology Center</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0246-Nano_1.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2850,9 +2850,9 @@
 		<num_code>456</num_code>
 		<description>Skirkanich Hall promotes enhanced connection between the School of Engineering and Applied Sciences (SEAS) and the greater Penn academic community. This new facility provides an opportunity to unite formerly disparate spaces and give the SEAS a dramatic and welcoming front door. Equally important to embracing the campus is the intimacy of the Quain courtyard between the four buildings, Levine, Towne, Skirkanich, and Moore.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames></nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0456-Skirkanich.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2865,8 +2865,8 @@
 		<description>The 10-story <strong>Smilow Center for Translational Research</strong> brings Penn basic scientists and physicians together to deliver discoveries quickly and effectively to patients. The collaborative, innovative design of the Smilow Center for Translational Research helps research teams accelerate targeted scientific discoveries for a wide range of diseases and train the next generation of physician-scientists. This also provides support to enhance Penn's medical bioinformatics team and infrastructure, allowing researchers to mine large amounts of genetic, imaging, and biomarker data for patterns, and analyze gene sequences and drug targets. The building is physically integrated and shares the same 3400 entrance with Penn's Perelman Center for Advanced Medicine and Roberts Proton Therapy Center.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -2878,9 +2878,9 @@
 		<num_code>475</num_code>
 		<description>Part of a quadrangle of understated academic buildings that draped contextual brickwork with pilaster like concrete piers that recalled the Beaux-arts training of the architect.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0800</open><close>1800</close></hours-regular>
-		<hours-weekend><open>0800</open><close>1800</close><tag>1</tag></hours-weekend>
-		<nicknames>Solomon Labs, Psychology Labs, Psych Labs, Soc. Science</nickname>
+		<hours_regular><open>0800</open><close>1800</close></hours_regular>
+		<hours_weekend><open>0800</open><close>1800</close><tag>1</tag></hours_weekend>
+		<nicknames>Solomon Labs, Psychology Labs, Psych Labs, Soc. Science</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0475-SolomonLabs.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2893,8 +2893,8 @@
 		<description>Former Philadelphia Divinity School faculty house.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA9204-SpruceHouse.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2907,8 +2907,8 @@
 		<description>Originally a mid-nineteenth century villa, this house was completely rebuilt for Joseph Potts by the Wilson Brothers c. 1876, the interior contains an important Victorian space. Home to the University of Pennsylvania Press.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Penn Press, The University of Pennsylvania Press, Wayne Hall, Joseph Potts House</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Penn Press, The University of Pennsylvania Press, Wayne Hall, Joseph Potts House</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0410-Spruce3905.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2921,8 +2921,8 @@
 		<description>A group of four buildings three of which front on Chestnut Street that formed a private girls school for young Catholic women. Its earlier buildings are of Centennial era brownstone, while later buildings show the influence of Edwin F. Durang. Part of the institutional core of old West Philadelphia.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>St. Leonard&#039;s Court </nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>St. Leonard&#039;s Court </nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0522-StLeonards.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2935,8 +2935,8 @@
 		<description>A post-modern version of traditional Penn themes of the towered entrance and framing archways into small courtyards, in brownish brick and cast stone.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Executive Education Center, Aresty Institute of Executive Education</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Executive Education Center, Aresty Institute of Executive Education</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0610-SteinbergConfCtr.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2948,9 +2948,9 @@
 		<num_code>535</num_code>
 		<description>The Wharton School moved to Dietrich Hall from overcrowded quarters in Logan Hall. The New York architectural firm of McKim, Mead &amp;, White which designed many of Columbia University&amp;rsquo,s facilities, designed the building. By the early 1980s, growth in Wharton School programs created a strong need for additional facilities. The University asked the firm of Warner Burns, Toane and Lunde (also from New York) to prepare designs for renovating the original building and for an addition. Behind the new facade, the original Dietrich facade is largely intact on the interior and retains the limestone panel on which was inscribed Dietrich Hall. The addition sides and rear retain the detailing of the original building, which overlaid a slightly orange brick with limestone trim and organized windows into vertical bands in the fashion of contemporary design. The original building honored D. Wellington Dietrich, uncle of H. Richard Dietrich and Daniel W. Dietrich, Wharton graduates and benefactors of the University. The 1983 renovation and addition honors Saul Steinberg, CEO of the Reliance Group Holdings and University graduate, trustee and donor of the facility.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0700</open><close>2200</close></hours-regular>
-		<hours-weekend><open>0800</open><close>1700</close><tag>3</tag></hours-weekend>
-		<nicknames>Steinberg-Dietrich, Dietrich Hall</nickname>
+		<hours_regular><open>0700</open><close>2200</close></hours_regular>
+		<hours_weekend><open>0800</open><close>1700</close><tag>3</tag></hours_weekend>
+		<nicknames>Steinberg-Dietrich, Dietrich Hall</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0535-SteinbergDietrich.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2963,8 +2963,8 @@
 		<description>Named for two of Penn???s premier research scientists Britton Chance, and Eliot Stellar who for a time served as Provost during the Meyerson Presidency Its principal feature is the decorative masonry skin which explores the possibilities of the Flemish-bond brickwork that had become a principal motif of the University campus.?? The building???s south facade is split by a recess containing a large stainless ventilator tube that denotes the laboratory function. The entrance is marked by a small zone of brown granite with a curving glass-block wall?? and?? yellow oak doors.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>BRB1, Biomedical Research Laboratories, Mod 5</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>BRB1, Biomedical Research Laboratories, Mod 5</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0027-StellarChance.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2977,8 +2977,8 @@
 		<description>This medical education building has a structural sunscreen wall that reduces solar loading.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>MEB, Med Ed, Edward J. Stemmler Hall, Medical Education Building</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>MEB, Med Ed, Edward J. Stemmler Hall, Medical Education Building</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0330-StemmlerHall.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -2990,9 +2990,9 @@
 		<num_code>550</num_code>
 		<description>Part of a quadrangle of understated academic buildings that draped contextual brickwork with pilaster like concrete piers that recalled the Beaux-arts training of the architect. Second floor redesigned to accommodate the Political Science department in 1980.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0800</open><close>1800</close></hours-regular>
-		<hours-weekend><open>0800</open><close>1800</close><tag>1</tag></hours-weekend>
-		<nicknames>Stietler, Steitler, Social Science I, Joint Use Building</nickname>
+		<hours_regular><open>0800</open><close>1800</close></hours_regular>
+		<hours_weekend><open>0800</open><close>1800</close><tag>1</tag></hours_weekend>
+		<nicknames>Stietler, Steitler, Social Science I, Joint Use Building</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0550-StitelerHall.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3004,9 +3004,9 @@
 		<num_code>555</num_code>
 		<description>Following the lines that had originally been proposed for the superblock developments, the architects designed Stouffer as a low-rise, complex, and ironic recasting of the Quad in modern idiom, but with a reference to Jane Jacobs urbanism with the retail along Spruce Street. It is one of the best buildings of the early modern phase of the campus.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames>STOU, Stouffer Commons, Stouffer Triangle, Stouffer Dorms, Housing and Conference Services, SDS</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames>STOU, Stouffer Commons, Stouffer Triangle, Stouffer Dorms, Housing and Conference Services, SDS</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0555-StoufferCollege.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3018,9 +3018,9 @@
 		<num_code>7044</num_code>
 		<description>Penn Student Health Services occupies the entire level of Suite 100. (Not a University-owned building.)</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0800</open><close>1930</close><tag>1</tag></hours-regular>
-		<hours-weekend><open>0800</open><close>1730</close><tag>2</tag></hours-weekend>
-		<nicknames>Penn Student Health Services</nickname>
+		<hours_regular><open>0800</open><close>1930</close><tag>1</tag></hours_regular>
+		<hours_weekend><open>0800</open><close>1730</close><tag>2</tag></hours_weekend>
+		<nicknames>Penn Student Health Services</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7044-3535MarketStudentHealth.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3033,8 +3033,8 @@
 		<description>Originally, as the Delta Tau Delta fraternity house, this building linked the fraternity to campus with Gothic architecture. In recent years, it has housed administrative offices. The building currently houses Penn Alumni Relations.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>E. Craig Sweeten Alumni House, Alumni Center, 3533 Locust Walk, Delta House, Delta Tau Delta Fraternity</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>E. Craig Sweeten Alumni House, Alumni Center, 3533 Locust Walk, Delta House, Delta Tau Delta Fraternity</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0560-SweetenAlumni.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3047,8 +3047,8 @@
 		<description>Tanenbaum Hall contains the Biddle Law Library. , Entry to all Penn Law facilities is located at 3501 Sansom Street.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Law Library Building, Nicole E. Tanenbaum Hall</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Law Library Building, Nicole E. Tanenbaum Hall</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0286-Tanenbaum.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3061,8 +3061,8 @@
 		<description>Office of the Provost</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -3074,9 +3074,9 @@
 		<num_code>570</num_code>
 		<description>The Towne Building is one of the Cope and Stewardson designs that established the architectural character of the University's large laboratory buildings such as Leidy Laboratories and the John Morgan Building. The design is styled in the manner of English classicism of the seventeenth century with clear references to the work of Christopher Wren. It is a major feature of Smith Walk and 33rd Street. When opened in 1906, it housed the machine shops and related facilities used to train students in modern industrial practice. It remains the home of the School of Engineering and Applied Science administrative offices and of several of its departments. Towne houses the SEAS Library. The building is named to honor the memory of the Philadelphia industrialist, trustee and donor, John Henry Towne.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames>Towne, Towne School, Towne School of Engineering</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames>Towne, Towne School, Towne School of Engineering</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0570-Towne.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3089,8 +3089,8 @@
 		<description>Occupied by The School of Medicine, Department of Medical Genetics and Vivarium, The Department of Psychiatry and Sleep &amp;, Respiratory Neurobiology.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7051-Translational.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3103,8 +3103,8 @@
 		<description>Repeating windows demonstrate the laboratories on the inside.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>The Roy and Diana Vagelos Laboratories of the Institute for Advanced Science and Technology</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>The Roy and Diana Vagelos Laboratories of the Institute for Advanced Science and Technology</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0227-Vagelos.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3116,9 +3116,9 @@
 		<num_code>580</num_code>
 		<description>Vaguely Grecian in its massive colonnade, but screened by brick panels whose small windows recall the historic tradition of the French library, Van Pelt is a major presence on the campus and is the University's main library. Within this facility is the Van Pelt Library, the Lippincott Library @ Wharton, the Music Library and the Kislak Center for Special Collections, Rare Book &amp;, Manuscripts.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0830</open><close>0000</close></hours-regular>
-		<hours-weekend><open>1000</open><close>2100</close><tag>3</tag></hours-weekend>
-		<nicknames>, Charles Patterson Van Pelt Library, Van Pelt, Lippincott , The Charles Patterson Van Pelt Library, Graduate Library and Center for Graduate Studies LIPP </nickname>
+		<hours_regular><open>0830</open><close>0000</close></hours_regular>
+		<hours_weekend><open>1000</open><close>2100</close><tag>3</tag></hours_weekend>
+		<nicknames>, Charles Patterson Van Pelt Library, Van Pelt, Lippincott , The Charles Patterson Van Pelt Library, Graduate Library and Center for Graduate Studies LIPP </nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0580-VanPeltLibrary.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3131,8 +3131,8 @@
 		<description>This is the main Penn Library. Within this facility is the Van Pelt Library, the Lippincott Library @ Wharton, the Music Library and the Kislak Center for Special Collections, Rare Book &amp;, Manuscripts.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Charles Patterson Van Pelt Library</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Charles Patterson Van Pelt Library</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0580L-VanPeltLibrary.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3144,9 +3144,9 @@
 		<num_code>585</num_code>
 		<description>One of four Superblock low rises, that recall the original scheme of the 1963 master plan for low rise quadrangles, but planned more with an eye toward modern housing projects than traditional academic quadrangles. The shift to brick was intended to link the complex to the surrounding community.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>3</tag></hours-weekend>
-		<nicknames>VANP, Van Pelt Manor, Low Rise South, Van Pelt College House</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>3</tag></hours_weekend>
+		<nicknames>VANP, Van Pelt Manor, Low Rise South, Van Pelt College House</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0585-VanPeltManor.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3158,9 +3158,9 @@
 		<num_code>590</num_code>
 		<description>Built to house the Wharton School's, graduate education program, the building represents an important stage of the Philadelphia School in expressing the structural frame while simplifying the external volume</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0700</open><close>2100</close></hours-regular>
-		<hours-weekend><open>0800</open><close>1700</close><tag>1</tag></hours-weekend>
-		<nicknames>Vance, Wharton Grad, Henry T. Vance Hall</nickname>
+		<hours_regular><open>0700</open><close>2100</close></hours_regular>
+		<hours_weekend><open>0800</open><close>1700</close><tag>1</tag></hours_weekend>
+		<nicknames>Vance, Wharton Grad, Henry T. Vance Hall</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0590-VanceHall.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3173,8 +3173,8 @@
 		<description>School of Veterinary Medicine Teaching and Research Facility and home of the Veterinary Library.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0630-HillPavilionL.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3187,8 +3187,8 @@
 		<description>Drawing on sixteenth-century English architecture, Cope and Stewardson skillfully related this building to their Quad across the street.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Olds Vet, Old Small Animal Hospital, Veterinary Medicine Old Quadrangle</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Olds Vet, Old Small Animal Hospital, Veterinary Medicine Old Quadrangle</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0600-VetOldQuad.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3201,8 +3201,8 @@
 		<description>Home to the Wharton Student Life Center, a facility for Wharton graduate students. Partial building lease to the University.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -3215,8 +3215,8 @@
 		<description>Home of WXPN and World Cafe Live.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>WXPN, World Cafe , HAJOCA Building</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>WXPN, World Cafe , HAJOCA Building</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0411-Walnut3025.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3229,8 +3229,8 @@
 		<description>The 3101 Walnut Street Bridge level, elevator head-house, is located to the east of the Left Bank. Several University offices are located within the lower level. Lower level access is also available from 3160 Chestnut Street.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>3101 Walnut</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>3101 Walnut</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0073-LeftBankA.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3242,9 +3242,9 @@
 		<num_code>416</num_code>
 		<description>Post-modern reversal of Penn's traditional brick and limestone trim for a commercial and academic support facility.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0700</open><close>1900</close></hours-regular>
-		<hours-weekend><open>0700</open><close>1900</close><tag>1</tag></hours-weekend>
-		<nicknames></nickname>
+		<hours_regular><open>0700</open><close>1900</close></hours_regular>
+		<hours_weekend><open>0700</open><close>1900</close><tag>1</tag></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0416-Walnut3401.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3256,9 +3256,9 @@
 		<num_code>420</num_code>
 		<description>A late Victorian double house rehabilitated as office space, preserves its distinctive porch as well as a rich interior. Refurbished in the early 1980s to house School Arts and Sciences academic programs, the Center for the Study of Black Literature and Culture and most recently, the home of the Center for Programs in Contemporary Writing.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0900</open><close>1700</close></hours-regular>
-		<hours-weekend><open>0900</open><close>1700</close><tag>1</tag></hours-weekend>
-		<nicknames>Eisenlohr Annex,  Eisenlohr Hall Annex</nickname>
+		<hours_regular><open>0900</open><close>1700</close></hours_regular>
+		<hours_weekend><open>0900</open><close>1700</close><tag>1</tag></hours_weekend>
+		<nicknames>Eisenlohr Annex,  Eisenlohr Hall Annex</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0420-Walnut3808-10.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3270,9 +3270,9 @@
 		<num_code>7039</num_code>
 		<description>Part of a series of altered brick twins originally built by Frank Furness.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0000</open><close>2359</close></hours-regular>
-		<hours-weekend><open>0000</open><close>2359</close><tag>1</tag></hours-weekend>
-		<nicknames>&lt;a href=&#039;http://www.sas.upenn.edu/jerrylee/&#039;&gt; Jerry Lee Center of Criminology &lt;/a&gt;</nickname>
+		<hours_regular><open>0000</open><close>2359</close></hours_regular>
+		<hours_weekend><open>0000</open><close>2359</close><tag>1</tag></hours_weekend>
+		<nicknames>&lt;a href=&#039;http://www.sas.upenn.edu/jerrylee/&#039;&gt; Jerry Lee Center of Criminology &lt;/a&gt;</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA7039-Walnut3809.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3285,8 +3285,8 @@
 		<description>This building contains units of the School of Social Policy &amp;, ,Practice, consisting of the Field Center for Children&amp;rsquo,s Policy, Practice &amp;, Research, the Ortner - Unity Program, Religion &amp;, Social Policy, the Center for High Impact Philanthropy and the Out-of-School Time Resource Center.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>School of Social Policy and Practice, 3813-15 Walnut Street</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>School of Social Policy and Practice, 3813-15 Walnut Street</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0480-Walnut3815.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3299,8 +3299,8 @@
 		<description></description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Fraternity and Sorority Affairs</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Fraternity and Sorority Affairs</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -3313,8 +3313,8 @@
 		<description>This building houses the offices of the Daily Pennsylvanian and the University Records Center. There are two retail store fronts on the ground floor.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0430-Walnut4015.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3327,8 +3327,8 @@
 		<description>The Weave Bridge is an accessible ,pedestrian connection, which crosses over the existing AMTRAK rail lines that bisect Penn Park facilities and the Hollenback Center, Hollenback Annex and the sports fields to the southeast.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0802-WeaveBridge.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3341,8 +3341,8 @@
 		<description>Known as the 'Dental House', a residential living-learning facility for dental students, the University City Historical Society recognized this building in 2000, for it's extensive restoration and 'Outstanding Preservation'.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Dental House</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Dental House</nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -3355,8 +3355,8 @@
 		<description>Originally constructed as a field house, this building is skillfully incorporated into the west edifice of Franklin Field. It houses offices of the Penn Athletic Department and the PENN Sports Medicine Center.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>Weightman</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>Weightman</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0605-Weightman.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3369,8 +3369,8 @@
 		<description>The George A Weiss Pavilion encompasses a new 18,000 square foot weight room dedicated to Penn's varsity intercollegiate athletes, with state-of-the art equipment , and setups that are unique to the University. The room also boasts two running tracks with a special surface specifically designed for maximum traction and durability.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames>The Weiss Pavilion</nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames>The Weiss Pavilion</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0165-FranklinField-Weiss.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3383,8 +3383,8 @@
 		<description>Wharton | San Francisco is the west coast campus of the Wharton School, located in the historic Hills Plaza on the Embarcadero. A state-of-the-art educational facility, Wharton | San Francisco is home to the west-coast program of the MBA Program for Executives, as well as executive education, entrepreneurship, and alumni programs.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
@@ -3396,9 +3396,9 @@
 		<num_code>620</num_code>
 		<description>The School of Arts &amp;, ,Sciences occupies most of the building, and a part of the Perelman Quadrangle, the Silfen Study Center and Williams Cafe are located on the plaza level.</description>
 		<pennCardAccess>null</pennCardAccess>
-		<hours-regular><open>0700</open><close>2200</close></hours-regular>
-		<hours-weekend><open>0400</open><close>1700</close><tag>1</tag></hours-weekend>
-		<nicknames>Williams, Edwin B. &amp; Leonore R. Williams Humanities and Language Hall</nickname>
+		<hours_regular><open>0700</open><close>2200</close></hours_regular>
+		<hours_weekend><open>0400</open><close>1700</close><tag>1</tag></hours_weekend>
+		<nicknames>Williams, Edwin B. &amp; Leonore R. Williams Humanities and Language Hall</nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0620-WilliamsHall.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3411,8 +3411,8 @@
 		<description></description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0625-Wistar.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3425,8 +3425,8 @@
 		<description>Wright / Saunders Building of the Presbyterian Medical Center of the University of Pennsylvania Health Care System.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
-		<hours_other></hours_other>
-		<nicknames></nickname>
+		<hours_weekend></hours_weekend>
+		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 </upenn>
