@@ -1,4 +1,4 @@
-<? xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <upenn>
 	<location>
 		<name>133 South 36th Street</name>
@@ -2030,7 +2030,7 @@
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0575-MuseumArchaeology.pdf</pennaccessLink>
 	</location>
 	<location>
-		<name>Neural &amp</name>
+		<name>Neural &amp; Behavioral Sciences Facility</name>
 		<address>425 S. University Avenue, Philadelphia PA, 19104</address>
 		<lat>39.94952</lat>
 		<lng>-75.199218</lng>
@@ -2296,7 +2296,7 @@
 		<pennaccessLink>null</pennaccessLink>
 	</location>
 	<location>
-		<name>Penn Children&#039</name>
+		<name>Penn Children's Center</name>
 		<address>3160 Chestnut Street, Suite 100, Philadelphia PA, 19104</address>
 		<lat>39.953499</lat>
 		<lng>-75.186897</lng>
@@ -2506,7 +2506,7 @@
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0176-Pottruck.pdf</pennaccessLink>
 	</location>
 	<location>
-		<name>President&#039</name>
+		<name>President's House</name>
 		<address>3812 Walnut Street, Philadelphia PA, 19104</address>
 		<lat>39.953499</lat>
 		<lng>-75.199501</lng>
@@ -2912,7 +2912,7 @@
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0410-Spruce3905.pdf</pennaccessLink>
 	</location>
 	<location>
-		<name>St. Leonard&#039</name>
+		<name>St. Leonard's</name>
 		<address>3819 Chestnut Street, Philadelphia PA, 19104</address>
 		<lat>39.9557</lat>
 		<lng>-75.199501</lng>
