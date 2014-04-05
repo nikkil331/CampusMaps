@@ -5,7 +5,11 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
 	<string name="api_key">AIzaSyAx2hhIPLs2n1UiJB8q4LFvph37ZPWxEbY</string>
-	<string name="longitude">-75.1930</string>
-	<string name="latitude">39.9539</string>
+	<string name="longitude_center">-75.1930</string>
+	<string name="latitude_center">39.9539</string>
+	<string name="latitude_south">39.94268</string>
+	<string name="latitude_north">39.95718</string>
+	<string name="longitude_west">-75.21141</string>
+	<string name="longitude_east">-75.18013</string>
 	<string name="radius">16000</string>
 </resources>

@@ -30,6 +30,12 @@ public class GeneralSearcher implements Searcher {
 	private String radius;
 	private static String API_BASE_URL = "https://maps.googleapis.com/maps/api/place/textsearch/json";
 	
+	/**
+	 * GeneralSearcher needs apikey to query places api
+	 * latitude, longitude and radius specify in what vicinity to search 
+	 * all strings necessary are found in res/values/strings.xml
+	 * hasLocationSensor indicates whether or not the device has gps sensor
+	 */
 	public GeneralSearcher(String apikey, boolean hasLocationSensor, String latitude, String longitude, String radius){
 		super();
 		this.apikey = apikey;
@@ -39,22 +45,27 @@ public class GeneralSearcher implements Searcher {
 		this.radius = radius;
 	}
 
-	
+	/**
+	 * returns null when an error occurred while talking to google's servers
+	 */
 	public List<Building> getBuildings(String query){
 		query = formatQuery(query);
 		String apirequest = buildRequest(query);
 		String apiresponse = makeHTTPRequest(apirequest);
-		List<Building> results = null;
+		if(apiresponse.equals("")){
+			return null;
+		}
+		List<Building> results = new ArrayList<Building>();
 		try {
 			results = parseAPIResponse(apiresponse);
 		} catch (IOException e) {
-			e.printStackTrace();
+			Log.v("General Searcher", "IOException when reading json response");
 		}
 		return results;
-
 	}
 	
-	public String formatQuery(String query){
+	//replaces spaces with "+" signs for api query
+	private String formatQuery(String query){
 		String[] queryTokens = query.split(" ");
 		StringBuilder sb = new StringBuilder();
 		for(String t: queryTokens){
@@ -66,7 +77,8 @@ public class GeneralSearcher implements Searcher {
 		return query;
 	}
 	
-	public String buildRequest(String query){
+	//creates get request url out of given information 
+	private String buildRequest(String query){
 		String sensor = hasLocationSensor ? "true" : "false";
 		String apirequest = API_BASE_URL + "?query=" + query + "&sensor=" + sensor + 
 				"&key=" + apikey + "&location=" + latitude + "," + longitude + "&radius=" + radius;
@@ -81,8 +93,14 @@ public class GeneralSearcher implements Searcher {
 		try {
 			response = httpclient.execute(new HttpGet(URL));
 		} 
-		catch (ClientProtocolException e) { e.printStackTrace();} 
-		catch (IOException e) { e.printStackTrace(); }
+		catch (ClientProtocolException e) { 
+			Log.v("General Searcher", "ClientProtocolException when making request");
+			return "";
+		} 
+		catch (IOException e) { 
+			Log.v("General Searcher", "IOException when making request");
+			return "";
+		}
 		
 		//check if response is not an error
 	    StatusLine statusLine = response.getStatusLine();
@@ -90,10 +108,16 @@ public class GeneralSearcher implements Searcher {
 	        ByteArrayOutputStream out = new ByteArrayOutputStream();
 	        try {
 				response.getEntity().writeTo(out);
-			} catch (IOException e) { e.printStackTrace();}
+			} catch (IOException e) {
+				Log.v("General Searcher", "IOException when writing HTTP Response");
+				return "";
+			}
 	        try {
 				out.close();
-			} catch (IOException e) { e.printStackTrace(); }
+			} catch (IOException e) {
+				Log.v("General Searcher", "IOException when writing HTTP Response");
+				return "";
+			}
 	        String responseString = out.toString();
 	        return responseString;
 	    } else{
@@ -101,12 +125,17 @@ public class GeneralSearcher implements Searcher {
 	        try {
 				response.getEntity().getContent().close();
 			} 
-	        catch (IllegalStateException e) {e.printStackTrace(); }
-	        catch (IOException e) { e.printStackTrace(); }
+	        catch (IllegalStateException e) {
+	        	Log.v("General Searcher", "IllegalStateException when closing connection");
+	        }
+	        catch (IOException e) { 
+	        	Log.v("General Searcher", "IOException when closing connection");
+	        }
 	        return "";
 	    }
 	}
 	
+	//reads json response from places api
 	private List<Building> parseAPIResponse(String response) throws IOException{
 		JsonReader reader = new JsonReader(new StringReader(response));
 		List<Building> buildings = new ArrayList<Building>();
@@ -173,7 +202,6 @@ public class GeneralSearcher implements Searcher {
 			reader.endObject();
 			Building b = new Building(longitude, latitude, id, icon, name, address);
 			buildings.add(b);
-			Log.d("building added", b.getName());
 		}
 		reader.endArray();
 		return buildings;

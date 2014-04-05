@@ -57,6 +57,7 @@ public class ResultsEntryView extends TextView{
 		if(e.getAction() == MotionEvent.ACTION_DOWN){
 			layout.setBackgroundColor(color.holo_blue_bright);
 			layout.setAlpha((float) 0.7);
+			invalidate();
 		}
 		return true;
 	}
