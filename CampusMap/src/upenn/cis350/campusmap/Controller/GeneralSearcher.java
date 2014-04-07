@@ -15,13 +15,11 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.util.JsonReader;
 import android.util.Log;
-import upenn.cis350.campusmap.R;
 
 @SuppressLint("NewApi")
-public class GeneralSearcher implements Searcher {
+public class GeneralSearcher extends Searcher{
 	
 	private String apikey;
 	private boolean hasLocationSensor;
@@ -29,20 +27,21 @@ public class GeneralSearcher implements Searcher {
 	private String longitude;
 	private String radius;
 	private static String API_BASE_URL = "https://maps.googleapis.com/maps/api/place/textsearch/json";
-	
+
 	/**
 	 * GeneralSearcher needs apikey to query places api
 	 * latitude, longitude and radius specify in what vicinity to search 
 	 * all strings necessary are found in res/values/strings.xml
 	 * hasLocationSensor indicates whether or not the device has gps sensor
 	 */
-	public GeneralSearcher(String apikey, boolean hasLocationSensor, String latitude, String longitude, String radius){
+	public GeneralSearcher(MainActivity activity, String apikey, boolean hasLocationSensor, String latitude, String longitude, String radius){
 		super();
 		this.apikey = apikey;
 		this.hasLocationSensor = hasLocationSensor;
 		this.latitude = latitude;
 		this.longitude = longitude;
 		this.radius = radius;
+		this.activity = activity;
 	}
 
 	/**
@@ -86,6 +85,7 @@ public class GeneralSearcher implements Searcher {
 	}
 	
 	private String makeHTTPRequest(String URL){
+		Log.v("GeneralSearcher", URL);
 	    HttpClient httpclient = new DefaultHttpClient();
 	   
 	    //try executing request
@@ -169,7 +169,7 @@ public class GeneralSearcher implements Searcher {
 			double latitude = 0.0 , longitude = 0.0;
 			while(reader.hasNext()){
 				String tag = reader.nextName();
-				if(tag.equals("formatted_adress")){
+				if(tag.equals("formatted_address")){
 					address = reader.nextString();
 				}
 				else if (tag.equals("geometry")){

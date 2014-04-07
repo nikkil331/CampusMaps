@@ -33,6 +33,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity 
+            android:name="upenn.cis350.campusmap.Controller.ResultsActivity">
+        </activity>
         <meta-data android:name="com.google.android.gms.version"
            android:value="@integer/google_play_services_version" />
         <meta-data android:name="com.google.android.maps.v2.API_KEY"
