@@ -48,6 +48,8 @@ public class GeneralSearcher extends Searcher{
 	 * returns null when an error occurred while talking to google's servers
 	 */
 	public List<Building> getBuildings(String query){
+		// this would be where you would check the database against the various
+		// query entries
 		query = formatQuery(query);
 		String apirequest = buildRequest(query);
 		String apiresponse = makeHTTPRequest(apirequest);
