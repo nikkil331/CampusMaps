@@ -1,5 +1,6 @@
 package upenn.cis350.campusmap.Controller;
-import java.io.File;
+import java.io.*;
+import java.net.*;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -28,14 +29,17 @@ public class Parser {
 	public void Parse() {
 
 		try {
+			
+				URL fileLoc = new URL(this.fileLocation);
+			    URLConnection uc = fileLoc.openConnection();
+			
 
 			//File file = new File("C:/Users/Max/git/CampusMaps/buildings.xml");
-			File file = new File(this.fileLocation);
 
 			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance()
 					.newDocumentBuilder();
 
-			Document doc = dBuilder.parse(file);
+			Document doc = dBuilder.parse(uc.getInputStream());
 
 			// normalize text representation
 			doc.getDocumentElement().normalize();
@@ -103,7 +107,7 @@ public class Parser {
 					
 					
 					if (i == 0) {
-						//b.printBuilding();
+						b.printBuilding();
 					}
 				}
 			}//end of for loop with s var

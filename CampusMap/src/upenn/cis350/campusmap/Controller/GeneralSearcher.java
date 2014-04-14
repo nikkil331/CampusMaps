@@ -38,6 +38,7 @@ public class GeneralSearcher extends Searcher{
 		this.longitude = longitude;
 		this.radius = radius;
 		this.activity = activity;
+		
 	}
 
 	/**
@@ -54,25 +55,34 @@ public class GeneralSearcher extends Searcher{
 	}
 	
 	private List<Building> getBuildingFromCode(String query) {
+		
 		HashMap<String, Building> codeMap = p.getCodeMap();
 		List<Building> results = new LinkedList<Building>();
-		String q = query.toLowerCase();
-		Building b = new Building(-75.198196,39.952999,"JMHH","","Jon M. Huntsman Hall","3730 Walnut Street, Philadelphia PA, 19104");
+		String q = query.toLowerCase(Locale.US);
 		int i = 0;
+		try {
 		for(String code : codeMap.keySet())
 		{
-			//if(match(code,q))
-			results.add(codeMap.get(code));
-			i++;
-			if(i > 5)
-				break;
+			if(code == null)
+			{
+				continue;
+			}
+			if(matchCode(code,q)){
+				results.add(codeMap.get(code));
+			}
 		}
 		return results;
+		}
+		catch(NullPointerException e)
+		{
+			Log.v("General Searcher", " Null Pointer Exception in getBuildingFromCode");
+			return new ArrayList<Building>();
+		}
 	}
 
-	private boolean match(String name, String q) {
-		String n = name.toLowerCase(Locale.US);
-		return (n.contains(q) || q.contains(n));
+	private boolean matchCode(String code, String q) {
+		String c = code.toLowerCase(Locale.US);
+		return c.contains(q);
 	}
 
 	private int queryType(String query) {
