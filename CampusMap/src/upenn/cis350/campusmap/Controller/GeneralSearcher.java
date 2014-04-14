@@ -71,7 +71,10 @@ public class GeneralSearcher extends Searcher{
 				results.add(codeMap.get(code));
 			}
 		}
-		return results;
+		if(results.size() != 0)
+			return results;
+		
+		return getBuildingFromName(query);
 		}
 		catch(NullPointerException e)
 		{
@@ -90,12 +93,14 @@ public class GeneralSearcher extends Searcher{
 		q = q.toLowerCase(Locale.US);
 		String c = code.toLowerCase(Locale.US);
 		String[] terms = q.split(" ");
+		double i = 0;
 		for(String t : terms)
 		{
 			if(c.contains(t))
-				return true;
+				i+=1;
 		}
-		return false;
+		double t = terms.length + 0.0;
+		return i/t > 0.75;
 	}
 
 	private int queryType(String query) {
