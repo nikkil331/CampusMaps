@@ -51,7 +51,12 @@ public class Pin {
 	}
 	
 	public void addPin() {
-		if (m != null) mark.remove();
+		if (m != null) {
+			m.visible(false);
+			mark.remove();
+			nMap.clear();
+			
+		}
 		m = new MarkerOptions();
 		m.position(new LatLng(latitude, longitude));
 		m.title(title);
