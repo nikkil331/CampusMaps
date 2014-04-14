@@ -119,6 +119,7 @@ public class MainActivity extends Activity {
     	GoogleMap mMap;
     	mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
     	LatLng position = new LatLng(b.getLatitude(), b.getLongitude());
+    	if (pinMark != null) pinMark.removePin();
     	pinMark = new Pin (mMap, b);
     	mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 15));
     	pinMark.addPin();

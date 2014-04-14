@@ -53,9 +53,6 @@ public class Pin {
 	public void addPin() {
 		if (m != null) {
 			m.visible(false);
-			mark.remove();
-			nMap.clear();
-			
 		}
 		m = new MarkerOptions();
 		m.position(new LatLng(latitude, longitude));
@@ -63,6 +60,11 @@ public class Pin {
 		this.setColor();
 		m.draggable(false);
 		mark = nMap.addMarker(m);
+	}
+	
+	public void removePin() {
+		m.visible(false);
+		mark.remove();
 	}
 	
 	public MarkerOptions getMarkerOptions() {
