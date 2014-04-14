@@ -1,5 +1,6 @@
 package upenn.cis350.campusmap.Controller;
 import java.io.File;
+import java.util.HashMap;
 import java.util.HashSet;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -13,14 +14,23 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
 public class Parser {
+	private HashSet<Building> buildings;
+	private HashMap<String, Building> nameMap;
+	private HashMap<String, Building> codeMap;
+	private HashMap<String, Building> nicknameMap;
+	private String fileLocation;
+	
+	public Parser (String fileLoc) {
+		this.fileLocation = fileLoc;
+		buildings = new HashSet <Building>();
+	}
+	
+	public void Parse(String fileLocation) {
 
-	public static void main(String[] args) {
-		Parser p = new Parser();
-		HashSet<Building> buildings = new HashSet <Building>();
-		
 		try {
 
-			File file = new File("C:/Users/Max/git/CampusMaps/buildings.xml");
+			//File file = new File("C:/Users/Max/git/CampusMaps/buildings.xml");
+			File file = new File(this.fileLocation);
 
 			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance()
 					.newDocumentBuilder();
@@ -44,45 +54,54 @@ public class Parser {
 
 					//-------
 					NodeList firstNameList = firstElement.getElementsByTagName("name");
-					String name = p.getElement(firstNameList);
+					String name = getElement(firstNameList);
 					//System.out.println("name : " + ((Node)textFNList.item(0)).getNodeValue().trim());
 
 					NodeList firstAddressList = firstElement.getElementsByTagName("address");
 					
-					String address = p.getElement(firstAddressList);
+					String address = getElement(firstAddressList);
 					
 					NodeList latList = firstElement.getElementsByTagName("lat");
 					double lat = 0.0;
-					if (p.getElement(latList) != null) lat = Double.parseDouble(p.getElement(latList));
+					if (getElement(latList) != null) lat = Double.parseDouble(getElement(latList));
 					
 					NodeList lngList = firstElement.getElementsByTagName("lng");
 					double lng = 0.0;
-					if (p.getElement(lngList) != null) lng = Double.parseDouble(p.getElement(lngList));
+					if (getElement(lngList) != null) lng = Double.parseDouble(getElement(lngList));
 
 					
 					NodeList firstCodeList = firstElement.getElementsByTagName("code");
-					String id = p.getElement(firstCodeList);
+					String id = getElement(firstCodeList);
 					
 					NodeList firstDescriptionList = firstElement.getElementsByTagName("description");
-					String des = p.getElement(firstDescriptionList);
+					String des = getElement(firstDescriptionList);
 					
 					NodeList firstNickNamesList = firstElement.getElementsByTagName("nicknames");
-					String nicknames = p.getElement(firstNickNamesList);
+					String nicknames = getElement(firstNickNamesList);
 					
 					
 					NodeList firstAccess = firstElement.getElementsByTagName("pennaccessLink");
-					String icon = p.getElement(firstAccess);
+					String icon = getElement(firstAccess);
 					
+					NodeList firstHoursReg = firstElement.getElementsByTagName("hours_regular");
+					//if (name.contains("Pennsylvania Bookstore")) System.out.println(firstHoursReg.getLength());
+					String hours = getHours(firstHoursReg);
+					
+					NodeList weekHours = firstElement.getElementsByTagName("hours_weekend");
+					String weekendHours = getHours(weekHours);
 					
 					
 					Building b = new Building (lng, lat, id, icon, name, address);
 					b.addNicknames(nicknames);
 					b.setDescription(des);
+					b.setRegHours(hours);
+					b.setWeekendHours(weekendHours);
 					buildings.add(b);
 					
 					
+					
 					if (i == 0) {
-						b.printBuilding();
+						//b.printBuilding();
 					}
 				}
 			}//end of for loop with s var
@@ -101,6 +120,20 @@ public class Parser {
 	}
 	
 
+	private String getHours (NodeList x) {
+		if (x == null) return null;
+		if (x.item(0) == null) return null;
+		Element firstEl = (Element)x.item(0);
+		NodeList t = firstEl.getElementsByTagName("open");
+		if (t.getLength() == 0) return null;
+		String ret = "";
+		ret += getElement(t);
+		NodeList t1 = firstEl.getElementsByTagName("close");
+		if (t1.getLength() == 0) return null;
+		ret += getElement(t1);
+		return ret;
+	}
+	
 	private String getElement(NodeList x) {
 		if (x == null) return null;
 		if (x.item(0) == null) return null;
@@ -117,4 +150,36 @@ public class Parser {
 		return null;
 	}
 
+	public HashMap<String, Building> getNameMap (){
+		if (this.nameMap != null) return this.nameMap;
+		else {
+			this.nameMap = new HashMap <String, Building>();
+			for (Building temp : this.buildings) {
+				this.nameMap.put(temp.getName(), temp);
+			}
+			return this.nameMap;
+		}
+	}
+	
+	public HashMap<String, Building> getCodeMap (){
+		if (this.codeMap != null) return this.codeMap;
+		else {
+			this.codeMap = new HashMap <String, Building>();
+			for (Building temp : this.buildings) {
+				this.codeMap.put(temp.getGooglePlaceID(), temp);
+			}
+			return this.codeMap;
+		}
+	}
+	
+	public HashMap<String, Building> getNicknameMap (){
+		if (this.nicknameMap != null) return this.nicknameMap;
+		else {
+			this.nicknameMap = new HashMap <String, Building>();
+			for (Building temp : this.buildings) {
+				for (String x : temp.getNicknames()) this.nicknameMap.put(x, temp);
+			}
+			return this.nicknameMap;
+		}
+	}
 }
