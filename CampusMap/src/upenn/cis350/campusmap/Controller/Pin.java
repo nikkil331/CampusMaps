@@ -13,13 +13,16 @@ public class Pin {
 	private String title;
 	private boolean isOpen;
 	private MarkerOptions m;
+	private String description;
 	
-	public Pin (GoogleMap m, double lat, double lon) {
+	public Pin (GoogleMap m, Building b) {
 		this.nMap = m;
-		this.latitude = lat;
-		this.longitude = lon;
-		title = "";
-		isOpen = true;
+		if (b == null) return;
+		this.latitude = b.getLatitude();
+		this.longitude = b.getLongitude();
+		this.title = b.getName();
+		this.isOpen = b.isOpen();
+		this.description = b.getDescription();
 	}
 	
 	public void setTitle(String t) {
@@ -40,6 +43,7 @@ public class Pin {
 		m.position(new LatLng(latitude, longitude));
 		m.title(title);
 		this.setColor();
+		m.draggable(false);
 		nMap.addMarker(m);
 	}
 	
