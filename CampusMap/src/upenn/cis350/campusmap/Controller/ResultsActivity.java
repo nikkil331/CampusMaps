@@ -43,6 +43,14 @@ public class ResultsActivity extends Activity implements View.OnTouchListener{
 		return false;
 	}
 	
+	@Override
+	public void onBackPressed() {
+		Intent i = new Intent(this,MainActivity.class);
+		i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		setContentView(R.layout.activity_main);
+		startActivity(i);
+		
+	}
 	
 
 }
