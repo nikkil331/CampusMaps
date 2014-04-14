@@ -20,6 +20,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -40,7 +41,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         pinInfo = (TextView)findViewById(R.id.InfoText1);
-        navigate = (Button)findViewById(R.id.button1);
+        navigate = (Button)findViewById(R.id.dirbutton1);
     }
   
     public void onSearchClick(View view){
@@ -129,12 +130,19 @@ public class MainActivity extends Activity {
     	pinMark = new Pin (mMap, b);
     	mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 15));
     	pinMark.addPin();
+    	pinInfoText();
     	Log.v("MainActivity", "pinned");
     }
     
     private void pinInfoText() {
     	this.pinInfo.setVisibility(View.VISIBLE);
     	this.navigate.setVisibility(View.VISIBLE);
+    	Building b = pinMark.getBuilding();
+    	String name = b.getName();
+    	String add = b.getAddress();
+    	String desc = b.getDescription();
+    	String format_HTML = "<p><b> "+name+"</b> <br><i>"+add+"</i></p><p>"+desc+"</p>";
+    	pinInfo.setText(Html.fromHtml(format_HTML));
     }
     
     //for testing
