@@ -1,6 +1,7 @@
 package upenn.cis350.campusmap.Controller;
 
 import java.io.StringReader;
+import java.util.ArrayList;
 
 import android.util.JsonReader;
 
@@ -12,6 +13,7 @@ public class Building {
 	String iconURL;
 	String name;
 	String address;
+	ArrayList <String> nicknames;
 	
 	public Building(double longitude, double latitude, String id, String icon, String name, String address){
 		this.longitude = longitude;
