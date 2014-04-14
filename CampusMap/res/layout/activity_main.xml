@@ -32,5 +32,28 @@
         android:layout_width="match_parent"
         android:layout_height="396dp"
         android:layout_weight="2.67" />
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0" >
+
+        <TextView
+            android:id="@+id/InfoText1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.80"
+            android:ems="10" >
+        </TextView>
+
+        <Button
+            android:id="@+id/dirbutton1"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight=".22"
+            android:drawableTop="@drawable/dir"
+            android:visibility="gone"
+            android:onClick="onDirectionsClick" />
+    </LinearLayout>
 
 </LinearLayout>
