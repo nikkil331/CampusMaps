@@ -73,7 +73,7 @@ public class RouteActivity extends FragmentActivity
 		start.position(curr).title("You Are Here").icon(BitmapDescriptorFactory
 				.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
 
-		map.addMarker(start);
+		//map.addMarker(start);
 		RouteActivity.this.markerPoints.add(curr);
 		map.addMarker(dest.getMarkerOptions());
 		RouteActivity.this.markerPoints.add(dest.getMarkerOptions().getPosition());

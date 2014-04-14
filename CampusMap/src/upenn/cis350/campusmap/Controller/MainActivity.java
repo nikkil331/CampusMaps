@@ -15,6 +15,7 @@ import upenn.cis350.campusmap.R;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -22,7 +23,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.text.Html;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -33,6 +36,7 @@ public class MainActivity extends Activity {
 	//private Marker pin;
 	private TextView pinInfo;
 	private Button navigate;
+	GoogleMap mMap;
 
 	private final int ResultsActivity_ID = 1;
 	
@@ -42,6 +46,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         pinInfo = (TextView)findViewById(R.id.InfoText1);
         navigate = (Button)findViewById(R.id.dirbutton1);
+        mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
+        mMap.setMyLocationEnabled(true);
     }
   
     public void onSearchClick(View view){
@@ -123,7 +129,6 @@ public class MainActivity extends Activity {
     private void pinBuilding(int index){
     	
     	Building b = currResults.get(index);
-    	GoogleMap mMap;
     	mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
     	LatLng position = new LatLng(b.getLatitude(), b.getLongitude());
     	if (pinMark != null) pinMark.removePin();
@@ -131,6 +136,7 @@ public class MainActivity extends Activity {
     	mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 15));
     	pinMark.addPin();
     	pinInfoText();
+    	mMap.setMyLocationEnabled(true);
     	Log.v("MainActivity", "pinned");
     }
     
@@ -181,4 +187,5 @@ public class MainActivity extends Activity {
     	Dialog d = builder.create();
     	d.show();
     }
+    
 }
