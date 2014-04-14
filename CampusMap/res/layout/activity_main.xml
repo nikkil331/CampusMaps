@@ -54,7 +54,15 @@
             android:layout_weight=".22"
             android:visibility="gone"
             android:drawableTop="@drawable/dir"
-            android:onClick="onDirectionsClick" />
+            android:onClick="addMarkers" />
+        
+        <Button
+            android:id="@+id/dirbutton1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".22"
+            android:visibility="gone"
+            android:onClick="addMarkers" />
     </LinearLayout>
 
 </LinearLayout>
