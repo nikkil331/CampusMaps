@@ -35,6 +35,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.Html;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MotionEvent;
@@ -53,6 +54,7 @@ public class MainActivity extends Activity {
 	private LatLng curr;
 	private TextView pinInfo;
 	private Button navigate;
+	private Button door;
 	private GoogleMap mMap;
 	private ArrayList<LatLng> markerPoints;
 
@@ -64,10 +66,15 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		pinInfo = (TextView)findViewById(R.id.InfoText1);
 		navigate = (Button)findViewById(R.id.dirbutton1);
+		door = (Button)findViewById(R.id.insidebutton1);
+		pinInfo.setMovementMethod(new ScrollingMovementMethod());
+		current = new GPSTracker(this);
+		curr = new LatLng (current.getLocation().getLatitude(), 
+				current.getLocation().getLongitude());
 		mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 		mMap.setMyLocationEnabled(true);
+		mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(curr, 15));
 		this.markerPoints = new ArrayList<LatLng>();
-		current = new GPSTracker(this);
 	}
 
 	public void onSearchClick(View view){
@@ -164,6 +171,7 @@ public class MainActivity extends Activity {
 	private void pinInfoText() {
 		this.pinInfo.setVisibility(View.VISIBLE);
 		this.navigate.setVisibility(View.VISIBLE);
+		this.door.setVisibility(View.VISIBLE);
 		Building b = pinMark.getBuilding();
 		String name = b.getName();
 		String add = b.getAddress();
@@ -241,6 +249,13 @@ public class MainActivity extends Activity {
 		// Start downloading json data from Google Directions API
 		downloadTask.execute(url);
 
+	}
+
+	//	goInside();
+
+	public void goInside(View v) 
+	{
+		displayDialog("In building navigation is not enabled for this location at this time.");
 	}
 
 
