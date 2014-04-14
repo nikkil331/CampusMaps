@@ -14,6 +14,8 @@ public class Building {
 	String name;
 	String address;
 	ArrayList <String> nicknames;
+	String reg_hours;
+	String weekend_hours;
 	
 	public Building(double longitude, double latitude, String id, String icon, String name, String address){
 		this.longitude = longitude;
