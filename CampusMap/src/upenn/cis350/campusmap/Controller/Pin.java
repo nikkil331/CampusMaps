@@ -25,6 +25,10 @@ public class Pin {
 		this.description = b.getDescription();
 	}
 	
+	public String getDescription() {
+		return this.description;
+	}
+	
 	public void setTitle(String t) {
 		this.title = t;
 	}

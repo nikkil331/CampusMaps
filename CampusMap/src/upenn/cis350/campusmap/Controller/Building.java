@@ -40,6 +40,8 @@ public class Building {
 	}
 
 	class Hours {
+		// internal class that checks if the building is open based on
+		// the building's passed in hours
 		private Calendar regOpen;
 		private Calendar regClose;
 		private Calendar weekOpen;
@@ -48,14 +50,16 @@ public class Building {
 
 		public Hours (String reg_hours, String week_hours) {
 			try {
+				// error checking
 				if (reg_hours == null) return;
 				if (reg_hours.length() < 8) return;
 				String rOpen = reg_hours.substring(0,2) + ":" + reg_hours.substring(2,4) + ":00";
 				String rClose = reg_hours.substring(4,6) + ":" + reg_hours.substring(6,8) + ":00";
-				Date time1 = new SimpleDateFormat("HH:mm:ss").parse(rOpen);
+				// creates a date object to store the parsed times
+				Date time1 = new SimpleDateFormat("HH:mm:ss", java.util.Locale.getDefault()).parse(rOpen);
 				regOpen = Calendar.getInstance();
 				regOpen.setTime(time1);
-				time1 = new SimpleDateFormat("HH:mm:ss").parse(rClose);
+				time1 = new SimpleDateFormat("HH:mm:ss", java.util.Locale.getDefault()).parse(rClose);
 				regClose = Calendar.getInstance();
 				regClose.setTime(time1);
 				
@@ -63,10 +67,10 @@ public class Building {
 				if (week_hours.length() < 8) return;
 				String wOpen = week_hours.substring(0,2) + ":" + week_hours.substring(2,4) + ":00";
 				String wClose = week_hours.substring(4,6) + ":" + week_hours.substring(6,8) + ":00";
-				time1 = new SimpleDateFormat("HH:mm:ss").parse(wOpen);
+				time1 = new SimpleDateFormat("HH:mm:ss", java.util.Locale.getDefault()).parse(wOpen);
 				weekOpen = Calendar.getInstance();
 				weekOpen.setTime(time1);
-				time1 = new SimpleDateFormat("HH:mm:ss").parse(wClose);
+				time1 = new SimpleDateFormat("HH:mm:ss", java.util.Locale.getDefault()).parse(wClose);
 				weekClose = Calendar.getInstance();
 				weekClose.setTime(time1);
 				
@@ -83,12 +87,12 @@ public class Building {
 		public boolean isOpen() {
 			if (regOpen == null) return false;
 			boolean op = false;
-			if (current.DAY_OF_WEEK > 2){
+			if (current.get(Calendar.DAY_OF_WEEK) > 2){
 				op = (current.after(regOpen) && current.before(regClose));
 				return op;
 			}
 			if (weekOpen == null) return false;
-			if (current.DAY_OF_WEEK < 2) {
+			if (current.get(Calendar.DAY_OF_WEEK) < 2) {
 				op = (current.after(weekOpen) && current.before(weekClose));
 				return op;
 			}
@@ -99,6 +103,7 @@ public class Building {
 	}
 
 	public void printBuilding() {
+		// prints out the building information for testing purposes
 		System.out.println("Name: " + name);
 		System.out.println("Address: " + address);
 		System.out.println("Longitude: " + longitude + " and Latitude: " + latitude);

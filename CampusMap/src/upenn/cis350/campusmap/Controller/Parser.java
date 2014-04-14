@@ -39,17 +39,19 @@ public class Parser {
 
 			// normalize text representation
 			doc.getDocumentElement().normalize();
-			System.out.println ("Root element of the doc is " + doc.getDocumentElement().getNodeName());
-
+			//System.out.println ("Root element of the doc is " + doc.getDocumentElement().getNodeName());
+			
+			// gets a list of all the buildings in the xml
 			NodeList listOfBuildings = doc.getElementsByTagName("location");
 			int totalBuildings = listOfBuildings.getLength();
-			System.out.println("Total no of buildings : " + totalBuildings);
+			//System.out.println("Total no of buildings : " + totalBuildings);
 
-			for(int i=0; i < listOfBuildings.getLength() ; i++) {
+			for(int i=0; i < totalBuildings ; i++) {
 
 				Node firstBuildingNode = listOfBuildings.item(i);
 				if(firstBuildingNode.getNodeType() == Node.ELEMENT_NODE) {
-
+					
+					// gets the first element, aka the entire location node
 					Element firstElement = (Element)firstBuildingNode;                              
 
 					//-------
@@ -90,7 +92,7 @@ public class Parser {
 					NodeList weekHours = firstElement.getElementsByTagName("hours_weekend");
 					String weekendHours = getHours(weekHours);
 					
-					
+					// builds the building set
 					Building b = new Building (lng, lat, id, icon, name, address);
 					b.addNicknames(nicknames);
 					b.setDescription(des);
@@ -119,7 +121,7 @@ public class Parser {
 
 	}
 	
-
+	// uses getElement to open each hours segment
 	private String getHours (NodeList x) {
 		if (x == null) return null;
 		if (x.item(0) == null) return null;
@@ -134,6 +136,7 @@ public class Parser {
 		return ret;
 	}
 	
+	// returns a single string value of a node segment in the location element
 	private String getElement(NodeList x) {
 		if (x == null) return null;
 		if (x.item(0) == null) return null;
@@ -149,7 +152,8 @@ public class Parser {
 		
 		return null;
 	}
-
+	
+	// singleton for the name-building map
 	public HashMap<String, Building> getNameMap (){
 		if (this.nameMap != null) return this.nameMap;
 		else {
@@ -161,6 +165,7 @@ public class Parser {
 		}
 	}
 	
+	// singleton for the code to building map
 	public HashMap<String, Building> getCodeMap (){
 		if (this.codeMap != null) return this.codeMap;
 		else {
@@ -172,6 +177,7 @@ public class Parser {
 		}
 	}
 	
+	// singleton for the nickname to building map
 	public HashMap<String, Building> getNicknameMap (){
 		if (this.nicknameMap != null) return this.nicknameMap;
 		else {
