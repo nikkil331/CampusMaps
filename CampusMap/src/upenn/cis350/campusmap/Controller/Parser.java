@@ -25,7 +25,7 @@ public class Parser {
 		buildings = new HashSet <Building>();
 	}
 	
-	public void Parse(String fileLocation) {
+	public void Parse() {
 
 		try {
 
@@ -188,4 +188,6 @@ public class Parser {
 			return this.nicknameMap;
 		}
 	}
+	
+
 }

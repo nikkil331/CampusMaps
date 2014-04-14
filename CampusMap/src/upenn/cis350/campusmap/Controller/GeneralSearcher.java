@@ -1,10 +1,7 @@
 package upenn.cis350.campusmap.Controller;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.*;
+import java.util.*;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
@@ -15,8 +12,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 import android.annotation.SuppressLint;
-import android.util.JsonReader;
-import android.util.Log;
+import android.util.*;
 
 @SuppressLint("NewApi")
 public class GeneralSearcher extends Searcher{
@@ -48,21 +44,72 @@ public class GeneralSearcher extends Searcher{
 	 * returns null when an error occurred while talking to google's servers
 	 */
 	public List<Building> getBuildings(String query){
-		// this would be where you would check the database against the various
-		// query entries
-		query = formatQuery(query);
-		String apirequest = buildRequest(query);
-		String apiresponse = makeHTTPRequest(apirequest);
-		if(apiresponse.equals("")){
-			return null;
+		int code = queryType(query);
+		switch(code)
+		{
+		case 1: return getBuildingFromName(query);
+		case 2: return getBuildingFromCode(query);
+		default: return getBuildingsFromGoogle(query);
 		}
-		List<Building> results = new ArrayList<Building>();
-		try {
-			results = parseAPIResponse(apiresponse);
-		} catch (IOException e) {
-			Log.v("General Searcher", "IOException when reading json response");
+	}
+	
+	private List<Building> getBuildingFromCode(String query) {
+		HashMap<String, Building> codeMap = p.getCodeMap();
+		List<Building> results = new LinkedList<Building>();
+		String q = query.toLowerCase();
+		Building b = new Building(-75.198196,39.952999,"JMHH","","Jon M. Huntsman Hall","3730 Walnut Street, Philadelphia PA, 19104");
+		int i = 0;
+		for(String code : codeMap.keySet())
+		{
+			//if(match(code,q))
+			results.add(codeMap.get(code));
+			i++;
+			if(i > 5)
+				break;
 		}
 		return results;
+	}
+
+	private boolean match(String name, String q) {
+		String n = name.toLowerCase(Locale.US);
+		return (n.contains(q) || q.contains(n));
+	}
+
+	private int queryType(String query) {
+		String q = query.trim();
+		if((q.length() == 4 || q.length() == 3) && q.split(" ").length == 1)
+		{
+			return 2;
+		}
+		if(!q.contains(",") && q.split(" ").length <= 4)
+			return 1;
+		
+		return 0;
+	}
+
+	private List<Building> getBuildingFromName(String query)
+	{
+		// TODO implementation
+		return getBuildingsFromGoogle(query);
+	}
+	
+	private List<Building> getBuildingsFromGoogle(String query)
+	{
+		// this would be where you would check the database against the various
+				// query entries
+				query = formatQuery(query);
+				String apirequest = buildRequest(query);
+				String apiresponse = makeHTTPRequest(apirequest);
+				if(apiresponse.equals("")){
+					return null;
+				}
+				List<Building> results = new ArrayList<Building>();
+				try {
+					results = parseAPIResponse(apiresponse);
+				} catch (IOException e) {
+					Log.v("General Searcher", "IOException when reading json response");
+				}
+				return results;
 	}
 	
 	//replaces spaces with "+" signs for api query

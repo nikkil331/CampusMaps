@@ -8,8 +8,6 @@ import java.util.Date;
 
 import org.apache.http.ParseException;
 
-import android.util.JsonReader;
-
 
 public class Building {
 	private double longitude;
