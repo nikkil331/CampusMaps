@@ -81,8 +81,21 @@ public class GeneralSearcher extends Searcher{
 	}
 
 	private boolean matchCode(String code, String q) {
+		q = q.toLowerCase(Locale.US);
 		String c = code.toLowerCase(Locale.US);
 		return c.contains(q);
+	}
+	
+	private boolean match(String code, String q) {
+		q = q.toLowerCase(Locale.US);
+		String c = code.toLowerCase(Locale.US);
+		String[] terms = q.split(" ");
+		for(String t : terms)
+		{
+			if(c.contains(t))
+				return true;
+		}
+		return false;
 	}
 
 	private int queryType(String query) {
@@ -99,8 +112,40 @@ public class GeneralSearcher extends Searcher{
 
 	private List<Building> getBuildingFromName(String query)
 	{
-		// TODO implementation
-		return getBuildingsFromGoogle(query);
+		HashMap<String,Building> nameMap = p.getNameMap();
+		HashMap<String,Building> nicknameMap = p.getNicknameMap();
+		List<Building> results = new ArrayList<Building>();
+		for(String name : nameMap.keySet())
+		{
+			if(name == null)
+				continue;
+			if(match(name,query.trim())) {
+				Building b = nameMap.get(name);
+				Log.v("GeneralSearcher.getBuildingFromName(Name)", "Result added :"+b.getName());
+				results.add(b);
+			}
+			
+		}
+		
+		for(String name : nicknameMap.keySet())
+		{
+			if(name == null)
+				continue;
+			if(match(name,query.trim())) {
+				Building b = nicknameMap.get(name);
+				if(!results.contains(b)){ 
+					results.add(b);
+					Log.v("GeneralSearcher.getBuildingFromName(NKName)", "Result added ("+name+") :"+b.getName());
+				}
+			}
+			
+		}
+		if(results.size() == 0) {
+			Log.v("GeneralSearcher.getBuildingFromName","No results found on DB, Calling Google");
+			return getBuildingsFromGoogle(query);
+		}
+		
+		return results;
 	}
 	
 	private List<Building> getBuildingsFromGoogle(String query)
