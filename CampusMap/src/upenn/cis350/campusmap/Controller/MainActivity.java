@@ -22,12 +22,16 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 	private List<Building> currResults;
 	private Pin pinMark;
 	//private Marker pin;
+	private TextView pinInfo;
+	private Button navigate;
 
 	private final int ResultsActivity_ID = 1;
 	
@@ -35,6 +39,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        pinInfo = (TextView)findViewById(R.id.InfoText1);
+        navigate = (Button)findViewById(R.id.button1);
     }
   
     public void onSearchClick(View view){
@@ -124,6 +130,11 @@ public class MainActivity extends Activity {
     	mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 15));
     	pinMark.addPin();
     	Log.v("MainActivity", "pinned");
+    }
+    
+    private void pinInfoText() {
+    	this.pinInfo.setVisibility(View.VISIBLE);
+    	this.navigate.setVisibility(View.VISIBLE);
     }
     
     //for testing

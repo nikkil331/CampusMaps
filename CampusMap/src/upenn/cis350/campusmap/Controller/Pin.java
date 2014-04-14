@@ -16,6 +16,7 @@ public class Pin {
 	private MarkerOptions m;
 	private String description;
 	private Marker mark;
+	private Building build;
 	
 	public Pin (GoogleMap m, Building b) {
 		this.nMap = m;
@@ -31,6 +32,11 @@ public class Pin {
 		this.title = b.getName();
 		this.isOpen = b.isOpen();
 		this.description = b.getDescription();
+		this.build = b;
+	}
+	
+	public Building getBuilding() {
+		return this.build;
 	}
 	
 	public String getDescription() {
