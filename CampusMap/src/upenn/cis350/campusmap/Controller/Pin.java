@@ -17,7 +17,13 @@ public class Pin {
 	
 	public Pin (GoogleMap m, Building b) {
 		this.nMap = m;
-		if (b == null) return;
+		if (b == null) {
+			latitude = 0;
+			longitude = 0;
+			title = "This is not a real pin, the building passed was null";
+			isOpen = false;
+			description = "";
+		}
 		this.latitude = b.getLatitude();
 		this.longitude = b.getLongitude();
 		this.title = b.getName();

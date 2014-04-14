@@ -121,6 +121,7 @@ public class MainActivity extends Activity {
     	LatLng position = new LatLng(b.getLatitude(), b.getLongitude());
     	pinMark = new Pin (mMap, b);
     	mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 15));
+    	pinMark.addPin();
     	Log.v("MainActivity", "pinned");
     }
     
