@@ -26,6 +26,14 @@ public class Parser {
 		buildings = new HashSet <Building>();
 	}
 	
+//	public static void main (String[] args) {
+//		Parser p = new Parser ("https://raw.githubusercontent.com/nikkil331/CampusMaps/master/CampusMap/buildings.xml");
+//		p.Parse();
+//		HashMap<String, Building> names = p.getNameMap();
+//		Building temp = names.get("Carriage House");
+//	//	System.out.println(temp.isOpen());
+//	}
+//	
 	public void Parse() {
 
 		try {
@@ -34,7 +42,7 @@ public class Parser {
 			    URLConnection uc = fileLoc.openConnection();
 			
 
-			//File file = new File("C:/Users/Max/git/CampusMaps/buildings.xml");
+			//File file = new File("C:/Users/Max/Documents/GitHub/CampusMaps/buildings.xml");
 
 			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance()
 					.newDocumentBuilder();
@@ -104,11 +112,6 @@ public class Parser {
 					b.setWeekendHours(weekendHours);
 					buildings.add(b);
 					
-					
-					
-					if (i == 0) {
-						b.printBuilding();
-					}
 				}
 			}//end of for loop with s var
 		} catch (SAXParseException err) {

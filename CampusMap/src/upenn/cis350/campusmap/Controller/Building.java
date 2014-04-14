@@ -23,7 +23,9 @@ public class Building {
 	private String weekend_hours;
 	private String description;
 	private Hours h;
-
+	
+	
+	
 	public Building(double longitude, double latitude, String id, String icon, String name, String address){
 		this.longitude = longitude;
 		this.latitude = latitude;
@@ -51,15 +53,18 @@ public class Building {
 				// error checking
 				if (reg_hours == null) return;
 				if (reg_hours.length() < 8) return;
+				current = Calendar.getInstance();
 				String rOpen = reg_hours.substring(0,2) + ":" + reg_hours.substring(2,4) + ":00";
 				String rClose = reg_hours.substring(4,6) + ":" + reg_hours.substring(6,8) + ":00";
 				// creates a date object to store the parsed times
 				Date time1 = new SimpleDateFormat("HH:mm:ss", java.util.Locale.getDefault()).parse(rOpen);
 				regOpen = Calendar.getInstance();
 				regOpen.setTime(time1);
+				regOpen.set(Calendar.DATE, current.get(Calendar.DATE));
 				time1 = new SimpleDateFormat("HH:mm:ss", java.util.Locale.getDefault()).parse(rClose);
 				regClose = Calendar.getInstance();
 				regClose.setTime(time1);
+				regClose.set(Calendar.DATE, current.get(Calendar.DATE));
 				
 				if (week_hours == null) return;
 				if (week_hours.length() < 8) return;
@@ -68,14 +73,14 @@ public class Building {
 				time1 = new SimpleDateFormat("HH:mm:ss", java.util.Locale.getDefault()).parse(wOpen);
 				weekOpen = Calendar.getInstance();
 				weekOpen.setTime(time1);
+				weekOpen.set(Calendar.DATE, current.get(Calendar.DATE));
 				time1 = new SimpleDateFormat("HH:mm:ss", java.util.Locale.getDefault()).parse(wClose);
 				weekClose = Calendar.getInstance();
 				weekClose.setTime(time1);
+				weekClose.set(Calendar.DATE, current.get(Calendar.DATE));
 				
-				current = Calendar.getInstance();
-			}
-			catch(ParseException e) {
-				e.printStackTrace();
+				
+			
 			} catch (java.text.ParseException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -85,8 +90,18 @@ public class Building {
 		public boolean isOpen() {
 			if (regOpen == null) return false;
 			boolean op = false;
-			if (current.get(Calendar.DAY_OF_WEEK) > 2){
-				op = (current.after(regOpen) && current.before(regClose));
+			////System.out.println("got to main function");
+			int day = current.get(Calendar.DAY_OF_WEEK);
+			if (day != 0 && day != 7){
+			//	//System.out.println("got the correct day of the week");
+				boolean before = current.get(Calendar.HOUR_OF_DAY) < regClose.get(Calendar.HOUR_OF_DAY);
+				before = before & (current.get(Calendar.MINUTE) < regClose.get(Calendar.MINUTE));
+				//System.out.println("close hour: " + regClose.get(Calendar.HOUR_OF_DAY));
+				//System.out.println("current hours: " + current.get(Calendar.HOUR_OF_DAY));
+				boolean after = current.after(regOpen);
+				//System.out.println("before bool: " + before);
+				//System.out.println("after bool: " + after);
+				op = (before & after);
 				return op;
 			}
 			if (weekOpen == null) return false;
@@ -106,8 +121,11 @@ public class Building {
 		System.out.println("Address: " + address);
 		System.out.println("Longitude: " + longitude + " and Latitude: " + latitude);
 		System.out.print("Nicknames: ");
-		for (String x : this.nicknames) System.out.print(x + " ");
+		for (String x : this.nicknames) System.out.print(x + ", ");
 		System.out.println();
+		System.out.println("reg hours: " + reg_hours);
+		System.out.println("weekend hours: " + weekend_hours);
+		
 	}
 	
 	public boolean isOpen() {
