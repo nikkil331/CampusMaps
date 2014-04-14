@@ -85,7 +85,7 @@ public class GeneralSearcher extends Searcher{
 
 	private boolean matchCode(String code, String q) {
 		q = q.toLowerCase(Locale.US);
-		String c = code.toLowerCase(Locale.US);
+		String c = code.toLowerCase();
 		return c.contains(q);
 	}
 	
