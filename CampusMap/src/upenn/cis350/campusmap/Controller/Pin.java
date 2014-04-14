@@ -3,6 +3,7 @@ package upenn.cis350.campusmap.Controller;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 
@@ -14,6 +15,7 @@ public class Pin {
 	private boolean isOpen;
 	private MarkerOptions m;
 	private String description;
+	private Marker mark;
 	
 	public Pin (GoogleMap m, Building b) {
 		this.nMap = m;
@@ -49,12 +51,13 @@ public class Pin {
 	}
 	
 	public void addPin() {
+		if (m != null) mark.remove();
 		m = new MarkerOptions();
 		m.position(new LatLng(latitude, longitude));
 		m.title(title);
 		this.setColor();
 		m.draggable(false);
-		nMap.addMarker(m);
+		mark = nMap.addMarker(m);
 	}
 	
 	public MarkerOptions getMarkerOptions() {
