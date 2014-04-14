@@ -68,10 +68,10 @@ public class MainActivity extends Activity {
     	Iterator<Building> iter = currResults.iterator();
     	while(iter.hasNext()){
     		Building b = iter.next();
-    		boolean tooNorth = b.latitude > Double.parseDouble(getString(R.string.latitude_north));
-    		boolean tooSouth = b.latitude < Double.parseDouble(getString(R.string.latitude_south));
-    		boolean tooWest = b.longitude < Double.parseDouble(getString(R.string.longitude_west));
-    		boolean tooEast = b.longitude > Double.parseDouble(getString(R.string.longitude_east));
+    		boolean tooNorth = b.getLatitude() > Double.parseDouble(getString(R.string.latitude_north));
+    		boolean tooSouth = b.getLatitude() < Double.parseDouble(getString(R.string.latitude_south));
+    		boolean tooWest = b.getLongitude() < Double.parseDouble(getString(R.string.longitude_west));
+    		boolean tooEast = b.getLongitude() > Double.parseDouble(getString(R.string.longitude_east));
     		if(tooNorth || tooSouth || tooWest|| tooEast){
     	    	iter.remove();
     	    }
@@ -117,11 +117,11 @@ public class MainActivity extends Activity {
     	Building b = currResults.get(index);
     	GoogleMap mMap;
     	mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
-    	LatLng position = new LatLng(b.latitude, b.longitude);
+    	LatLng position = new LatLng(b.getLatitude(), b.getLongitude());
     	if(pin != null) {pin.remove();}
     	pin = mMap.addMarker(new MarkerOptions()
     	        .position(position)
-    	        .title(b.name));
+    	        .title(b.getName()));
     	mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 15));
     	Log.v("MainActivity", "pinned");
     }
