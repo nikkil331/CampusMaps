@@ -1,34 +1,53 @@
 package upenn.cis350.campusmap.test;
 
-import java.util.List;
 
-import junit.framework.TestCase;
-import android.util.Log;
-import upenn.cis350.campusmap.Controller.Building;
-import upenn.cis350.campusmap.Controller.GeneralSearcher;
+import com.robotium.solo.Condition;
+import com.robotium.solo.Solo;
 
-public class GeneralSearcherTest extends TestCase {
-	public void testFormatQuery(){
-		GeneralSearcher s = new GeneralSearcher("AIzaSyAx2hhIPLs2n1UiJB8q4LFvph37ZPWxEbY", false, "39.9539", "-75.1930", "16000");
-		String result = s.formatQuery("Huntsman Hall");
-		assertTrue(result.equals("Huntsman+Hall"));
-	}
-	public void testBuildRequest(){
-		GeneralSearcher s = new GeneralSearcher("AIzaSyAx2hhIPLs2n1UiJB8q4LFvph37ZPWxEbY", false, "39.9539", "-75.1930", "16000");
-		String result = s.buildRequest("Huntsman+Hall");
-		System.out.println(result);
-		assertTrue(result.equals("https://maps.googleapis.com/maps/api/place/textsearch/json?query=Huntsman+Hall&sensor=false&key=AIzaSyAx2hhIPLs2n1UiJB8q4LFvph37ZPWxEbY&location=39.9539,-75.1930&radius=16000"));
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.test.ActivityInstrumentationTestCase2;
+import android.view.View;
+import android.widget.EditText;
+import upenn.cis350.campusmap.R;
+import upenn.cis350.campusmap.Controller.MainActivity;
+
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.model.CameraPosition;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+
+@SuppressLint("NewApi")
+public class GeneralSearcherTest extends ActivityInstrumentationTestCase2<MainActivity>{
+
+	private Solo solo;
+	
+	public GeneralSearcherTest() {
+		super(MainActivity.class);
 	}
 	
-	public void testGetBuildingBasic(){
-		GeneralSearcher s = new GeneralSearcher("AIzaSyAx2hhIPLs2n1UiJB8q4LFvph37ZPWxEbY", false, "39.9539", "-75.1930", "16000");
-		List<Building> bs = s.getBuildings("Huntsman Hall");
-		assertFalse(bs.size() == 0);
-		Building result = bs.get(0);
-		assertTrue(result.getName().equals("Jon M. Huntsman Hall"));
-		assertTrue(Math.abs(result.getLongitude() + 75.19822) <= 0.00001);
-		assertTrue(Math.abs(result.getLatitude() - 39.95315) <= 0.00001);
-		assertTrue(result.getGooglePlaceID().equals("d93b3e7e31eafea258cf7acae94f7d9e7c3d4dec"));
-		assertTrue(result.getIconURL().equals("http://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png")); 
-	}
+	 public void setUp() throws Exception {
+	        solo = new Solo(getInstrumentation(), getActivity());
+	  }
+
+	 
+	 public void testOneResult() throws Exception{
+		 EditText searchBox = (EditText)solo.getView(R.id.editText1);
+		 solo.enterText(searchBox, "Huntsman Hall");
+		 View button = solo.getView(R.id.button1);
+		 solo.clickOnView(button);
+		
+		 solo.sleep(11000);
+		 MainActivity a = (MainActivity)solo.getCurrentActivity();
+		 Marker p = a.getPin();
+		 LatLng position = p.getPosition();
+		 assertTrue(Math.abs(position.latitude - 39.9531512) <= 0.00001);
+		 assertTrue(Math.abs(position.longitude + 75.1982201) <= 0.00001);
+	 }
+	 
+	 @Override
+	   public void tearDown() throws Exception {
+	        solo.finishOpenedActivities();
+	  }
 }

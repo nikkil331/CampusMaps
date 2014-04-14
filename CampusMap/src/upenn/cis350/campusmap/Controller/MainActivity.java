@@ -5,7 +5,9 @@ import java.util.Iterator;
 import java.util.List;
 
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.GoogleMap;
 
@@ -24,6 +26,7 @@ import android.widget.EditText;
 
 public class MainActivity extends Activity {
 	private List<Building> currResults;
+	private Marker pin;
 
 	private final int ResultsActivity_ID = 1;
 	
@@ -46,6 +49,7 @@ public class MainActivity extends Activity {
         Searcher searcher = new GeneralSearcher(this, apikey, hasLocationSensor, lattitude, longitude, radius);
     	searcher.execute(text);	
     }
+
     
     public void receiveSearchResults(List<Building> buildings){
     	Log.v("MainActivity", String.valueOf(buildings.size()));
@@ -109,13 +113,22 @@ public class MainActivity extends Activity {
     
     //pins building at index in currResults 
     private void pinBuilding(int index){
+    	
     	Building b = currResults.get(index);
-    	//displayDialog("Pin at " + b.latitude + ", " + b.longitude);
     	GoogleMap mMap;
     	mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
-    	mMap.addMarker(new MarkerOptions()
-    	        .position(new LatLng(b.latitude, b.longitude))
+    	LatLng position = new LatLng(b.latitude, b.longitude);
+    	if(pin != null) {pin.remove();}
+    	pin = mMap.addMarker(new MarkerOptions()
+    	        .position(position)
     	        .title(b.name));
+    	mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 15));
+    	Log.v("MainActivity", "pinned");
+    }
+    
+    //for testing
+    public Marker getPin(){
+    	return pin;
     }
    
     private void displayDialog(String message){
