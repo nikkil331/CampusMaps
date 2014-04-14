@@ -1,7 +1,12 @@
 package upenn.cis350.campusmap.Controller;
 
 import java.io.StringReader;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+
+import org.apache.http.ParseException;
 
 import android.util.JsonReader;
 
@@ -19,7 +24,8 @@ public class Building {
 	private String reg_hours;
 	private String weekend_hours;
 	private String description;
-	
+	private Hours h;
+
 	public Building(double longitude, double latitude, String id, String icon, String name, String address){
 		this.longitude = longitude;
 		this.latitude = latitude;
@@ -32,7 +38,66 @@ public class Building {
 		this.weekend_hours = "";
 		this.description = "";
 	}
-	
+
+	class Hours {
+		private Calendar regOpen;
+		private Calendar regClose;
+		private Calendar weekOpen;
+		private Calendar weekClose;
+		private Calendar current;
+
+		public Hours (String reg_hours, String week_hours) {
+			try {
+				if (reg_hours == null) return;
+				if (reg_hours.length() < 8) return;
+				String rOpen = reg_hours.substring(0,2) + ":" + reg_hours.substring(2,4) + ":00";
+				String rClose = reg_hours.substring(4,6) + ":" + reg_hours.substring(6,8) + ":00";
+				Date time1 = new SimpleDateFormat("HH:mm:ss").parse(rOpen);
+				regOpen = Calendar.getInstance();
+				regOpen.setTime(time1);
+				time1 = new SimpleDateFormat("HH:mm:ss").parse(rClose);
+				regClose = Calendar.getInstance();
+				regClose.setTime(time1);
+				
+				if (week_hours == null) return;
+				if (week_hours.length() < 8) return;
+				String wOpen = week_hours.substring(0,2) + ":" + week_hours.substring(2,4) + ":00";
+				String wClose = week_hours.substring(4,6) + ":" + week_hours.substring(6,8) + ":00";
+				time1 = new SimpleDateFormat("HH:mm:ss").parse(wOpen);
+				weekOpen = Calendar.getInstance();
+				weekOpen.setTime(time1);
+				time1 = new SimpleDateFormat("HH:mm:ss").parse(wClose);
+				weekClose = Calendar.getInstance();
+				weekClose.setTime(time1);
+				
+				current = Calendar.getInstance();
+			}
+			catch(ParseException e) {
+				e.printStackTrace();
+			} catch (java.text.ParseException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		public boolean isOpen() {
+			if (regOpen == null) return false;
+			boolean op = false;
+			if (current.DAY_OF_WEEK > 2){
+				op = (current.after(regOpen) && current.before(regClose));
+				return op;
+			}
+			if (weekOpen == null) return false;
+			if (current.DAY_OF_WEEK < 2) {
+				op = (current.after(weekOpen) && current.before(weekClose));
+				return op;
+			}
+			return op;
+		}
+		
+		
+	}
+
 	public void printBuilding() {
 		System.out.println("Name: " + name);
 		System.out.println("Address: " + address);
@@ -42,6 +107,11 @@ public class Building {
 		System.out.println();
 	}
 	
+	public boolean isOpen() {
+		h = new Hours (reg_hours, weekend_hours);
+		return h.isOpen();
+	}
+
 	public void addNicknames(String n) {
 		if (n == null) return;
 		String[] all = n.split(",");
@@ -50,35 +120,35 @@ public class Building {
 			this.nicknames.add(x);
 		}
 	}
-	
+
 	public ArrayList <String> getNicknames() {
 		return this.nicknames;
 	}
-	
+
 	public void setDescription(String d) {
 		this.description = d;
 	}
-	
+
 	public String getDescription() {
 		return this.description;
 	}
-	
+
 	public void setRegHours(String hours) {
 		this.reg_hours = hours;
 	}
-	
+
 	public String getRegHours() {
 		return this.reg_hours;
 	}
-	
+
 	public void setWeekendHours(String hours) {
 		this.weekend_hours = hours;
 	}
-	
+
 	public String getWeekendHours() {
 		return this.weekend_hours;
 	}
-	
+
 	public double getLongitude(){
 		return this.longitude;
 	}

@@ -26,7 +26,8 @@ import android.widget.EditText;
 
 public class MainActivity extends Activity {
 	private List<Building> currResults;
-	private Marker pin;
+	private Pin pinMark;
+	//private Marker pin;
 
 	private final int ResultsActivity_ID = 1;
 	
@@ -118,17 +119,16 @@ public class MainActivity extends Activity {
     	GoogleMap mMap;
     	mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
     	LatLng position = new LatLng(b.getLatitude(), b.getLongitude());
-    	if(pin != null) {pin.remove();}
-    	pin = mMap.addMarker(new MarkerOptions()
-    	        .position(position)
-    	        .title(b.getName()));
+    	pinMark = new Pin (mMap, position.latitude, position.longitude);
+    	pinMark.setTitle(b.getName());
+    	pinMark.setOpen(b.isOpen());
     	mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 15));
     	Log.v("MainActivity", "pinned");
     }
     
     //for testing
-    public Marker getPin(){
-    	return pin;
+    public MarkerOptions getPin(){
+    	return pinMark.getMarkerOptions();
     }
    
     private void displayDialog(String message){
