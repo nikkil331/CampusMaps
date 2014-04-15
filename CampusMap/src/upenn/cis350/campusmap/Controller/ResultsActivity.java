@@ -1,7 +1,6 @@
 package upenn.cis350.campusmap.Controller;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 import upenn.cis350.campusmap.R;
 import upenn.cis350.campusmap.Views.ResultsEntryView;

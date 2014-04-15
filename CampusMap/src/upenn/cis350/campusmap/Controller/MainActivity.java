@@ -455,6 +455,7 @@ public class MainActivity extends Activity {
 				lineOptions.addAll(points);
 				lineOptions.width(7);
 				lineOptions.color(Color.BLUE);
+				lineOptions.geodesic(true);
 			}
 
 
