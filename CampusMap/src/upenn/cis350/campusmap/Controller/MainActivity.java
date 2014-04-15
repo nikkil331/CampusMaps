@@ -69,8 +69,15 @@ public class MainActivity extends Activity {
 		door = (Button)findViewById(R.id.insidebutton1);
 		pinInfo.setMovementMethod(new ScrollingMovementMethod());
 		current = new GPSTracker(this);
-		curr = new LatLng (current.getLocation().getLatitude(), 
-				current.getLocation().getLongitude());
+		if(current != null)
+		{
+			curr = new LatLng (current.getLocation().getLatitude(),current.getLocation().getLongitude());
+		}
+		else
+		{
+			curr = new LatLng(39.953183,-75.194791);
+		}
+		
 		mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 		mMap.setMyLocationEnabled(true);
 		mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(curr, 15));
@@ -129,7 +136,7 @@ public class MainActivity extends Activity {
 		//create bundle to sent to results view
 		ArrayList<String> names = new ArrayList<String>();
 		ArrayList<String> addresses = new ArrayList<String>();
-		int numResults = Math.min(currResults.size(), 5);
+		int numResults = Math.min(currResults.size(), 7);
 		for(int i = 0; i < numResults; i++){
 			Building b = currResults.get(i);
 			names.add(b.getName());
@@ -160,7 +167,7 @@ public class MainActivity extends Activity {
 		LatLng position = new LatLng(b.getLatitude(), b.getLongitude());
 		if (pinMark != null) pinMark.removePin();
 		pinMark = new Pin (mMap, b);
-		mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 15));
+		mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 16));
 		pinMark.addPin();
 		pinInfoText();
 		mMap.setMyLocationEnabled(true);
