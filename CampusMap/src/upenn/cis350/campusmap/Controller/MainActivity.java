@@ -40,6 +40,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -68,6 +69,7 @@ public class MainActivity extends Activity {
 		navigate = (Button)findViewById(R.id.dirbutton1);
 		door = (Button)findViewById(R.id.insidebutton1);
 		pinInfo.setMovementMethod(new ScrollingMovementMethod());
+		getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 		current = new GPSTracker(this);
 		if(current != null)
 		{
@@ -94,8 +96,14 @@ public class MainActivity extends Activity {
 		boolean hasLocationSensor = pm.hasSystemFeature(PackageManager.FEATURE_LOCATION_GPS);
 		//I imagine this will eventually be subclass or composition of GeneralSearcher that 
 		//handles more complicated searches
+		if(text.length() != 0){
 		Searcher searcher = new GeneralSearcher(this, apikey, hasLocationSensor, lattitude, longitude, radius);
 		searcher.execute(text);	
+		}
+		else
+		{
+			displayDialog("Please enter text to search.");
+		}
 	}
 
 
