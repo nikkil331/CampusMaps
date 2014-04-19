@@ -3503,4 +3503,123 @@
                 <pennaccessLink></pennaccessLink>
         </location>
 
+	<location>
+                <name>Tacos Don Memo</name>
+                <address>38th and Walnut/Chestnut Street, Philadelphia, PA, 19104</address>
+                <lat>39.9539</lat>
+                <lng>-75.1988</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>(610) 529-2039, Mexican</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck, Mexican</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+	<location>
+                <name>MexiCali</name>
+                <address>38th and Walnut Street, Philadelphia, PA, 19104</address>
+                <lat>39.9539</lat>
+                <lng>-75.1988</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>Mexican, 11:00am-4:30pm (MF)</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1100</open><close>1630</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck, Mexican</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+	<location>
+                <name>Hanan House of Pita</name>
+                <address>38th and Walnut Street, Philadelphia, PA, 19104</address>
+                <lat>39.9539</lat>
+                <lng>-75.1988</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>(267) 226-5692, Middle-Eastern</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1100</open><close>2000</close></hours_regular>
+                <hours_weekend><open>1100</open><close>2000</close></hours_weekend>
+                <nicknames>Food Truck, Middle Eastern</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+	<location>
+                <name>Yue Kee</name>
+                <address>38th and Locust/Walnut Street, Philadelphia, PA, 19104</address>
+                <lat>39.9539</lat>
+                <lng>-75.1988</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>(610) 812-7189, Asian, Chinese</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1100</open><close>2100</close></hours_regular>
+                <hours_weekend><open>1100</open><close>2100</close></hours_weekend>
+                <nicknames>Food Truck, Asian</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+
+	<location>
+                <name>Steak Queen</name>
+                <address>38th and Locust/Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9519</lat>
+                <lng>-75.19896</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>(267) 205-5906, American, Sandwiches</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>0700</open><close>1800</close></hours_regular>
+                <hours_weekend><open>0700</open><close>1600</close></hours_weekend>
+                <nicknames>Food Truck, American</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+	<location>
+                <name>Dulett's Jamaica Wings</name>
+                <address>38th and Walnut/Locust Street, Philadelphia, PA, 19104</address>
+                <lat>39.9531</lat>
+                <lng>-75.1987</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>(215) 520-1146, Jamaican</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck, Jamaican</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+	<location>
+                <name>Bui's Lunch Truck</name>
+                <address>38th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9512</lat>
+                <lng>-75.1999</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>(856) 630-7269, American, Sandwiches</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>0700</open><close>1800</close></hours_regular>
+                <hours_weekend><open>0700</open><close>1600</close></hours_weekend>
+                <nicknames>Food Truck, American</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+	<location>
+                <name>GiGi's and Big R</name>
+                <address>38th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9512</lat>
+                <lng>-75.1999</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>(610) 389-2150, Jamaican</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck, Jamaican</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
 </upenn>
