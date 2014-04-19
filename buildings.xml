@@ -3429,4 +3429,78 @@
 		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
+	<location>
+                <name>Produce Truck at 40th/Locust</name>
+                <address>40th and Locust Street, Philadelphia, PA, 19104</address>
+                <lat>39.9534</lat>
+                <lng>-75.2028</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>Fruit</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+	<location>
+                <name>Rami's</name>
+                <address>40th and Locust Street, Philadelphia, PA, 19104</address>
+                <lat>39.9534</lat>
+                <lng>-75.2028</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>Middle-Eastern</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+	<location>
+                <name>Troy Mediterranean at 40th/Spruce</name>
+                <address>40th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9520</lat>
+                <lng>-75.2031</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>(610) 659-8855, Middle-Eastern</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck, Troy, Mediterranean</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+	<location>
+                <name>KoJa</name>
+                <address>38th and Walnut Street, Philadelphia, PA, 19104</address>
+                <lat>39.9539</lat>
+                <lng>-75.1907</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>(267) 322-9925, Asian, Korean, Japanese</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1100</open><close>2030</close></hours_regular>
+                <hours_weekend><open>0000</open><close>0000</close></hours_weekend>
+                <nicknames>Food Truck, Asian, KoJa</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+
+	<location>
+                <name>Hemo's at 38th/Walnut</name>
+                <address>38th and Walnut Street, Philadelphia, PA, 19104</address>
+                <lat>39.9539</lat>
+                <lng>-75.1907</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>American, Sandwiches, </description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1100</open><close>2030</close></hours_regular>
+                <hours_weekend><open>0000</open><close>0000</close></hours_weekend>
+                <nicknames>Food Truck, Sandwiches</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
 </upenn>
