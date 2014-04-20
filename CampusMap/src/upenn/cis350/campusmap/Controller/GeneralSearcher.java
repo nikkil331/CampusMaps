@@ -190,6 +190,7 @@ public class GeneralSearcher extends Searcher{
 		String sensor = hasLocationSensor ? "true" : "false";
 		String apirequest = API_BASE_URL + "?query=" + query + "&sensor=" + sensor + 
 				"&key=" + apikey + "&location=" + latitude + "," + longitude + "&radius=" + radius;
+		Log.v("GeneralSearcher", apirequest);
 		return apirequest;
 	}
 	

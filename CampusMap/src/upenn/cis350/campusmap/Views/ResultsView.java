@@ -38,7 +38,7 @@ public class ResultsView extends LinearLayout{
 		for(int i = 0; i < names.size(); i++){
 			String name = names.get(i);
 			String address = addresses.get(i);
-			ResultsEntryView result = new ResultsEntryView(context, name, address);
+			ResultsEntryView result = new ResultsEntryView(context, name, address, i);
 			addView(result);
 		}
 		

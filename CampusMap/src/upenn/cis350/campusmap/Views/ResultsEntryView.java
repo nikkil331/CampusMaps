@@ -19,9 +19,9 @@ public class ResultsEntryView extends LinearLayout{
 	private TextView nameView;
 	private TextView addressView;
 	
-	public ResultsEntryView(Context context, String name, String address) {
-		
+	public ResultsEntryView(Context context, String name, String address, int id) {
 		super(context);
+		setId(id);
 		nameView = new TextView(context);
 		addressView = new TextView(context);
 		//name view

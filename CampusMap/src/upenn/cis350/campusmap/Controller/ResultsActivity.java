@@ -26,17 +26,30 @@ public class ResultsActivity extends Activity implements View.OnTouchListener{
 
 	@Override
 	public boolean onTouch(View v, MotionEvent e) {
+		Log.v("ResultsActivity", "result touched");
 		if(v instanceof ResultsEntryView && e.getAction() == MotionEvent.ACTION_UP){
-			Log.v("ResultsActivity", "entry clicked");
+			Log.v("ResultsActivity", "entry view pressed");
+			Intent i = new Intent();
+			i.putExtra("listIndex", v.getId());
+			setResult(RESULT_OK, i);
+			finish();
+			
+			/*
 			String address = ((ResultsEntryView) v).getAddress();
 			String name = ((ResultsEntryView) v).getName();
+			
+			
+			Log.v("ResultsActivity", name);
+			
 			int index = addresses.indexOf(address);
+			Log.v("ResultsActivity", names.get(index));
 			if(names.get(index).equals(name)){
+				Log.v("ResultsActivity", "ending...");
 				Intent i = new Intent();
 				i.putExtra("listIndex", index);
 				setResult(RESULT_OK, i);
 				finish();
-			}
+			}*/
 			return true;
 		}
 		return false;
@@ -44,11 +57,11 @@ public class ResultsActivity extends Activity implements View.OnTouchListener{
 	
 	@Override
 	public void onBackPressed() {
+		Log.v("ResultsActivity", "back pressed");
 		Intent i = new Intent(this,MainActivity.class);
 		i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-		setContentView(R.layout.activity_main);
-		startActivity(i);
-		
+		setResult(RESULT_OK, i);
+		finish();
 	}
 	
 

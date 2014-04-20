@@ -58,7 +58,8 @@ public class MainActivity extends Activity {
 	private Button door;
 	private GoogleMap mMap;
 	private ArrayList<LatLng> markerPoints;
-
+	//for testing
+	public Searcher currSearcher;
 	private final int ResultsActivity_ID = 1;
 
 	@Override
@@ -71,7 +72,7 @@ public class MainActivity extends Activity {
 		pinInfo.setMovementMethod(new ScrollingMovementMethod());
 		getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 		current = new GPSTracker(this);
-		if(current != null)
+		if(current != null && current.getLocation() != null)
 		{
 			curr = new LatLng (current.getLocation().getLatitude(),current.getLocation().getLongitude());
 		}
@@ -84,9 +85,11 @@ public class MainActivity extends Activity {
 		mMap.setMyLocationEnabled(true);
 		mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(curr, 15));
 		this.markerPoints = new ArrayList<LatLng>();
+		Log.v("MainActivity", "created");
 	}
 
 	public void onSearchClick(View view){
+		Log.v("MainActivity", "searching...");
 		String text = ((EditText)findViewById(R.id.editText1)).getText().toString();
 		String apikey = getString(R.string.api_key);
 		String lattitude = getString(R.string.latitude_center);
@@ -94,11 +97,10 @@ public class MainActivity extends Activity {
 		String radius = getString(R.string.radius);
 		PackageManager pm = this.getPackageManager();
 		boolean hasLocationSensor = pm.hasSystemFeature(PackageManager.FEATURE_LOCATION_GPS);
-		//I imagine this will eventually be subclass or composition of GeneralSearcher that 
-		//handles more complicated searches
 		if(text.length() != 0){
 		Searcher searcher = new GeneralSearcher(this, apikey, hasLocationSensor, lattitude, longitude, radius);
 		searcher.execute(text);	
+		currSearcher = searcher;
 		}
 		else
 		{
@@ -108,7 +110,7 @@ public class MainActivity extends Activity {
 
 
 	public void receiveSearchResults(List<Building> buildings){
-		Log.v("MainActivity", String.valueOf(buildings.size()));
+		Log.v("MainActivity", "receiving results...");
 		currResults = buildings;
 		//if null, there was in issue when making the api request
 		if(currResults == null){
@@ -138,6 +140,7 @@ public class MainActivity extends Activity {
 		}
 		//don't go to results page if there's only one result
 		if(currResults.size() == 1){
+			Log.v("MainActivity", "pinning building...");
 			pinBuilding(0);
 			return;
 		}
@@ -163,7 +166,10 @@ public class MainActivity extends Activity {
 	protected void onActivityResult(int requestCode, int resultCode, Intent intent){
 		super.onActivityResult(requestCode, resultCode, intent);
 		if(requestCode == ResultsActivity_ID){
-			pinBuilding(intent.getExtras().getInt("listIndex", 0));
+			Bundle extras = intent.getExtras();
+			if(extras != null){
+				pinBuilding(extras.getInt("listIndex", 0));
+			}
 		}
 	}
 
@@ -172,6 +178,8 @@ public class MainActivity extends Activity {
 		mMap.clear();
 		Building b = currResults.get(index);
 		mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
+		Log.v("MainActivity", String.valueOf(b.getLatitude()));
+		Log.v("MainActivity", String.valueOf(b.getLongitude()));
 		LatLng position = new LatLng(b.getLatitude(), b.getLongitude());
 		if (pinMark != null) pinMark.removePin();
 		pinMark = new Pin (mMap, b);
@@ -179,7 +187,6 @@ public class MainActivity extends Activity {
 		pinMark.addPin();
 		pinInfoText();
 		mMap.setMyLocationEnabled(true);
-		Log.v("MainActivity", "pinned");
 		//addMarkers();
 	}
 
@@ -196,8 +203,8 @@ public class MainActivity extends Activity {
 	}
 
 	//for testing
-	public MarkerOptions getPin(){
-		return pinMark.getMarkerOptions();
+	public Pin getPin(){
+		return pinMark;
 	}
 
 	private void displayDialog(String message){
