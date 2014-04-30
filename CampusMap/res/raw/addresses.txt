@@ -1,0 +1,26 @@
+3808-10 Walnut Street, Philadelphia PA, 19104 : thirtyeight
+3620 Walnut Street, Philadelphia PA, 19104 : annenberg
+3601 Locust Walk, Philadelphia PA, 19104 : arch
+3701 Locust Walk - 6214, Philadelphia PA, 19104 : caster
+Chemistry Complex, University of Pennsylvania, Philadelphia, PA, 19104, USA : chemistry
+249 South 36th Street, Philadelphia PA, 19104 : cohen
+1 College Hall, Philadelphia PA, 19104 : college
+209 South 33rd Street, Philadelphia PA, 19104 : drl
+3700 Walnut Street, Philadelphia PA, 19104 : education
+418 Curie Boulevard, Philadelphia PA, 19104 : fagin
+3340 Walnut Street, Philadelphia PA, 19104 : fisher
+3710 Hamilton Walk, Philadelphia PA, 19104 : goddard
+3320 Smith Walk, Philadelphia PA, 19104 : hayden
+3405 Woodland Walk, Philadelphia PA, 19104 : jaffe
+3805 Locust Walk, Philadelphia PA, 19104 : kelly
+3740 Hamilton Walk, Philadelphia PA, 19104 : leidy
+3231 Walnut Street, Philadelphia PA, 19104 : lrsm
+3718 Locust Walk, Philadelphia PA, 19104 : mcneil
+3355 Woodland Walk, Philadelphia PA, 19104 : mcneileas
+210 South 34th Street, Philadelphia PA, 19104 : meyerson
+200 South 33rd Street, Philadelphia PA, 19104 : moore
+201 South 34th Street, Philadelphia PA, 19104 : music
+3720 Walnut Street, Philadelphia PA, 19104 : solomon
+208 South 37th Street, Philadelphia PA, 19104 : stiteler
+220 S. 33rd Street, Philadelphia PA, 19104 : towne
+255 S. 36th Street, Philadelphia PA, 19104 : williams

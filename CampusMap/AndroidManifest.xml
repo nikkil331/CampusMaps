@@ -48,6 +48,10 @@
             android:name="upenn.cis350.campusmap.Controller.RouteActivity"
             android:label="@string/title_activity_route" >
         </activity>
+        
+        <activity
+            android:name="upenn.cis350.campusmap.Controller.InBuildingActivity">
+        </activity>
     </application>
 
 </manifest>

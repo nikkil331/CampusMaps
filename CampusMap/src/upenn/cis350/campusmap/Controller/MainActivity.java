@@ -1,6 +1,8 @@
 package upenn.cis350.campusmap.Controller;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -55,12 +57,15 @@ public class MainActivity extends Activity {
 	private LatLng curr;
 	private TextView pinInfo;
 	private Button navigate;
+	private String format_HTML;
 	private Button door;
 	private GoogleMap mMap;
 	private ArrayList<LatLng> markerPoints;
+	private HashMap<String, String> floorPlans;
 	//for testing
 	public Searcher currSearcher;
 	private final int ResultsActivity_ID = 1;
+	private final int InBuildingActivity_ID = 2;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -85,9 +90,39 @@ public class MainActivity extends Activity {
 		mMap.setMyLocationEnabled(true);
 		mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(curr, 15));
 		this.markerPoints = new ArrayList<LatLng>();
+		getFloorPlans();
 		Log.v("MainActivity", "created");
 	}
-
+	
+	private void getFloorPlans(){
+		floorPlans = new HashMap<String, String>();
+		BufferedReader addresses = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.addresses)));
+		String line;
+		try {
+			line = addresses.readLine();
+		} catch (IOException e) {
+			Log.v("MainActivity", "ioexception");
+			return;
+		}
+		while(line != null){
+			String[] building = line.split(":");
+			Log.v("MainActivity", line);
+			String address = building[0].trim();
+			String prefix = building[1].trim();
+			Log.v("MainActivity", address + ":" + prefix);
+			floorPlans.put(address, prefix);
+			try {
+				line = addresses.readLine();
+			} catch (IOException e) {
+				Log.v("MainActivity", "ioexception");
+				return;
+			}
+		}
+		try {
+			addresses.close();
+		} catch (IOException e) {}
+		return;
+	}
 	public void onSearchClick(View view){
 		Log.v("MainActivity", "searching...");
 		String text = ((EditText)findViewById(R.id.editText1)).getText().toString();
@@ -178,8 +213,6 @@ public class MainActivity extends Activity {
 		mMap.clear();
 		Building b = currResults.get(index);
 		mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
-		Log.v("MainActivity", String.valueOf(b.getLatitude()));
-		Log.v("MainActivity", String.valueOf(b.getLongitude()));
 		LatLng position = new LatLng(b.getLatitude(), b.getLongitude());
 		if (pinMark != null) pinMark.removePin();
 		pinMark = new Pin (mMap, b);
@@ -198,7 +231,7 @@ public class MainActivity extends Activity {
 		String name = b.getName();
 		String add = b.getAddress();
 		String desc = b.getDescription();
-		String format_HTML = "<p><b> "+name+"</b> <br><i>"+add+"</i></p><p>"+desc+"</p>";
+		format_HTML = "<p><b> "+name+"</b> <br><i>"+add+"</i></p><p>"+desc+"</p>";
 		pinInfo.setText(Html.fromHtml(format_HTML));
 	}
 
@@ -276,8 +309,20 @@ public class MainActivity extends Activity {
 	//	goInside();
 
 	public void goInside(View v) 
-	{
-		displayDialog("In building navigation is not enabled for this location at this time.");
+	{	
+		String address = pinMark.getBuilding().getAddress();
+		Log.v("MainActivity", address);
+		String prefix = floorPlans.get(address);
+		if(prefix == null){
+			displayDialog("In building navigation is not enabled for this location at this time.");
+			return;
+		}
+		Intent i = new Intent(this, InBuildingActivity.class);
+		Bundle b = new Bundle();
+		b.putString("info", format_HTML);
+		b.putString("prefix", prefix);
+		i.putExtras(b);
+		startActivityForResult(i, InBuildingActivity_ID);
 	}
 
 

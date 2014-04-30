@@ -31,8 +31,6 @@ public class ResultsEntryView extends LinearLayout{
 		nameView.setTypeface(Typeface.SANS_SERIF);
 		nameView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
-		//addressView
-		Log.v("ResultsEntryView", address);
 		addressView.setText(address);
 		addressView.setPadding(50, 20, 50, 0);
 		addressView.setTextSize(16);
