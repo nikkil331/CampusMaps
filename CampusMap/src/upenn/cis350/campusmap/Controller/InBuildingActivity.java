@@ -40,7 +40,6 @@ public class InBuildingActivity extends Activity implements OnTouchListener, OnG
 	ArrayList<String> picNames = new ArrayList<String>();
 	int currIndex = 0;
 	Drawable currDrawable;
-	Bitmap oldBM;
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -162,19 +161,27 @@ public class InBuildingActivity extends Activity implements OnTouchListener, OnG
 			animate(in, out);
 		}
 		((ImageView)findViewById(currIndex)).setImageResource(R.drawable.circle_chosen);
-		return false;
+		return true;
 	}
 	
 	
 	private void animate(Animation in, Animation out){
+		ImageView v = (ImageView)imageSwitcher.getNextView(); 
+		BitmapDrawable bd = (BitmapDrawable) v.getDrawable();
+		if (bd != null) 
+		{
+			Log.v("InBuildingActivity", "recycling");
+		    Bitmap b = bd.getBitmap();
+		    b.recycle();
+		}
 		imageSwitcher.setInAnimation(in);
 		imageSwitcher.setOutAnimation(out);
 		int imageCode = getResources().getIdentifier(picNames.get(currIndex), "drawable", getPackageName());
 		BitmapFactory.Options options=new BitmapFactory.Options();// Create object of bitmapfactory's option method for further option use
         options.inPurgeable = true; // inPurgeable is used to free up memory while required
         Bitmap image = BitmapFactory.decodeResource(getResources(), imageCode, options);
-
-		imageSwitcher.setImageDrawable(new BitmapDrawable(image));
+        BitmapDrawable nextImage = new BitmapDrawable(image);
+		imageSwitcher.setImageDrawable(nextImage);
 	}
 
 	@Override
