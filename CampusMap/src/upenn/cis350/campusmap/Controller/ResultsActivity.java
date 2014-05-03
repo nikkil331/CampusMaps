@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
 
 public class ResultsActivity extends Activity implements View.OnTouchListener{
 	
@@ -21,7 +23,8 @@ public class ResultsActivity extends Activity implements View.OnTouchListener{
 		super.onCreate(savedInstanceState);
 		names = getIntent().getStringArrayListExtra("names");
 		addresses = getIntent().getStringArrayListExtra("addresses");
-		setContentView(new ResultsView(this, getIntent().getExtras()));
+		ResultsView view = new ResultsView(this, getIntent().getExtras());
+		setContentView(view);
 	}
 
 	@Override

@@ -1,7 +1,7 @@
 package upenn.cis350.campusmap.Views;
 
 import upenn.cis350.campusmap.Controller.ResultsActivity;
-import android.R;
+import upenn.cis350.campusmap.R;
 import android.R.color;
 import android.content.Context;
 import android.graphics.Canvas;
@@ -26,23 +26,25 @@ public class ResultsEntryView extends LinearLayout{
 		addressView = new TextView(context);
 		//name view
 		nameView.setText(name);
-		nameView.setPadding(50,20,50,0);
-		nameView.setTextSize(22);
+		nameView.setPadding(40,20,20,0);
+		nameView.setTextSize(18);
 		nameView.setTypeface(Typeface.SANS_SERIF);
 		nameView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
 		addressView.setText(address);
-		addressView.setPadding(50, 20, 50, 0);
-		addressView.setTextSize(16);
+		addressView.setPadding(40, 20, 20, 40);
+		addressView.setTextSize(14);
 		addressView.setTypeface(Typeface.SANS_SERIF);
 		addressView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
 
 		//set up layout
-		setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+		params.setMargins(15, 15, 15, 15);
+		setLayoutParams(params);
 		setOrientation(LinearLayout.VERTICAL);
-		setPadding(0,0,0,30);
 		addView(nameView);
 		addView(addressView);
+		setBackgroundResource(R.drawable.shadow);
 		
 		setOnTouchListener((ResultsActivity)getContext());
 	}
@@ -53,7 +55,7 @@ public class ResultsEntryView extends LinearLayout{
 	
 		if(e.getAction() == MotionEvent.ACTION_DOWN){
 			Log.v("ResultsEntryView", "touch event");
-			setBackgroundColor(getResources().getColor(R.color.holo_blue_bright));
+			setBackgroundColor(getResources().getColor(android.R.color.holo_blue_bright));
 			setAlpha((float) 0.7);
 			invalidate();
 		}

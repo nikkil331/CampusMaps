@@ -33,32 +33,38 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.Html;
+import android.text.Spannable;
+import android.text.SpannableString;
 import android.text.method.ScrollingMovementMethod;
+import android.text.style.RelativeSizeSpan;
+import android.text.style.TextAppearanceSpan;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnTouchListener;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnTouchListener {
 	private List<Building> currResults;
 	private Pin pinMark;
 	//private Marker pin;
 	private GPSTracker current;
 	private LatLng curr;
-	private TextView pinInfo;
-	private Button navigate;
 	private String format_HTML;
-	private Button door;
 	private GoogleMap mMap;
 	private ArrayList<LatLng> markerPoints;
 	private HashMap<String, String> floorPlans;
@@ -70,28 +76,51 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-		pinInfo = (TextView)findViewById(R.id.InfoText1);
-		navigate = (Button)findViewById(R.id.dirbutton1);
-		door = (Button)findViewById(R.id.insidebutton1);
-		pinInfo.setMovementMethod(new ScrollingMovementMethod());
-		getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
-		current = new GPSTracker(this);
-		if(current != null && current.getLocation() != null)
-		{
-			curr = new LatLng (current.getLocation().getLatitude(),current.getLocation().getLongitude());
-		}
-		else
-		{
-			curr = new LatLng(39.953183,-75.194791);
+		setContentView(R.layout.loading);
+		OnStart startTask = new OnStart();
+		startTask.execute(this);
+		Log.v("MainActivity", "created");
+	}
+	
+	private class OnStart extends AsyncTask<MainActivity, Void, Boolean>{
+		private MainActivity activity;
+		
+		@Override
+		protected Boolean doInBackground(MainActivity... args) {
+			activity = args[0];
+			
+			getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+			current = new GPSTracker(activity);
+			if(current != null && current.getLocation() != null)
+			{
+				curr = new LatLng (current.getLocation().getLatitude(),current.getLocation().getLongitude());
+			}
+			else
+			{
+				curr = new LatLng(39.953183,-75.194791);
+			}
+			activity.markerPoints = new ArrayList<LatLng>();
+			getFloorPlans();
+			//show loading page
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			return true;
 		}
 		
-		mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
-		mMap.setMyLocationEnabled(true);
-		mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(curr, 15));
-		this.markerPoints = new ArrayList<LatLng>();
-		getFloorPlans();
-		Log.v("MainActivity", "created");
+		@Override
+		protected void onPostExecute(Boolean b){
+			setContentView(R.layout.activity_main);
+			findViewById(R.id.button1).setOnTouchListener(activity);
+			findViewById(R.id.dirbutton1).setOnTouchListener(activity);
+			findViewById(R.id.insidebutton1).setOnTouchListener(activity);
+			mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
+			mMap.setMyLocationEnabled(true);
+			mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(curr, 15));
+		}
+		
 	}
 	
 	private void getFloorPlans(){
@@ -123,6 +152,8 @@ public class MainActivity extends Activity {
 		} catch (IOException e) {}
 		return;
 	}
+
+	
 	public void onSearchClick(View view){
 		Log.v("MainActivity", "searching...");
 		String text = ((EditText)findViewById(R.id.editText1)).getText().toString();
@@ -136,6 +167,9 @@ public class MainActivity extends Activity {
 		Searcher searcher = new GeneralSearcher(this, apikey, hasLocationSensor, lattitude, longitude, radius);
 		searcher.execute(text);	
 		currSearcher = searcher;
+		InputMethodManager imm = (InputMethodManager)getSystemService(
+			      Context.INPUT_METHOD_SERVICE);
+		imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
 		}
 		else
 		{
@@ -224,15 +258,21 @@ public class MainActivity extends Activity {
 	}
 
 	private void pinInfoText() {
-		this.pinInfo.setVisibility(View.VISIBLE);
-		this.navigate.setVisibility(View.VISIBLE);
-		this.door.setVisibility(View.VISIBLE);
+		RelativeLayout infoContainer = (RelativeLayout)findViewById(R.id.pinInfo);
+		infoContainer.setVisibility(View.VISIBLE);
 		Building b = pinMark.getBuilding();
 		String name = b.getName();
 		String add = b.getAddress();
-		String desc = b.getDescription();
-		format_HTML = "<p><b> "+name+"</b> <br><i>"+add+"</i></p><p>"+desc+"</p>";
-		pinInfo.setText(Html.fromHtml(format_HTML));
+		String desc = name + "\n" + add;
+		SpannableString text = new SpannableString(desc);
+		text.setSpan(new RelativeSizeSpan(1.25f), 0, name.length() + 1,
+	            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+		text.setSpan(new TextAppearanceSpan(this, Typeface.NORMAL, Color.rgb(51,51,51)), 0, name.length() + 1,
+		            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+		text.setSpan(new TextAppearanceSpan(this, Typeface.NORMAL, Color.rgb(90, 90, 90)), name.length() + 1, desc.length(),
+	            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+		TextView pinText = (TextView)findViewById(R.id.InfoText1);
+		pinText.setText(text);
 	}
 
 	//for testing
@@ -278,8 +318,16 @@ public class MainActivity extends Activity {
 	public void addMarkers(View v) 
 	{
 		MarkerOptions start = new MarkerOptions();
-		curr = new LatLng (current.getLocation().getLatitude(), 
-				current.getLocation().getLongitude());
+		if(current == null){
+			current = new GPSTracker(this);
+		}
+		double longitude = -75.193576;
+		double latitude = 39.952641;
+		if(current.getLocation() != null){
+			longitude = current.getLocation().getLongitude();
+			latitude = current.getLocation().getLatitude();
+		}
+		curr = new LatLng (latitude, longitude);
 		start.position(curr).title("You Are Here").icon(BitmapDescriptorFactory
 				.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
 
@@ -319,7 +367,8 @@ public class MainActivity extends Activity {
 		}
 		Intent i = new Intent(this, InBuildingActivity.class);
 		Bundle b = new Bundle();
-		b.putString("info", format_HTML);
+		TextView pinText = (TextView)findViewById(R.id.InfoText1);
+		b.putString("info", pinText.getText().toString());
 		b.putString("prefix", prefix);
 		i.putExtras(b);
 		startActivityForResult(i, InBuildingActivity_ID);
@@ -505,8 +554,8 @@ public class MainActivity extends Activity {
 
 				// Adding all the points in the route to LineOptions
 				lineOptions.addAll(points);
-				lineOptions.width(7);
-				lineOptions.color(Color.BLUE);
+				lineOptions.width(20);
+				lineOptions.color(Color.rgb(0,208,240));
 				lineOptions.geodesic(true);
 			}
 
@@ -522,5 +571,34 @@ public class MainActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		this.getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+
+	@Override
+	public boolean onTouch(View v, MotionEvent e) {
+		if(v.equals(findViewById(R.id.button1))){
+			if(e.getAction() == MotionEvent.ACTION_DOWN){
+				((ImageButton) v).setImageResource(R.drawable.search_focused);
+			}
+			else if (e.getAction() == MotionEvent.ACTION_UP){
+				((ImageButton) v).setImageResource(R.drawable.search);
+			}
+		}
+		else if(v.equals(findViewById(R.id.dirbutton1))){
+			if(e.getAction() == MotionEvent.ACTION_DOWN){
+				((ImageButton) v).setImageResource(R.drawable.dir_focused);
+			}
+			else if (e.getAction() == MotionEvent.ACTION_UP){
+				((ImageButton) v).setImageResource(R.drawable.dir);
+			}
+		}
+		else if(v.equals(findViewById(R.id.insidebutton1))){
+			if(e.getAction() == MotionEvent.ACTION_DOWN){
+				((ImageButton) v).setImageResource(R.drawable.door_focused);
+			}
+			else if (e.getAction() == MotionEvent.ACTION_UP){
+				((ImageButton) v).setImageResource(R.drawable.door);
+			}
+		}
+		return false;
 	}
 }

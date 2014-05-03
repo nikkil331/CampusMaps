@@ -276,7 +276,7 @@ public class RouteActivity extends FragmentActivity
 
 				// Adding all the points in the route to LineOptions
 				lineOptions.addAll(points);
-				lineOptions.width(2);
+				lineOptions.width(6);
 				lineOptions.color(Color.RED);
 			}
 
