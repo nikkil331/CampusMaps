@@ -208,4 +208,23 @@ public class InBuildingActivity extends Activity implements OnTouchListener, OnG
 		return false;
 	}
 	
+	@Override
+	public void onStop(){
+		ImageView v = (ImageView)imageSwitcher.getCurrentView(); 
+		BitmapDrawable bd = (BitmapDrawable) v.getDrawable();
+		if (bd != null) 
+		{
+		    Bitmap b = bd.getBitmap();
+		    b.recycle();
+		}v = (ImageView)imageSwitcher.getNextView(); 
+		bd = (BitmapDrawable) v.getDrawable();
+		if (bd != null) 
+		{
+			Log.v("InBuildingActivity", "recycling");
+		    Bitmap b = bd.getBitmap();
+		    b.recycle();
+		}
+		super.onStop();
+	}
+	
 }
