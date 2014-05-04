@@ -13,5 +13,7 @@
     <string name="longitude_east">-75.18013</string>
     <string name="radius">16000</string>
     <string name="title_activity_route">RouteActivity</string>
+    <string name="get_started">Welcome to Campus Maps!</string>
+    <string name="app_id">708959602495764</string>
 
 </resources>
