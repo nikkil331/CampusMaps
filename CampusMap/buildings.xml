@@ -3690,5 +3690,162 @@
                 <nicknames>Food Truck</nicknames>
                 <pennaccessLink></pennaccessLink>
         </location>
+        <location>
+                <name>Troy Mediterranean at 38th/Spruce</name>
+                <address>38th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9512</lat>
+                <lng>-75.1993</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>(610) 659-8855</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck, Middle-Eastern</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+	<location>
+                <name>Vienna Beef House of Dogs</name>
+                <address>37th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9513</lat>
+                <lng>-75.1973</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>American</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1000</open><close>1500</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck, American</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+	<location>
+                <name>Tang Chinese Food</name>
+                <address>36th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.951</lat>
+                <lng>-75.1953</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>(215) 939-5286, Asian/Chinese</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1100</open><close>1800</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+
+	<location>
+                <name>Lovash Indian Cuisine</name>
+                <address>37th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9513</lat>
+                <lng>-75.1973</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>Asian, Indian</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1000</open><close>1500</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+
+
+	<location>
+                <name>Fruit Truck at 37th/Spruce</name>
+                <address>37th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9513</lat>
+                <lng>-75.1973</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>Fruit</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1130</open><close>1630</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+
+	<location>
+                <name>Sonic's</name>
+                <address>37th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9513</lat>
+                <lng>-75.1973</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>American, Sandwiches</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>0830</open><close>1730</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck, American</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+
+
+	<location>
+                <name>Hemo's at 37th/Spruce</name>
+                <address>37th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9513</lat>
+                <lng>-75.1973</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>American, Sandwiches</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck, American</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+	<location>
+                <name>Khan Hotdog Cart</name>
+                <address>35th/36th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9507</lat>
+                <lng>-75.1948</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>American, Sandwiches</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>0730</open><close>1800</close></hours_regular>
+                <hours_weekend><open>0730</open><close>1800</close></hours_weekend>
+                <nicknames>Food Truck, American</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+
+
+	<location>
+                <name>Lucky's Mexican Spot</name>
+                <address>37th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9513</lat>
+                <lng>-75.1973</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>Mexican</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1030</open><close>1830</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck, Mexican</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+
+	<location>
+                <name>MexiPhilly</name>
+                <address>37th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9513</lat>
+                <lng>-75.1973</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>Mexican</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1000</open><close>1800</close></hours_regular>
+                <hours_weekend><open>1130</open><close>1630</close></hours_weekend>
+                <nicknames>Food Truck, Mexican</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
 
 </upenn>
