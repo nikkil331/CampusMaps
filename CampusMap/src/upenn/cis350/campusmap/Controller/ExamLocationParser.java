@@ -2,7 +2,9 @@ package upenn.cis350.campusmap.Controller;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
@@ -13,16 +15,33 @@ public class ExamLocationParser {
 	private BufferedReader br;
 	private Map<String, String[]> examLocs;
 
-	ExamLocationParser(String x) {
+	ExamLocationParser(String strURL) {
+		InputStream iStream = null;
+		HttpURLConnection urlConnection = null;
 		try {
-			URL url = new URL(x);
-			br = new BufferedReader(new InputStreamReader(url.openStream()));
+			URL url = new URL(strURL);
+			
+			// Creating an http connection to communicate with url
+			urlConnection = (HttpURLConnection) url.openConnection();
+
+			// Connecting to url
+			urlConnection.connect();
+
+			// Reading data from url
+			iStream = urlConnection.getInputStream();
+
+			br = new BufferedReader(new InputStreamReader(iStream));
+
 			examLocs = new HashMap<String, String[]>();
 		} catch (MalformedURLException e) {
 			System.out.println("Malformed URL: " + e.getMessage());
 		} catch (IOException e) {
 			System.out.println("I/O Error: " + e.getMessage());
 		}
+	}
+	
+	protected Map<String,String[]> getMap(){
+		return examLocs;
 	}
 
 	public void parse() {
@@ -32,9 +51,9 @@ public class ExamLocationParser {
 			String temp = new String();
 			while (((line = br.readLine()) != null)) {
 				data = line.split(",");
-				temp = data[1].substring(0, data[0].indexOf('-'));
+				temp = data[0].substring(0, data[0].indexOf('-'));
 				temp = temp.trim();
-				temp = temp + data[1].substring(data[0].indexOf('-'));
+				temp = temp + data[0].substring(data[0].indexOf('-'));
 				String[] locations = data[1].split(";");
 				for (int i = 0; i < locations.length; i++) {
 					locations[i] = locations[i].trim();

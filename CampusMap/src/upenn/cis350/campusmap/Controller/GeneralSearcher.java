@@ -15,8 +15,8 @@ import android.annotation.SuppressLint;
 import android.util.*;
 
 @SuppressLint("NewApi")
-public class GeneralSearcher extends Searcher{
-	
+public class GeneralSearcher extends Searcher {
+
 	private String apikey;
 	private boolean hasLocationSensor;
 	private String latitude;
@@ -25,12 +25,14 @@ public class GeneralSearcher extends Searcher{
 	private static String API_BASE_URL = "https://maps.googleapis.com/maps/api/place/textsearch/json";
 
 	/**
-	 * GeneralSearcher needs apikey to query places api
-	 * latitude, longitude and radius specify in what vicinity to search 
-	 * all strings necessary are found in res/values/strings.xml
-	 * hasLocationSensor indicates whether or not the device has gps sensor
+	 * GeneralSearcher needs apikey to query places api latitude, longitude and
+	 * radius specify in what vicinity to search all strings necessary are found
+	 * in res/values/strings.xml hasLocationSensor indicates whether or not the
+	 * device has gps sensor
 	 */
-	public GeneralSearcher(MainActivity activity, String apikey, boolean hasLocationSensor, String latitude, String longitude, String radius){
+	public GeneralSearcher(MainActivity activity, String apikey,
+			boolean hasLocationSensor, String latitude, String longitude,
+			String radius) {
 		super();
 		this.apikey = apikey;
 		this.hasLocationSensor = hasLocationSensor;
@@ -38,47 +40,58 @@ public class GeneralSearcher extends Searcher{
 		this.longitude = longitude;
 		this.radius = radius;
 		this.activity = activity;
-		
+
 	}
 
 	/**
 	 * returns null when an error occurred while talking to google's servers
 	 */
-	public List<Building> getBuildings(String query){
+	public List<Building> getBuildings(String query) {
 		int code = queryType(query);
-		switch(code)
-		{
-		case 1: return getBuildingFromName(query);
-		case 2: return getBuildingFromCode(query);
-		default: return getBuildingsFromGoogle(query);
+		switch (code) {
+		case 1:
+			return getBuildingFromName(query);
+		case 2: 
+			return getBuildingFromCode(query);
+		case 3:
+			return getBuildingFromExam(query);
+		default:
+			return getBuildingsFromGoogle(query);
 		}
 	}
-	
+
+	private List<Building> getBuildingFromExam(String query) {
+		String[] x = pp.convertToBuildingCodes(pp.getMap().get(
+				query.split(" ")[0]));
+		List<Building> toReturn = new ArrayList<Building>();
+		for (String i : x) {
+			toReturn.addAll(getBuildingFromCode(i));
+		}
+		return toReturn;
+	}
+
 	private List<Building> getBuildingFromCode(String query) {
-		
+
 		HashMap<String, Building> codeMap = p.getCodeMap();
 		List<Building> results = new LinkedList<Building>();
 		String q = query.toLowerCase(Locale.US);
 		int i = 0;
 		try {
-		for(String code : codeMap.keySet())
-		{
-			if(code == null)
-			{
-				continue;
+			for (String code : codeMap.keySet()) {
+				if (code == null) {
+					continue;
+				}
+				if (matchCode(code, q)) {
+					results.add(codeMap.get(code));
+				}
 			}
-			if(matchCode(code,q)){
-				results.add(codeMap.get(code));
-			}
-		}
-		if(results.size() != 0)
-			return results;
-		
-		return getBuildingFromName(query);
-		}
-		catch(NullPointerException e)
-		{
-			Log.v("General Searcher", " Null Pointer Exception in getBuildingFromCode");
+			if (results.size() != 0)
+				return results;
+
+			return getBuildingFromName(query);
+		} catch (NullPointerException e) {
+			Log.v("General Searcher",
+					" Null Pointer Exception in getBuildingFromCode");
 			return new ArrayList<Building>();
 		}
 	}
@@ -88,233 +101,235 @@ public class GeneralSearcher extends Searcher{
 		String c = code.toLowerCase();
 		return c.contains(q);
 	}
-	
+
 	private boolean match(String code, String q) {
 		q = q.toLowerCase(Locale.US);
 		String c = code.toLowerCase(Locale.US);
 		String[] terms = q.split(" ");
 		double i = 0;
-		for(String t : terms)
-		{
-			if(c.contains(t))
-				i+=1;
+		for (String t : terms) {
+			if (c.contains(t))
+				i += 1;
 		}
 		double t = terms.length + 0.0;
-		return i/t > 0.75;
+		return i / t > 0.75;
 	}
 
 	private int queryType(String query) {
 		String q = query.trim();
-		if((q.length() == 4 || q.length() == 3) && q.split(" ").length == 1)
-		{
+		String[] qq = q.split(" ");
+		if (qq.length == 2) {
+			if (qq[1].equals("Exam")) {
+				return 3;
+			}
+		}
+		if ((q.length() == 4 || q.length() == 3) && q.split(" ").length == 1) {
 			return 2;
 		}
-		if(!q.contains(",") && q.split(" ").length <= 4)
+		if (!q.contains(",") && q.split(" ").length <= 4)
 			return 1;
-		
+
 		return 0;
 	}
 
-	private List<Building> getBuildingFromName(String query)
-	{
-		HashMap<String,Building> nameMap = p.getNameMap();
-		HashMap<String,Building> nicknameMap = p.getNicknameMap();
+	private List<Building> getBuildingFromName(String query) {
+		HashMap<String, Building> nameMap = p.getNameMap();
+		HashMap<String, Building> nicknameMap = p.getNicknameMap();
 		List<Building> results = new ArrayList<Building>();
-		for(String name : nameMap.keySet())
-		{
-			if(name == null)
+		for (String name : nameMap.keySet()) {
+			if (name == null)
 				continue;
-			if(match(name,query.trim())) {
+			if (match(name, query.trim())) {
 				Building b = nameMap.get(name);
-				Log.v("GeneralSearcher.getBuildingFromName(Name)", "Result added :"+b.getName());
+				Log.v("GeneralSearcher.getBuildingFromName(Name)",
+						"Result added :" + b.getName());
 				results.add(b);
 			}
-			
+
 		}
-		
-		for(String name : nicknameMap.keySet())
-		{
-			if(name == null)
+
+		for (String name : nicknameMap.keySet()) {
+			if (name == null)
 				continue;
-			if(match(name,query.trim())) {
+			if (match(name, query.trim())) {
 				Building b = nicknameMap.get(name);
-				if(!results.contains(b)){ 
+				if (!results.contains(b)) {
 					results.add(b);
-					Log.v("GeneralSearcher.getBuildingFromName(NKName)", "Result added ("+name+") :"+b.getName());
+					Log.v("GeneralSearcher.getBuildingFromName(NKName)",
+							"Result added (" + name + ") :" + b.getName());
 				}
 			}
-			
+
 		}
-		if(results.size() == 0) {
-			Log.v("GeneralSearcher.getBuildingFromName","No results found on DB, Calling Google");
+		if (results.size() == 0) {
+			Log.v("GeneralSearcher.getBuildingFromName",
+					"No results found on DB, Calling Google");
 			return getBuildingsFromGoogle(query);
 		}
-		
+
 		return results;
 	}
-	
-	private List<Building> getBuildingsFromGoogle(String query)
-	{
+
+	private List<Building> getBuildingsFromGoogle(String query) {
 		// this would be where you would check the database against the various
-				// query entries
-				query = formatQuery(query);
-				String apirequest = buildRequest(query);
-				String apiresponse = makeHTTPRequest(apirequest);
-				if(apiresponse.equals("")){
-					return null;
-				}
-				List<Building> results = new ArrayList<Building>();
-				try {
-					results = parseAPIResponse(apiresponse);
-				} catch (IOException e) {
-					Log.v("General Searcher", "IOException when reading json response");
-				}
-				return results;
+		// query entries
+		query = formatQuery(query);
+		String apirequest = buildRequest(query);
+		String apiresponse = makeHTTPRequest(apirequest);
+		if (apiresponse.equals("")) {
+			return null;
+		}
+		List<Building> results = new ArrayList<Building>();
+		try {
+			results = parseAPIResponse(apiresponse);
+		} catch (IOException e) {
+			Log.v("General Searcher", "IOException when reading json response");
+		}
+		return results;
 	}
-	
-	//replaces spaces with "+" signs for api query
-	private String formatQuery(String query){
+
+	// replaces spaces with "+" signs for api query
+	private String formatQuery(String query) {
 		String[] queryTokens = query.split(" ");
 		StringBuilder sb = new StringBuilder();
-		for(String t: queryTokens){
+		for (String t : queryTokens) {
 			sb.append(t + "+");
 		}
-		//get rid of last plus
+		// get rid of last plus
 		sb.delete(sb.length() - 1, sb.length());
 		query = sb.toString();
 		return query;
 	}
-	
-	//creates get request url out of given information 
-	private String buildRequest(String query){
+
+	// creates get request url out of given information
+	private String buildRequest(String query) {
 		String sensor = hasLocationSensor ? "true" : "false";
-		String apirequest = API_BASE_URL + "?query=" + query + "&sensor=" + sensor + 
-				"&key=" + apikey + "&location=" + latitude + "," + longitude + "&radius=" + radius;
+		String apirequest = API_BASE_URL + "?query=" + query + "&sensor="
+				+ sensor + "&key=" + apikey + "&location=" + latitude + ","
+				+ longitude + "&radius=" + radius;
 		Log.v("GeneralSearcher", apirequest);
 		return apirequest;
 	}
-	
-	private String makeHTTPRequest(String URL){
+
+	private String makeHTTPRequest(String URL) {
 		Log.v("GeneralSearcher", URL);
-	    HttpClient httpclient = new DefaultHttpClient();
-	   
-	    //try executing request
-	    HttpResponse response = null;
+		HttpClient httpclient = new DefaultHttpClient();
+
+		// try executing request
+		HttpResponse response = null;
 		try {
 			response = httpclient.execute(new HttpGet(URL));
-		} 
-		catch (ClientProtocolException e) { 
-			Log.v("General Searcher", "ClientProtocolException when making request");
+		} catch (ClientProtocolException e) {
+			Log.v("General Searcher",
+					"ClientProtocolException when making request");
 			return "";
-		} 
-		catch (IOException e) { 
+		} catch (IOException e) {
 			Log.v("General Searcher", "IOException when making request");
 			return "";
 		}
-		
-		//check if response is not an error
-	    StatusLine statusLine = response.getStatusLine();
-	    if(statusLine.getStatusCode() == HttpStatus.SC_OK){
-	        ByteArrayOutputStream out = new ByteArrayOutputStream();
-	        try {
+
+		// check if response is not an error
+		StatusLine statusLine = response.getStatusLine();
+		if (statusLine.getStatusCode() == HttpStatus.SC_OK) {
+			ByteArrayOutputStream out = new ByteArrayOutputStream();
+			try {
 				response.getEntity().writeTo(out);
 			} catch (IOException e) {
-				Log.v("General Searcher", "IOException when writing HTTP Response");
+				Log.v("General Searcher",
+						"IOException when writing HTTP Response");
 				return "";
 			}
-	        try {
+			try {
 				out.close();
 			} catch (IOException e) {
-				Log.v("General Searcher", "IOException when writing HTTP Response");
+				Log.v("General Searcher",
+						"IOException when writing HTTP Response");
 				return "";
 			}
-	        String responseString = out.toString();
-	        return responseString;
-	    } else{
-	        //Closes the connection.
-	        try {
+			String responseString = out.toString();
+			return responseString;
+		} else {
+			// Closes the connection.
+			try {
 				response.getEntity().getContent().close();
-			} 
-	        catch (IllegalStateException e) {
-	        	Log.v("General Searcher", "IllegalStateException when closing connection");
-	        }
-	        catch (IOException e) { 
-	        	Log.v("General Searcher", "IOException when closing connection");
-	        }
-	        return "";
-	    }
+			} catch (IllegalStateException e) {
+				Log.v("General Searcher",
+						"IllegalStateException when closing connection");
+			} catch (IOException e) {
+				Log.v("General Searcher", "IOException when closing connection");
+			}
+			return "";
+		}
 	}
-	
-	//reads json response from places api
-	private List<Building> parseAPIResponse(String response) throws IOException{
+
+	// reads json response from places api
+	private List<Building> parseAPIResponse(String response) throws IOException {
 		JsonReader reader = new JsonReader(new StringReader(response));
 		List<Building> buildings = new ArrayList<Building>();
-		//start the parse
+		// start the parse
 		reader.beginObject();
-		while(reader.hasNext()){
+		while (reader.hasNext()) {
 			String outerTag = reader.nextName();
-			if(outerTag.equals("error-message")){
-				//return empty list
+			if (outerTag.equals("error-message")) {
+				// return empty list
 				return new ArrayList<Building>();
-			}
-			else if(outerTag.equals("results")){
+			} else if (outerTag.equals("results")) {
 				buildings = parseResultsArray(reader);
-			}
-			else{
+			} else {
 				reader.skipValue();
-			}	
+			}
 		}
 		reader.endObject();
 		reader.close();
 		return buildings;
 	}
-	
-	private List<Building> parseResultsArray(JsonReader reader) throws IOException{
+
+	private List<Building> parseResultsArray(JsonReader reader)
+			throws IOException {
 		List<Building> buildings = new ArrayList<Building>();
-		//begin results array
+		// begin results array
 		reader.beginArray();
-		while(reader.hasNext()){
+		while (reader.hasNext()) {
 			reader.beginObject();
 			String address = "", name = "", id = "", icon = "";
-			double latitude = 0.0 , longitude = 0.0;
-			while(reader.hasNext()){
+			double latitude = 0.0, longitude = 0.0;
+			while (reader.hasNext()) {
 				String tag = reader.nextName();
-				if(tag.equals("formatted_address")){
+				if (tag.equals("formatted_address")) {
 					address = reader.nextString();
-				}
-				else if (tag.equals("geometry")){
+				} else if (tag.equals("geometry")) {
 					reader.beginObject();
-					while(reader.hasNext()){
+					while (reader.hasNext()) {
 						String innerTag = reader.nextName();
-						if(innerTag.equals("location")){
+						if (innerTag.equals("location")) {
 							reader.beginObject();
 							reader.nextName();
 							latitude = Double.parseDouble(reader.nextString());
 							reader.nextName();
 							longitude = Double.parseDouble(reader.nextString());
 							reader.endObject();
+						} else {
+							reader.skipValue();
 						}
-						else{ reader.skipValue();}
 					}
 					reader.endObject();
-				}
-				else if (tag.equals("icon")){
+				} else if (tag.equals("icon")) {
 					icon = reader.nextString();
-				}
-				else if (tag.equals("id")){
+				} else if (tag.equals("id")) {
 					id = reader.nextString();
-				}
-				else if (tag.equals("name")){
+				} else if (tag.equals("name")) {
 					name = reader.nextString();
+				} else {
+					reader.skipValue();
 				}
-				else{ reader.skipValue(); }
 			}
 			reader.endObject();
-			Building b = new Building(longitude, latitude, id, icon, name, address);
+			Building b = new Building(longitude, latitude, id, icon, name,
+					address);
 			buildings.add(b);
 		}
 		reader.endArray();
 		return buildings;
 	}
-	
+
 }
