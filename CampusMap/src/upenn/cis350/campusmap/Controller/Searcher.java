@@ -13,7 +13,7 @@ public abstract class Searcher extends AsyncTask<String, Void, List<Building>> {
 	@Override
 	protected List<Building> doInBackground(String... params) {
 		p = new Parser(
-				"https://raw.githubusercontent.com/nikkil331/CampusMaps/master/CampusMap/buildings.xml");
+				"https://raw.githubusercontent.com/nikkil331/CampusMaps/master/buildings.xml");
 		pp = new ExamLocationParser(
 				"https://raw.githubusercontent.com/nikkil331/CampusMaps/master/CampusMap/CIS350_Final_Exams.csv");
 		p.Parse();
