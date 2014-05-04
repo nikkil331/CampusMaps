@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <upenn>
 	<location>
 		<name>133 South 36th Street</name>
@@ -2030,13 +2030,13 @@
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0575-MuseumArchaeology.pdf</pennaccessLink>
 	</location>
 	<location>
-		<name>Neural &amp; Behavioral Sciences Facility</name>
+		<name>Neural and Behavioral Sciences facility</name>
 		<address>425 S. University Avenue, Philadelphia PA, 19104</address>
 		<lat>39.94952</lat>
 		<lng>-75.199218</lng>
 		<code></code>
 		<num_code>242</num_code>
-		<description>An expansion of the Lynch Laboratories, this new building will provide for the collaboration, exchange, and integration of knowledge that characterizes the study of Biology and Psychology at Penn. The new Neural &amp; Behavioral Sciences facility will will be attached to the south end of the Leidy Laboratories Building and house research laboratories, teaching facilities, and spaces designed for interactions to foster the kind of cross-disciplinary work that increasingly characterizes work in these fields.</description>
+		<description>An expansion of the Lynch Laboratories, this new building will provide for the collaboration, exchange, and integration of knowledge that characterizes the study of Biology and Psychology at Penn. The new Neural and Behavioral Sciences facility will will be attached to the south end of the Leidy Laboratories Building and house research laboratories, teaching facilities, and spaces designed for interactions to foster the kind of cross-disciplinary work that increasingly characterizes work in these fields.</description>
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
 		<hours_weekend></hours_weekend>
@@ -2912,7 +2912,7 @@
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0410-Spruce3905.pdf</pennaccessLink>
 	</location>
 	<location>
-		<name>St. Leonard's</name>
+		<name>St. Leonard's Court</name>
 		<address>3819 Chestnut Street, Philadelphia PA, 19104</address>
 		<lat>39.9557</lat>
 		<lng>-75.199501</lng>
@@ -2922,7 +2922,7 @@
 		<pennCardAccess>null</pennCardAccess>
 		<hours_regular></hours_regular>
 		<hours_weekend></hours_weekend>
-		<nicknames>St. Leonard&#039;s Court </nicknames>
+		<nicknames>St. Leonard's Court </nicknames>
 		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0522-StLeonards.pdf</pennaccessLink>
 	</location>
 	<location>
@@ -3429,6 +3429,7 @@
 		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
 	</location>
+	
 	<location>
                 <name>Produce Truck at 40th/Locust</name>
                 <address>40th and Locust Street, Philadelphia, PA, 19104</address>
@@ -3502,7 +3503,6 @@
                 <nicknames>Food Truck, Sandwiches</nicknames>
                 <pennaccessLink></pennaccessLink>
         </location>
-
 	<location>
                 <name>Tacos Don Memo</name>
                 <address>38th and Walnut/Chestnut Street, Philadelphia, PA, 19104</address>
@@ -3577,7 +3577,6 @@
                 <nicknames>Food Truck, American</nicknames>
                 <pennaccessLink></pennaccessLink>
         </location>
-
 	<location>
                 <name>Dulett's Jamaica Wings</name>
                 <address>38th and Walnut/Locust Street, Philadelphia, PA, 19104</address>
@@ -3621,5 +3620,707 @@
                 <nicknames>Food Truck, Jamaican</nicknames>
                 <pennaccessLink></pennaccessLink>
         </location>
+	<location>
+                <name>Bento Box</name>
+                <address>37th and Walnut Street, Philadelphia, PA, 19104</address>
+                <lat>39.9536</lat>
+                <lng>-75.1968</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>Asian, Japanese</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1100</open><close>1700</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+	<location>
+                <name>Curry on Wheels</name>
+                <address>37th and Walnut Street, Philadelphia, PA, 19104</address>
+                <lat>39.9536</lat>
+                <lng>-75.1968</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>Asian, Indian</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1100</open><close>2000</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+	<location>
+                <name>Ali Baba</name>
+                <address>37th and Walnut Street, Philadelphia, PA, 19104</address>
+                <lat>39.9536</lat>
+                <lng>-75.1968</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>Middle-Eastern</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>0800</open><close>1600</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+	<location>
+                <name>Kim's Oriental Food</name>
+                <address>37th and Walnut Street, Philadelphia, PA, 19104</address>
+                <lat>39.9536</lat>
+                <lng>-75.1968</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>Asian, Chinese</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1100</open><close>2000</close></hours_regular>
+                <hours_weekend><open>1200</open><close>2000</close></hours_weekend>
+                <nicknames>Food Truck</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+	<location>
+                <name>George's</name>
+                <address>37th and Walnut Street, Philadelphia, PA, 19104</address>
+                <lat>39.9536</lat>
+                <lng>-75.1968</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>American, Sandwiches</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>0700</open><close>1600</close></hours_regular>
+                <hours_weekend><open>1000</open><close>1700</close></hours_weekend>
+                <nicknames>Food Truck</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+        <location>
+                <name>Troy Mediterranean at 38th/Spruce</name>
+                <address>38th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9512</lat>
+                <lng>-75.1993</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>(610) 659-8855</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck, Middle-Eastern</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+	<location>
+                <name>Vienna Beef House of Dogs</name>
+                <address>37th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9513</lat>
+                <lng>-75.1973</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>American</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1000</open><close>1500</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck, American</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+	<location>
+                <name>Tang Chinese Food</name>
+                <address>36th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.951</lat>
+                <lng>-75.1953</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>(215) 939-5286, Asian/Chinese</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1100</open><close>1800</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+
+	<location>
+                <name>Lovash Indian Cuisine</name>
+                <address>37th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9513</lat>
+                <lng>-75.1973</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>Asian, Indian</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1000</open><close>1500</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+
+
+	<location>
+                <name>Fruit Truck at 37th/Spruce</name>
+                <address>37th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9513</lat>
+                <lng>-75.1973</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>Fruit</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1130</open><close>1630</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+
+	<location>
+                <name>Sonic's</name>
+                <address>37th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9513</lat>
+                <lng>-75.1973</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>American, Sandwiches</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>0830</open><close>1730</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck, American</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+
+
+	<location>
+                <name>Hemo's at 37th/Spruce</name>
+                <address>37th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9513</lat>
+                <lng>-75.1973</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>American, Sandwiches</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck, American</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+	<location>
+                <name>Khan Hotdog Cart</name>
+                <address>35th/36th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9507</lat>
+                <lng>-75.1948</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>American, Sandwiches</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>0730</open><close>1800</close></hours_regular>
+                <hours_weekend><open>0730</open><close>1800</close></hours_weekend>
+                <nicknames>Food Truck, American</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+
+
+	<location>
+                <name>Lucky's Mexican Spot</name>
+                <address>37th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9513</lat>
+                <lng>-75.1973</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>Mexican</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1030</open><close>1830</close></hours_regular>
+                <hours_weekend></hours_weekend>
+                <nicknames>Food Truck, Mexican</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+
+
+	<location>
+                <name>MexiPhilly</name>
+                <address>37th and Spruce Street, Philadelphia, PA, 19104</address>
+                <lat>39.9513</lat>
+                <lng>-75.1973</lng>
+                <code></code>
+                <num_code></num_code>
+                <description>Mexican</description>
+                <pennCardAccess>null</pennCardAccess>
+                <hours_regular><open>1000</open><close>1800</close></hours_regular>
+                <hours_weekend><open>1130</open><close>1630</close></hours_weekend>
+                <nicknames>Food Truck, Mexican</nicknames>
+                <pennaccessLink></pennaccessLink>
+        </location>
+<location>
+      <name>Alpha Chi Omega</name>
+      <address>3906 Spruce Street</address>
+      <lat>39.9511986</lat>
+      <lng>-75.2012939</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>AXO, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Alpha Chi Rho</name>
+      <address>219 S. 36th Street</address>
+      <lat>39.9525996</lat>
+      <lng>-75.1948493</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>AXR, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Alpha Phi</name>
+      <address>4045 Walnut</address>
+      <lat>39.95467</lat>
+      <lng>-75.2048416</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>Aphi, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Alpha Tau Omega</name>
+      <address>225 S. 39th Street</address>
+      <lat>39.9528705</lat>
+      <lng>-75.2003746</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>ATO, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Beta Theta Pi</name>
+      <address>3900 Spruce Street</address>
+      <lat>39.9511604</lat>
+      <lng>-75.2009888</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>Beta, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Chi Omega</name>
+      <address>3926 Spruce Street</address>
+      <lat>39.951525</lat>
+      <lng>-75.201466</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>XO, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Delta Delta Delta</name>
+      <address>4044 Spruce Street</address>
+      <lat>39.951685</lat>
+      <lng>-75.205049</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>Tri-delt, DDD, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Delta Kappa Epsilon</name>
+      <address>307 S. 39th Street</address>
+      <lat>39.950806</lat>
+      <lng>-75.200843</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>DKE, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Delta Phi</name>
+      <address>3627 Locust Walk</address>
+      <lat>39.952296</lat>
+      <lng>-75.196147</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>DP, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Delta Psi</name>
+      <address>3637 Locust Walk</address>
+      <lat>39.952253</lat>
+      <lng>-75.196447</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>Dpsi, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Delta Upsilon</name>
+      <address>3829 Walnut Street</address>
+      <lat>39.954048</lat>
+      <lng>-75.199892</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>DU, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Kappa Alpha Society</name>
+      <address>124 S. 39th Street</address>
+      <lat>39.954482</lat>
+      <lng>-75.200448</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Kappa Alpha Theta</name>
+      <address>130 S. 39th Street</address>
+      <lat>39.954317</lat>
+      <lng>-75.20048</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>KA, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Kappa Sigma</name>
+      <address>3706 Locust Walk</address>
+      <lat>39.952292</lat>
+      <lng>-75.197392</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>Kappa Sig, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Lambda Chi Alpha</name>
+      <address>128 S. 39th Street</address>
+      <lat>39.954373</lat>
+      <lng>-75.200472</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>Lambda Chi, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Phi Delta Theta</name>
+      <address>3700 Locust Walk</address>
+      <lat>39.952033</lat>
+      <lng>-75.197191</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>Phi Delt, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Phi Gamma Delta</name>
+      <address>3619 Locust Walk</address>
+      <lat>39.952312</lat>
+      <lng>-75.195891</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>PGD, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Phi Kappa Psi</name>
+      <address>3934 Spruce Street</address>
+      <lat>39.951349</lat>
+      <lng>-75.20247</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>PKP, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Pi Kappa Alpha</name>
+      <address>3916 Spruce Street</address>
+      <lat>39.951255</lat>
+      <lng>-75.201763</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>Pike, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Pi Kappa Phi</name>
+      <address>4040-4042 Walnut Street</address>
+      <lat>39.954079</lat>
+      <lng>-75.204651</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>Pi Kap, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Pi Lambda Phi</name>
+      <address>3914 Spruce Street</address>
+      <lat>39.952045</lat>
+      <lng>-75.202501</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Psi Upsilon</name>
+      <address>250 S. 36th Street</address>
+      <lat>39.952336</lat>
+      <lng>-75.194996</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>PU, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Sigma Alpha Epsilon</name>
+      <address>3908 Spruce Street</address>
+      <lat>39.951507</lat>
+      <lng>-75.201324</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>SAE, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Sigma Alpha Mu</name>
+      <address>3817 Walnut Street</address>
+      <lat>39.953778</lat>
+      <lng>-75.199489</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>SAM, SAMMY, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Sigma Chi</name>
+      <address>3809 Locust Walk</address>
+      <lat>39.95288</lat>
+      <lng>-75.199815</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>Sig Chi, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Sigma Delta Tau</name>
+      <address>3833 Walnut Street</address>
+      <lat>39.95407</lat>
+      <lng>-75.200065</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>SDT, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Sigma Kappa</name>
+      <address>3928 Spruce Street</address>
+      <lat>39.951315</lat>
+      <lng>-75.202209</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>SK, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Sigma Nu</name>
+      <address>3819 Walnut Street</address>
+      <lat>39.953761</lat>
+      <lng>-75.199592</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>Sig Nu, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Sigma Phi Epsilon</name>
+      <address>4028 Walnut Street</address>
+      <lat>39.953882</lat>
+      <lng>-75.204059</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>SPE, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Tau Epsilon Phi</name>
+      <address>3805 Walnut Street</address>
+      <lat>39.954062</lat>
+      <lng>-75.199105</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>TEP, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Theta Xi</name>
+      <address>4035 Walnut Street</address>
+      <lat>39.954541</lat>
+      <lng>-75.204332</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>Theta, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Zeta Beta Tau</name>
+      <address>235 S. 39th Street</address>
+      <lat>39.951962</lat>
+      <lng>-75.200351</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>ZBT, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Zeta Psi</name>
+      <address>3337 Walnut Street</address>
+      <lat>39.952665</lat>
+      <lng>-75.190798</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>Zeta, greek life</nicknames>
+      <pennaccessLink />
+   </location>
+   <location>
+      <name>Zeta Tau Alpha</name>
+      <address>4032 Walnut Street</address>
+      <lat>39.953919</lat>
+      <lng>-75.204233</lng>
+      <code></code>
+      <num_code></num_code>
+      <description>Fraternity or Sorority</description>
+      <pennCardAccess>null</pennCardAccess>
+      <hours_regular></hours_regular>
+      <hours_weekend></hours_weekend>
+      <nicknames>ZTA, Zeta, greek life</nicknames>
+      <pennaccessLink />
+   </location>
 
 </upenn>
