@@ -75,7 +75,13 @@ public class ExamLocationParser {
 				noDuplicates.add(x);
 			}
 		}
-		return (String[]) noDuplicates.toArray();
+		String[] toReturn = new String[noDuplicates.size()];
+		int i=0;
+		for (String x:noDuplicates){
+			toReturn[i]=x;
+			i++;
+		}
+		return toReturn;
 	}
 
 	public String[] convertToBuildingCodes(String[] input) {
