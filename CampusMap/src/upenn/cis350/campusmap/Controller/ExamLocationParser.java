@@ -7,8 +7,11 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class ExamLocationParser {
 
@@ -64,6 +67,16 @@ public class ExamLocationParser {
 			e.printStackTrace();
 		}
 	}
+	
+	public String[] removeDuplicates(String[] input) {
+		Set<String> noDuplicates = new HashSet<String>();
+		for (String x:input){
+			if (!noDuplicates.contains(x)){
+				noDuplicates.add(x);
+			}
+		}
+		return (String[]) noDuplicates.toArray();
+	}
 
 	public String[] convertToBuildingCodes(String[] input) {
 		String[] output = new String[input.length];
@@ -76,6 +89,6 @@ public class ExamLocationParser {
 			}
 			i++;
 		}
-		return output;
+		return removeDuplicates(output);
 	}
 }
