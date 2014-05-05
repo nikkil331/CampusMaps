@@ -4,7 +4,15 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.URL;
 import java.util.HashMap;
+
+import android.content.res.AssetManager;
+import android.content.res.Resources;
+import android.util.Log;
 
 
 public class ClassLocationParser {
@@ -12,13 +20,24 @@ public class ClassLocationParser {
 	private BufferedReader r;
 	public ClassLocationParser(String fileLocation) {
 		// TODO Auto-generated constructor stub
+		URL fileLoc;
+		InputStream is;
+//		if (Internet.hasActiveInternetConnection(MainActivity.c)){
+//			fileLoc = new URL(this.fileLocation);
+		//URLConnection uc = fileLoc.openConnection();
+		// is = uc.getInputStream();
+		// 
+//		}
+//		else {
+			Log.v("internet error", "There was an internet error");
+			Resources R = MainActivity.c.getResources();
+			is = (R.openRawResource(
+		            R.getIdentifier("raw/buildings",
+		                    "raw", MainActivity.c.getPackageName())));
+//		}
 		classToLocation = new HashMap<String, String>();
-		try {
-			r = new BufferedReader (new FileReader(fileLocation));
-		} catch (FileNotFoundException e) {
-			System.out.println("Could not find reader");
-			e.printStackTrace();
-		}
+		Reader reader = new InputStreamReader(is);
+		r = new BufferedReader (reader);
 	}
 	
 	public void bigparse() throws IOException {
