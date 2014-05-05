@@ -67,12 +67,11 @@ public class GeneralSearcher extends Searcher {
 
 	private List<Building> getBuildingFromClass(String query) {
 		List<Building> toReturn = new ArrayList<Building>();
-		if (clp.getMap().containsKey(query.split(" ")[0])) {
-			toReturn.addAll(getBuildingFromCode(clp.getMap().get(
-					query.split(" ")[0])));
+		String q = query.split(" ")[0].toUpperCase();
+		if (clp.getMap().containsKey(q)) {
+			toReturn.addAll(getBuildingFromCode(clp.getMap().get(q)));
 		} else
-			toReturn.addAll(getBuildingsFromGoogle(clp.getMap().get(
-					query.split(" ")[0])));
+			toReturn.addAll(getBuildingsFromGoogle(clp.getMap().get(q)));
 		return toReturn;
 	}
 
