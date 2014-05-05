@@ -663,7 +663,7 @@
 		<address>209 South 33rd Street, Philadelphia PA, 19104</address>
 		<lat>39.952099</lat>
 		<lng>-75.189903</lng>
-		<code></code>
+		<code>DRLB</code>
 		<num_code>510</num_code>
 		<description>The original wing is a red brick structure that is adjacent to Shoemaker Green next to the Palestra. The addition is in a more modern style, and faces Walnut Street. DRL is home to the Department of Mathematics, the Department of Physics and Astronomy, and the Multi-Media and Educational Technology Services center. DRL contains the Mathematics, Physics and Astronomy Library. The building is named after David Rittenhouse (1731-1796), who was professor of astronomy at Penn, the first director of the United States Mint, and president of the American Philosophical Society.</description>
 		<pennCardAccess>null</pennCardAccess>
@@ -1804,20 +1804,6 @@
 		<hours_weekend></hours_weekend>
 		<nicknames></nicknames>
 		<pennaccessLink>null</pennaccessLink>
-	</location>
-	<location>
-		<name>Math/Physics/Astronomy Library - DRL</name>
-		<address>209 South 33rd Street, Philadelphia PA, 19104</address>
-		<lat>39.952099</lat>
-		<lng>-75.190002</lng>
-		<code>DRLB</code>
-		<num_code>510</num_code>
-		<description>The original wing is a red brick structure that is adjacent to Shoemaker Green next to the Palestra. The addition is in a more modern style, and faces Walnut Street. DRL is home to the Department of Mathematics, the Department of Physics and Astronomy, and the Multi-Media and Educational Technology Services center. DRL contains the Mathematics, Physics and Astronomy Library. The building is named after David Rittenhouse (1731-1796), who was professor of astronomy at Penn, the first director of the United States Mint, and president of the American Philosophical Society.</description>
-		<pennCardAccess>null</pennCardAccess>
-		<hours_regular><open>0700</open><close>2300</close></hours_regular>
-		<hours_weekend><open>0700</open><close>1800</close><tag>1</tag></hours_weekend>
-		<nicknames>DRL, DRLB</nicknames>
-		<pennaccessLink>http://www.facilities.upenn.edu/sites/default/files/pennaccess/PA0510-DRLL.pdf</pennaccessLink>
 	</location>
 	<location>
 		<name>Mayer Residence Hall (Stouffer College House)</name>
