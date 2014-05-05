@@ -1,5 +1,4 @@
 package upenn.cis350.campusmap.Controller;
-
 import java.io.*;
 import java.util.*;
 
@@ -12,6 +11,9 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.util.*;
 
 @SuppressLint("NewApi")
@@ -51,7 +53,7 @@ public class GeneralSearcher extends Searcher {
 		switch (code) {
 		case 1:
 			return getBuildingFromName(query);
-		case 2: 
+		case 2:
 			return getBuildingFromCode(query);
 		case 3:
 			return getBuildingFromExam(query);
@@ -61,12 +63,37 @@ public class GeneralSearcher extends Searcher {
 	}
 
 	private List<Building> getBuildingFromExam(String query) {
-		//System.out.println(query.split(" ")[0]);
-		String[] x = pp.convertToBuildingCodes(pp.getMap().get(
-				query.split(" ")[0]));
+		// System.out.println(query.split(" ")[0]);
 		List<Building> toReturn = new ArrayList<Building>();
-		for (String i : x) {
-			toReturn.addAll(getBuildingFromCode(i));
+		if (pp.getMap().containsKey(query.split(" ")[0])) {
+
+			String[] x = pp.convertToBuildingCodes(pp.getMap().get(
+					query.split(" ")[0]));
+
+			for (String i : x) {
+				toReturn.addAll(getBuildingFromCode(i));
+			}
+		} else if (pp.examLocsDefaults.containsKey(query.split(" ")[0])) {
+			Map<String, String[]> x = (pp.examLocsDefaults
+					.get(query.split(" ")[0]));
+
+			for (String out : x.keySet()) {
+				for (String i : x.get(out)) {
+					String y = new String();
+					if (x.equals("VAN PELT FILM CENTER")) {
+						y = i;
+					} else {
+						y = i.substring(0, i.indexOf(' '));
+					}
+					toReturn.addAll(getBuildingFromCode(y));
+					for (Building b : toReturn) {
+						b.setName(b.getName()+" - For Class: "+out);
+
+					}
+				}
+			}
+		} else{
+			toReturn = getBuildingFromCode(query);
 		}
 		return toReturn;
 	}

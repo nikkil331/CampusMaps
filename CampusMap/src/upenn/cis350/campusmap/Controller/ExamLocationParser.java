@@ -17,6 +17,7 @@ public class ExamLocationParser {
 
 	private BufferedReader br;
 	private Map<String, String[]> examLocs;
+	protected Map<String, Map<String, String[]>> examLocsDefaults;
 
 	ExamLocationParser(String strURL) {
 		InputStream iStream = null;
@@ -36,6 +37,7 @@ public class ExamLocationParser {
 			br = new BufferedReader(new InputStreamReader(iStream));
 
 			examLocs = new HashMap<String, String[]>();
+			examLocsDefaults = new HashMap<String, Map<String, String[]>>();
 		} catch (MalformedURLException e) {
 			System.out.println("Malformed URL: " + e.getMessage());
 		} catch (IOException e) {
@@ -63,12 +65,18 @@ public class ExamLocationParser {
 					locations[i] = locations[i].trim();
 				}
 				String[] numberDashes = temp.split("-");
-				String temp1=numberDashes[0] +"-"+ numberDashes[1];
 				if (numberDashes.length > 2) {
-					if (!examLocs
-							.containsKey(temp1)) {
-						examLocs.put(temp1,
-								locations);
+					String temp1 = numberDashes[0] + "-" + numberDashes[1];
+					
+					if (!examLocsDefaults.containsKey(temp1)) {
+						Map<String,String[]> w = new HashMap<String,String[]>();
+						w.put(temp, locations);
+						examLocsDefaults.put(temp1,w);
+					} else {
+						Map<String,String[]> temp3 = examLocsDefaults.get(temp1);
+						examLocsDefaults.remove(temp1);
+						temp3.put(temp, locations);
+						examLocsDefaults.put(temp1, temp3);
 					}
 				}
 				examLocs.put(temp, locations);
@@ -95,14 +103,14 @@ public class ExamLocationParser {
 	}
 
 	public String[] convertToBuildingCodes(String[] input) {
-		if (input==null){
+		if (input == null) {
 			System.out.println("Why would you do this, passed in a null");
 		}
 		String[] output = new String[input.length];
 		int i = 0;
 		for (String x : input) {
 			if (x.equals("VAN PELT FILM CENTER")) {
-				output[i] = input[i];
+				output[i] = x;
 			} else {
 				output[i] = x.substring(0, x.indexOf(' '));
 			}
