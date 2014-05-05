@@ -79,7 +79,6 @@ public class MainActivity extends Activity implements OnTouchListener {
 	public Searcher currSearcher;
 	private final int ResultsActivity_ID = 1;
 	private final int InBuildingActivity_ID = 2;
-	private MyLocationListener mLocationListener;
 	private LocationManager mLocationManager;
 	private Location currLoc;
 
@@ -88,50 +87,10 @@ public class MainActivity extends Activity implements OnTouchListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.loading);
 		this.mLocationManager = (LocationManager) this.getSystemService(LOCATION_SERVICE);
-		this.mLocationListener = new MyLocationListener();
 		OnStart startTask = new OnStart();
 		startTask.execute(this);
 	}
 	
-//	@Override
-//	protected void onResume() {
-//		String provider = LocationManager.GPS_PROVIDER;
-//		long minTime = 10000;
-//		float minDistance = 0;
-//		mLocationManager.requestLocationUpdates(provider, minTime, minDistance, mLocationListener);
-//	}
-	
-//	@Override
-//	protected void onPause() {
-//		mLocationManager.removeUpdates(mLocationListener);
-//	}
-	public class MyLocationListener implements LocationListener {
-
-		@Override
-		public void onLocationChanged(Location location) {
-			// TODO Auto-generated method stub
-			currLoc = location;
-		}
-
-		@Override
-		public void onProviderDisabled(String provider) {
-			// TODO Auto-generated method stub
-			
-		}
-
-		@Override
-		public void onProviderEnabled(String provider) {
-			// TODO Auto-generated method stub
-			
-		}
-
-		@Override
-		public void onStatusChanged(String provider, int status, Bundle extras) {
-			// TODO Auto-generated method stub
-			
-		}
-		
-	}
 	
 	private class OnStart extends AsyncTask<MainActivity, Void, Boolean>{
 		private MainActivity activity;
