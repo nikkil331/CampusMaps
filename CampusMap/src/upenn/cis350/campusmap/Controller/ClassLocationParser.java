@@ -58,6 +58,7 @@ public class ClassLocationParser {
 			if (x.length() > 20) test = x.substring(0, 20).contains("-");
 		}
 		String subject = x.substring(0, x.indexOf('-')+4);
+		subject = subject.replaceAll("-", " ");
 		if (!r.ready()) return;
 		while(individParse(subject, r.readLine()));
 		if (!r.ready()) return;
