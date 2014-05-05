@@ -96,19 +96,14 @@ public class MainActivity extends Activity implements OnTouchListener {
 			
 			getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 			current = new GPSTracker(activity);
-			LocationManager lm = (LocationManager) getSystemService(LOCATION_SERVICE);
-			Criteria crit = new Criteria();
-			String provider = lm.getBestProvider(crit, true);
-			Location currLoc = lm.getLastKnownLocation(provider);
-			curr = new LatLng(currLoc.getLatitude(), currLoc.getLongitude());
-//			if(current != null && current.getLocation() != null)
-//			{
-//				curr = new LatLng (current.getLocation().getLatitude(),current.getLocation().getLongitude());
-//			}
-//			else
-//			{
-//				curr = new LatLng(39.953183,-75.194791);
-//			}
+			if(current != null && current.getLocation() != null)
+			{
+				curr = new LatLng (current.getLocation().getLatitude(),current.getLocation().getLongitude());
+			}
+			else
+			{
+				curr = new LatLng(39.953183,-75.194791);
+			}
 			activity.markerPoints = new ArrayList<LatLng>();
 			getFloorPlans();
 			//show loading page
