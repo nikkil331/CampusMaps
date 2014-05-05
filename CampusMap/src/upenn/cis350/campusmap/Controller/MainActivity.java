@@ -93,18 +93,18 @@ public class MainActivity extends Activity implements OnTouchListener {
 		startTask.execute(this);
 	}
 	
-	@Override
-	protected void onResume() {
-		String provider = LocationManager.GPS_PROVIDER;
-		long minTime = 10000;
-		float minDistance = 0;
-		mLocationManager.requestLocationUpdates(provider, minTime, minDistance, mLocationListener);
-	}
+//	@Override
+//	protected void onResume() {
+//		String provider = LocationManager.GPS_PROVIDER;
+//		long minTime = 10000;
+//		float minDistance = 0;
+//		mLocationManager.requestLocationUpdates(provider, minTime, minDistance, mLocationListener);
+//	}
 	
-	@Override
-	protected void onPause() {
-		mLocationManager.removeUpdates(mLocationListener);
-	}
+//	@Override
+//	protected void onPause() {
+//		mLocationManager.removeUpdates(mLocationListener);
+//	}
 	public class MyLocationListener implements LocationListener {
 
 		@Override
@@ -372,13 +372,13 @@ public class MainActivity extends Activity implements OnTouchListener {
 		if(current == null){
 			current = new GPSTracker(this);
 		}
-//		double longitude = -75.193576;
-//		double latitude = 39.952641;
-//		if(current.getLocation() != null){
-//			longitude = current.getLocation().getLongitude();
-//			latitude = current.getLocation().getLatitude();
-//		}
-		curr = new LatLng (this.currLoc.getLatitude(), this.currLoc.getLongitude());
+		double longitude = -75.193576;
+		double latitude = 39.952641;
+		if(current.getLocation() != null){
+			longitude = current.getLocation().getLongitude();
+			latitude = current.getLocation().getLatitude();
+		}
+		curr = new LatLng (latitude, longitude);
 		start.position(curr).title("You Are Here").icon(BitmapDescriptorFactory
 				.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
 
