@@ -4,27 +4,28 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-import facebook4j.*;
-import facebook4j.auth.AccessToken;
+//import facebook4j.*;
+//import facebook4j.auth.AccessToken;
 public class GetEvents {
 	
-	private Facebook facebook;
+	//private Facebook facebook;
 	
 	public GetEvents(String accessToken) { 
-		facebook = new FacebookFactory().getInstance();
+		/*facebook = new FacebookFactory().getInstance();
 		facebook.setOAuthAppId("708959602495764", "94192c9abfb090f95891fa1681b0c620");
 		facebook.setOAuthPermissions("email,public_profile,user_friends");
-		facebook.setOAuthAccessToken(new AccessToken(accessToken, null));
+		facebook.setOAuthAccessToken(new AccessToken(accessToken, null));*/
 	}
 	
 	public String getName() {
-		try {
+		/*try {
 			return facebook.users().getMe().getFirstName() + " " +
 			    facebook.users().getMe().getLastName();
 		} catch (FacebookException e) {
 			e.printStackTrace();
 			return null;
-		}
+		}*/
+		return null;
 	}
 	
 	public Set<Event> allEvents() {

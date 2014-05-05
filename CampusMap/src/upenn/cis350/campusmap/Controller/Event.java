@@ -7,6 +7,8 @@ public class Event {
 	private String name;
 	private String description;
 	private String id;
+	private double lat;
+	private double lng;
 	
 	public Event(String id) {
 		this.id = id;
@@ -26,6 +28,21 @@ public class Event {
 		endTime = end;
 	}
 	
+	public void setLatLong(double latitude, double longitude)
+	{
+		lat = latitude;
+		lng = longitude;
+	}
+	
+	public double getLatitude()
+	{
+		return lat;
+	}
+	
+	public double getLongitude()
+	{
+		return lng;
+	}
 	public String getName() {
 		return name;
 	}

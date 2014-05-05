@@ -11,6 +11,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
@@ -154,10 +155,53 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 			}else if(item.getTitle().equals("Get Events for the next 24 Hours"))
 			{
 				Set<Event> eventsFor24 = events.todayEvents();
+				Iterator<Event> iter = eventsFor24.iterator();
+				while(iter.hasNext())
+				{
+					Event e = iter.next();
+					if(isWithinBounds(e)) {
+							iter.remove();
+					}
+				}
+				
+				List<Building> eventBuilding = new LinkedList<Building>();
+				Building minStartTimeEventLocation = null;
+				long minStartTime = Long.MAX_VALUE;
+				while(iter.hasNext())
+				{
+					Event e = iter.next();
+					Building b = new Building(e.getLongitude(),e.getLatitude(),e.getId(),"EVENT",e.getName(),e.getVenue());
+					eventBuilding.add(b);
+					if(e.getStartTime() < minStartTime)
+					{
+						minStartTime = e.getStartTime();
+						minStartTimeEventLocation = b;
+					}
+				}
+				
+				mapAllEvents(minStartTimeEventLocation, eventBuilding);
 				
 			}
 			Toast.makeText(MainActivity.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();  
               return true; 
+		}
+
+		private void mapAllEvents(Building b,
+				List<Building> eventBuilding) {
+			mMap.clear();
+			mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
+			LatLng position = new LatLng(b.getLatitude(), b.getLongitude());
+			if (pinMark != null) pinMark.removePin();
+			pinMark = new Pin (mMap, b);
+			mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 16));
+			pinMark.addPin();
+			pinInfoText();
+			for(Building build : eventBuilding)
+			{
+				
+			}
+			mMap.setMyLocationEnabled(true);
+			
 		}  
      }
 	
@@ -224,15 +268,16 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 		return tooNorth || tooSouth || tooWest|| tooEast;
 	}
 	
-	/*private boolean isWithinBounds(Event e)
+	private boolean isWithinBounds(Event e)
 	{
 		boolean tooNorth = e.getLatitude() > Double.parseDouble(getString(R.string.latitude_north));
 		boolean tooSouth = e.getLatitude() < Double.parseDouble(getString(R.string.latitude_south));
 		boolean tooWest = e.getLongitude() < Double.parseDouble(getString(R.string.longitude_west));
 		boolean tooEast = e.getLongitude() > Double.parseDouble(getString(R.string.longitude_east));
 		return tooNorth || tooSouth || tooWest|| tooEast;
-	}*/
+	}
 
+	@Override
 	public void receiveSearchResults(List<Building> buildings){
 		Log.v("MainActivity", "receiving results...");
 		currResults = buildings;

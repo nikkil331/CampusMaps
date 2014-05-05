@@ -1,5 +1,8 @@
 package upenn.cis350.campusmap.Controller;
 
+
+import upenn.cis350.campusmap.R;
+
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
@@ -72,6 +75,19 @@ public class Pin {
 		m.position(new LatLng(latitude, longitude));
 		m.title(title);
 		this.setColor();
+		m.draggable(false);
+		mark = nMap.addMarker(m);
+	}
+	
+	public void addEventPin() {
+		if (m != null) {
+			m.visible(false);
+		}
+		m = new MarkerOptions();
+		m.position(new LatLng(latitude, longitude));
+		m.title(title);
+		this.setColor();
+		m.icon(BitmapDescriptorFactory.fromResource(R.drawable.event));
 		m.draggable(false);
 		mark = nMap.addMarker(m);
 	}
