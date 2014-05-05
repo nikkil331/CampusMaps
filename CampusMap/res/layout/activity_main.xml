@@ -34,15 +34,25 @@
 		    	android:hint="Search"
 		    	android:padding="8dp"
 		    	android:textSize="20dp" />
+			
+			<ImageButton
+		    	android:id="@+id/fbbutton"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="match_parent"
+		    	android:layout_weight=".10"
+		    	android:background="@android:color/transparent"
+		    	android:onClick="onFBClick"
+		    	android:src="@drawable/fbbutton" />
 
 			<ImageButton
 		    	android:id="@+id/button1"
 		    	android:layout_width="wrap_content"
 		    	android:layout_height="match_parent"
-		    	android:layout_weight=".22"
+		    	android:layout_weight=".10"
 		    	android:background="@android:color/transparent"
 		    	android:onClick="onSearchClick"
 		    	android:src="@drawable/search" />
+			
 	
     	</LinearLayout>
     </FrameLayout>
