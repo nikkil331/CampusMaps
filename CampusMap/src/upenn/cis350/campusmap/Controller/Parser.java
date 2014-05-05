@@ -23,7 +23,7 @@ import android.util.Log;
 import android.content.res.Resources;
 
 public class Parser {
-	private HashSet<Building> buildings;
+	public HashSet<Building> buildings;
 	private HashMap<String, Building> nameMap;
 	private HashMap<String, Building> codeMap;
 	private HashMap<String, Building> nicknameMap;

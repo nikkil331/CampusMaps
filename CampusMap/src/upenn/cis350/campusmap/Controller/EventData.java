@@ -9,7 +9,7 @@ public class EventData {
 	public EventData() {
 		events = new HashSet<Event>();
 		
- 		timeNow = System.currentTimeMillis();
+		timeNow = System.currentTimeMillis();
 		
 		Event a = new Event("001");
 		a.setName("Quadramics Presents: Hair");
