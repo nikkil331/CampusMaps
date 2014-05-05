@@ -58,9 +58,22 @@ public class GeneralSearcher extends Searcher {
 			return getBuildingFromCode(query);
 		case 3:
 			return getBuildingFromExam(query);
+		case 4:
+			return getBuildingFromClass(query);
 		default:
 			return getBuildingsFromGoogle(query);
 		}
+	}
+
+	private List<Building> getBuildingFromClass(String query) {
+		List<Building> toReturn = new ArrayList<Building>();
+		if (clp.getMap().containsKey(query.split(" ")[0])) {
+			toReturn.addAll(getBuildingFromCode(clp.getMap().get(
+					query.split(" ")[0])));
+		} else
+			toReturn.addAll(getBuildingsFromGoogle(clp.getMap().get(
+					query.split(" ")[0])));
+		return toReturn; 
 	}
 
 	private List<Building> getBuildingFromExam(String query) {
@@ -149,6 +162,11 @@ public class GeneralSearcher extends Searcher {
 		if (qq.length == 2) {
 			if (qq[1].toLowerCase().equals("exam")) {
 				return 3;
+			}
+		}
+		if (qq.length == 2) {
+			if (qq[1].toLowerCase().equals("class")) {
+				return 4;
 			}
 		}
 		if ((q.length() == 4 || q.length() == 3) && q.split(" ").length == 1) {
