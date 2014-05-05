@@ -291,12 +291,6 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 				pinBuilding(extras.getInt("listIndex", 0));
 			}
 		}
-		if(requestCode == StartPointsActivity_ID){
-			Bundle extras = intent.getExtras();
-			if (extras != null) {
-				curr = new LatLng(extras.getDouble("latitude"), extras.getDouble("longitude"));
-			}
-		}
 	}
 
 
