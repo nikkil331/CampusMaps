@@ -153,12 +153,31 @@ public class MainActivity extends OurActivity implements OnTouchListener, OnClic
 	private class EventsMenuItemClickListener implements PopupMenu.OnMenuItemClickListener {  
 		@Override
 		public boolean onMenuItemClick(MenuItem item) {
-			GetEvents events = new GetEvents("708959602495764");
+			GetEvents events = new GetEvents(null);
 			if(item.getTitle().equals("Get All Events"))
 			{
+				Set<Event> allEvents = events.allEvents();
+				HashSet<Event> eventInRange = new HashSet<Event>();
+				for(Event e : allEvents)
+				{
+					if(!isWithinBounds(e)) {
+							eventInRange.add(e);
+					}
+				}
 				
+				ArrayList<String> names = new ArrayList<String>();
+				ArrayList<String> addresses = new ArrayList<String>();
 				
-			}else if(item.getTitle().equals("Get Events for the next 24 Hours"))
+				for(Event e : eventInRange)
+				{
+					names.add(e.getName());
+					addresses.add(e.getVenue());
+				}	
+				
+				return startIntent(names, addresses);
+				
+			}
+			else if(item.getTitle().equals("Get Events for today"))
 			{
 				Set<Event> eventsFor24 = events.todayEvents();
 				HashSet<Event> eventInRange = new HashSet<Event>();
@@ -187,8 +206,7 @@ public class MainActivity extends OurActivity implements OnTouchListener, OnClic
 				mapAllEvents(minStartTimeEventLocation, eventBuilding);
 				
 			}
-			Toast.makeText(MainActivity.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();  
-              return true; 
+			return true; 
 		}
 
 		private void mapAllEvents(Building b,
@@ -219,6 +237,18 @@ public class MainActivity extends OurActivity implements OnTouchListener, OnClic
 		Log.v("MainActivity", "clicking");
 		OnStart startTask = new OnStart();
 		startTask.execute(this);
+	}
+	
+	public boolean startIntent(ArrayList<String> names, ArrayList<String> addresses)
+	{
+		Intent i = new Intent(this, ResultsActivity.class);
+		Bundle bundle = new Bundle();
+		bundle.putStringArrayList("addresses", addresses);
+		bundle.putStringArrayList("names", names);
+		i.putExtras(bundle);
+		startActivityForResult(i, ResultsActivity_ID);
+		return true;
+		
 	}
 	
 	private void getFloorPlans(){

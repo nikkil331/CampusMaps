@@ -6,5 +6,5 @@
 
     <item  
         android:id="@+id/nextDay"  
-        android:title="Get Events for the next 24 Hours"/>   
+        android:title="Get Events for today"/>   
 </menu>
