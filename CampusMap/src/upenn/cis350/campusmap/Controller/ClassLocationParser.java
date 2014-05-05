@@ -8,6 +8,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.URL;
+import java.net.URLConnection;
 import java.util.HashMap;
 
 import android.content.res.AssetManager;
@@ -21,32 +22,39 @@ public class ClassLocationParser {
 	public ClassLocationParser(String fileLocation) {
 		// TODO Auto-generated constructor stub
 		URL fileLoc;
-		InputStream is;
-//		if (Internet.hasActiveInternetConnection(MainActivity.c)){
-//			fileLoc = new URL(this.fileLocation);
-		//URLConnection uc = fileLoc.openConnection();
-		// is = uc.getInputStream();
-		// 
-//		}
-//		else {
+		InputStream is = null;
+		boolean i = false;
+		if (Internet.hasActiveInternetConnection(MainActivity.c)){
+			try {
+				fileLoc = new URL(fileLocation);
+				URLConnection uc = fileLoc.openConnection();
+				is = uc.getInputStream();
+				i = true;
+			}
+			catch (Exception e) {
+				e.printStackTrace();
+			}
+
+		}
+		if (!i) {
 			Log.v("internet error", "There was an internet error");
 			Resources R = MainActivity.c.getResources();
 			is = (R.openRawResource(
-		            R.getIdentifier("raw/class_locations",
-		                    "raw", MainActivity.c.getPackageName())));
-//		}
+					R.getIdentifier("raw/class_locations",
+							"raw", MainActivity.c.getPackageName())));
+		}
 		classToLocation = new HashMap<String, String>();
 		Reader reader = new InputStreamReader(is);
 		r = new BufferedReader (reader);
 	}
-	
+
 	public void bigparse() throws IOException {
 		String x = "";
 		boolean test = false;
 		while (!test) {
 			if (!r.ready()) return;
 			x = r.readLine();
-		//	if (x.contains("ACCT-102")) System.out.println("contains in bp");
+			//	if (x.contains("ACCT-102")) System.out.println("contains in bp");
 			if (x.length() > 20) test = x.substring(0, 20).contains("-");
 		}
 		String subject = x.substring(0, x.indexOf('-')+4);
@@ -55,20 +63,20 @@ public class ClassLocationParser {
 		if (!r.ready()) return;
 		bigparse();
 	}
-	
+
 	public boolean individParse(String x, String nextLine) throws IOException {
 		String add = x;
 		boolean subsection = false;
 		if (nextLine == null) {
 			return false;
 		}
-	//	if (nextLine.contains("ACCT-102")) System.out.println("contains in first indP");
+		//	if (nextLine.contains("ACCT-102")) System.out.println("contains in first indP");
 		if (nextLine.length() > 1) {
 			subsection = Character.isDigit(nextLine.charAt(1));
 		}
 		else {
-		//	System.out.println("gets to end");
-		//	printMap();
+			//	System.out.println("gets to end");
+			//	printMap();
 			return false;
 		}
 		while (!subsection) {
@@ -76,7 +84,7 @@ public class ClassLocationParser {
 			if (nextLine == null) {
 				return false;
 			}
-	//		if (nextLine.contains("ACCT-102")) System.out.println("contains in second indP");
+			//		if (nextLine.contains("ACCT-102")) System.out.println("contains in second indP");
 			if (nextLine.length() > 2) {
 				subsection = Character.isDigit(nextLine.charAt(1));
 			}
@@ -91,18 +99,18 @@ public class ClassLocationParser {
 
 		return true;
 	}
-	
+
 	public void printMap() {
 		for (String x : this.classToLocation.keySet()) {
 			String y = this.classToLocation.get(x);
 			System.out.println("class: " + x + ", location: " + y);
 		}
 	}
-	
+
 	public HashMap<String, String> getMap() {
 		return this.classToLocation;
 	}
-	
+
 	public static void main (String [] args) {
 		ClassLocationParser cp = new ClassLocationParser("Class_Locations.txt");
 		try {
