@@ -61,6 +61,7 @@ public class GeneralSearcher extends Searcher {
 	}
 
 	private List<Building> getBuildingFromExam(String query) {
+		//System.out.println(query.split(" ")[0]);
 		String[] x = pp.convertToBuildingCodes(pp.getMap().get(
 				query.split(" ")[0]));
 		List<Building> toReturn = new ArrayList<Building>();
@@ -119,7 +120,7 @@ public class GeneralSearcher extends Searcher {
 		String q = query.trim();
 		String[] qq = q.split(" ");
 		if (qq.length == 2) {
-			if (qq[1].equals("Exam")) {
+			if (qq[1].toLowerCase().equals("exam")) {
 				return 3;
 			}
 		}

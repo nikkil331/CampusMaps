@@ -63,10 +63,11 @@ public class ExamLocationParser {
 					locations[i] = locations[i].trim();
 				}
 				String[] numberDashes = temp.split("-");
+				String temp1=numberDashes[0] +"-"+ numberDashes[1];
 				if (numberDashes.length > 2) {
 					if (!examLocs
-							.containsKey(numberDashes[0] + numberDashes[1])) {
-						examLocs.put(numberDashes[0] + numberDashes[1],
+							.containsKey(temp1)) {
+						examLocs.put(temp1,
 								locations);
 					}
 				}
@@ -94,6 +95,9 @@ public class ExamLocationParser {
 	}
 
 	public String[] convertToBuildingCodes(String[] input) {
+		if (input==null){
+			System.out.println("Why would you do this, passed in a null");
+		}
 		String[] output = new String[input.length];
 		int i = 0;
 		for (String x : input) {
