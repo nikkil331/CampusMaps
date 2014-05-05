@@ -2,10 +2,12 @@ package upenn.cis350.campusmap.Controller;
 
 import java.io.IOException;
 import java.util.List;
+
+import android.app.Activity;
 import android.os.AsyncTask;
 
 public abstract class Searcher extends AsyncTask<String, Void, List<Building>> {
-	protected MainActivity activity;
+	protected Activity activity;
 	protected Parser p;
 	protected ExamLocationParser pp;
 	protected ClassLocationParser clp;
