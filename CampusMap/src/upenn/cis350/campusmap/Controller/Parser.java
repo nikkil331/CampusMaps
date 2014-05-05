@@ -14,6 +14,8 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
+import android.util.Log;
+
 public class Parser {
 	private HashSet<Building> buildings;
 	private HashMap<String, Building> nameMap;
@@ -37,17 +39,24 @@ public class Parser {
 	public void Parse() {
 
 		try {
-			
-				URL fileLoc = new URL(this.fileLocation);
-			    URLConnection uc = fileLoc.openConnection();
-			
-
-			//File file = new File("C:/Users/Max/Documents/GitHub/CampusMaps/buildings.xml");
-
+			Document doc;
 			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance()
 					.newDocumentBuilder();
+			URL fileLoc;
+//			if (Internet.hasActiveInternetConnection(MainActivity.c)){
+//				fileLoc = new URL(this.fileLocation);
+//			}
+//			else {
+				Log.v("internet error", "There was an internet error");
+				fileLoc = new URL("file:///android_asset/buildings.xml");
+//			}
 
-			Document doc = dBuilder.parse(uc.getInputStream());
+			URLConnection uc = fileLoc.openConnection();
+			doc = dBuilder.parse(uc.getInputStream());
+			//File file = new File("C:/Users/Max/Documents/GitHub/CampusMaps/buildings.xml");
+
+			
+			
 
 			// normalize text representation
 			doc.getDocumentElement().normalize();
