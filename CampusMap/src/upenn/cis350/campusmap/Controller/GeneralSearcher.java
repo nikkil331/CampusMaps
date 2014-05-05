@@ -1,4 +1,5 @@
 package upenn.cis350.campusmap.Controller;
+
 import java.io.*;
 import java.util.*;
 
@@ -86,13 +87,12 @@ public class GeneralSearcher extends Searcher {
 						y = i.substring(0, i.indexOf(' '));
 					}
 					toReturn.addAll(getBuildingFromCode(y));
-					for (Building b : toReturn) {
-						b.setName(b.getName()+" - For Class: "+out);
-
-					}
+				}
+				for (Building b : toReturn) {
+					b.setName(b.getName() + " - For Class: " + out);
 				}
 			}
-		} else{
+		} else {
 			toReturn = getBuildingFromCode(query);
 		}
 		return toReturn;
