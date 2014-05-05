@@ -125,14 +125,6 @@ public class StartPointsActivity extends OurActivity implements OnTouchListener 
 		return false;
 	}
 	
-	public void goNavigate(View v) {
-		Intent i = new Intent(this, StartPointsActivity.class);
-		Bundle b = new Bundle();
-		b.putString("name", pinMark.getBuilding().getName());
-		i.putExtras(b);
-		startActivityForResult(i, StartPointsActivity_ID);
-	}
-	
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent intent){
 		super.onActivityResult(requestCode, resultCode, intent);

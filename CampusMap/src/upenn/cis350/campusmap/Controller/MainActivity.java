@@ -329,6 +329,15 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 		return;
 	}
 
+	
+	public void goNavigate(View v) {
+		Intent i = new Intent(this, StartPointsActivity.class);
+		Bundle b = new Bundle();
+		b.putString("name", pinMark.getBuilding().getName());
+		i.putExtras(b);
+		startActivityForResult(i, StartPointsActivity_ID);
+	}
+	
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent intent){
 		super.onActivityResult(requestCode, resultCode, intent);
@@ -336,6 +345,12 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 			Bundle extras = intent.getExtras();
 			if(extras != null){
 				pinBuilding(extras.getInt("listIndex", 0));
+			}
+		}
+		if(requestCode == StartPointsActivity_ID){
+			Bundle extras = intent.getExtras();
+			if (extras != null) {
+				curr = new LatLng(extras.getDouble("latitude"), extras.getDouble("longitude"));
 			}
 		}
 	}
