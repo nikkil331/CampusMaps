@@ -9,7 +9,7 @@ public class EventData {
 	public EventData() {
 		events = new HashSet<Event>();
 		
-		timeNow = System.currentTimeMillis();
+ 		timeNow = System.currentTimeMillis();
 		
 		Event a = new Event("001");
 		a.setName("Quadramics Presents: Hair");
@@ -19,11 +19,19 @@ public class EventData {
 		a.setVenue("Iron Gate Theatre");
 		events.add(a);
 		
+		Event a1 = new Event("006");
+		a1.setName("CIS 350 Final Project Demo");
+		a1.setDescription("It's time for the final Project Demo!");
+		a1.setTime(plusHours(6), plusHours(7));
+		a1.setLatLong(39.952202, -75.1912);
+		a1.setVenue("Levine");
+		events.add(a1);
+		
 		Event b = new Event("002");
 		b.setName("SPEC Concert Presents David Guetta");
 		b.setDescription("Fling concert. Ra Ra Riot, Magic Man, Guetta.");
 		b.setTime(plusHours(8), plusHours(11));
-		a.setLatLong(39.9501, -75.189903);
+		b.setLatLong(39.9501, -75.189903);
 		b.setVenue("Franklin Field");
 		events.add(b);
 		
@@ -32,14 +40,14 @@ public class EventData {
 		c.setDescription("I'm With You Tour");
 		c.setTime(plusHours(3), plusHours(5));
 		c.setVenue("Venice Beach, CA");
-		a.setLatLong(33.9875155, -118.4617151);
+		c.setLatLong(33.9875155, -118.4617151);
 		events.add(c);
 		
 		Event d = new Event("004");
 		d.setName("Sunday Brunch Reunion");
 		d.setDescription("The cast of Taramandal meets at Hill for brunch.");
 		d.setTime(plusHours(15), plusHours(16));
-		a.setLatLong(39.952999, -75.190697);
+		d.setLatLong(39.952999, -75.190697);
 		d.setVenue("Hill College House");
 		events.add(d);
 		
@@ -47,7 +55,7 @@ public class EventData {
 		e.setName("FTC Presents: Rabbit Hole");
 		e.setDescription("Front Row's spring 2014 show. #SoRelavent");
 		e.setTime(plusHours(30), plusHours(32));
-		a.setLatLong(39.951, -75.193901);
+		e.setLatLong(39.951, -75.193901);
 		e.setVenue("Houston Hall");
 		events.add(e);
 		
@@ -55,7 +63,7 @@ public class EventData {
 		f.setName("PenNaatak Load In");
 		f.setDescription("Come help Naatak load in for their show!");
 		f.setTime(plusHours(40), plusHours(52));
-		a.setLatLong(39.9519, -75.201103);
+		f.setLatLong(39.9519, -75.201103);
 		f.setVenue("Harrison College House");
 		events.add(f);
 	}
