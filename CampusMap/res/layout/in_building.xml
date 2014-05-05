@@ -4,13 +4,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@android:color/transparent" >
-<!--  
-    <ListView
-        android:id="@+id/listView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
-    </ListView>
--->
 
 	<RelativeLayout
 	    android:layout_width="wrap_content"
@@ -29,7 +22,6 @@
 	    android:layout_alignParentLeft="true"
 	    android:layout_toLeftOf="@+id/dots"
 	    android:background="@drawable/round_rect" >
-
 	 </ImageSwitcher>
 
 	<LinearLayout
@@ -40,7 +32,6 @@
 	    android:layout_centerVertical="true"
 	    android:orientation="vertical"
 	    android:padding="15dp" >
-	    
 	</LinearLayout>
 
 	 </RelativeLayout>
@@ -61,7 +52,6 @@
 	        android:padding="10dp"
 	        android:scrollbarAlwaysDrawVerticalTrack="false"
 	        android:textSize="14sp" >
-
 	    </TextView>
 
 	    <LinearLayout
@@ -85,7 +75,4 @@
 	        </ImageButton>
 	    </LinearLayout>
 	</RelativeLayout>
-
-	 
-
 </RelativeLayout>

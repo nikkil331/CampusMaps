@@ -23,10 +23,13 @@ import android.util.Log;
 import android.view.GestureDetector.OnGestureListener;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.View.OnTouchListener;
 import android.view.WindowManager;
 import android.view.animation.Animation;
+import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
+import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
@@ -35,11 +38,11 @@ import android.widget.TextView;
 import android.widget.ViewSwitcher.ViewFactory;
 
 public class InBuildingActivity extends Activity implements OnTouchListener, OnGestureListener{
-	ImageSwitcher imageSwitcher;
-	GestureDetector gest;
-	ArrayList<String> picNames = new ArrayList<String>();
-	int currIndex = 0;
-	Drawable currDrawable;
+	private ImageSwitcher imageSwitcher;
+	private GestureDetector gest;
+	private ArrayList<String> picNames = new ArrayList<String>();
+	private int currIndex = 0;
+	private String currImageName;
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -63,15 +66,18 @@ public class InBuildingActivity extends Activity implements OnTouchListener, OnG
 				myView.setAdjustViewBounds(true);
 				myView.setLayoutParams(new ImageSwitcher.LayoutParams(ImageSwitcher.LayoutParams.
 						MATCH_PARENT, ImageSwitcher.LayoutParams.MATCH_PARENT));
+				myView.setTag(picNames.get(currIndex));
 				return myView;
 			}
 
 		});
-		int imageCode = getResources().getIdentifier(picNames.get(currIndex), "drawable", getPackageName());
+		currImageName = picNames.get(currIndex);
+		int imageCode = getResources().getIdentifier(currImageName, "drawable", getPackageName());
 		BitmapFactory.Options options=new BitmapFactory.Options();// Create object of bitmapfactory's option method for further option use
         options.inPurgeable = true; // inPurgeable is used to free up memory while required
         Bitmap image = BitmapFactory.decodeResource(getResources(), imageCode, options);
-		imageSwitcher.setImageDrawable(new BitmapDrawable(image));
+        Bitmap image1 = Bitmap.createScaledBitmap(image, image.getWidth(), image.getHeight(), true);
+		imageSwitcher.setImageDrawable(new BitmapDrawable(image1));
 		
 		LinearLayout dots = (LinearLayout)findViewById(R.id.dots);
 		for(int i = 0; i < picNames.size(); i++){
@@ -81,6 +87,7 @@ public class InBuildingActivity extends Activity implements OnTouchListener, OnG
 			params.setMargins(10, 10, 10, 10);
 			dot.setLayoutParams(params);
 			dot.setId(i);
+			dot.setTag("highlighted");
 			if(i == 0) { dot.setImageResource(R.drawable.circle_chosen); }
 			else{ dot.setImageResource(R.drawable.circle); }
 			dots.addView(dot);
@@ -136,12 +143,14 @@ public class InBuildingActivity extends Activity implements OnTouchListener, OnG
 	@Override
 	public boolean onFling(MotionEvent e1, MotionEvent e2, float velx,
 			float vely) {
-		Log.v("InBuildingActivity", "flung");
+		ImageView currDot;
 		//if swipe up
 		if((int)e1.getY() - (int)e2.getY() > 0)	{
 			Log.v("InBuildingActivity", "flung up");
 			if(currIndex == picNames.size() - 1){ return false; }
-			((ImageView)findViewById(currIndex)).setImageResource(R.drawable.circle);
+			currDot = (ImageView)findViewById(currIndex);
+			currDot.setImageResource(R.drawable.circle);
+			currDot.setTag(null);
 			currIndex++;
 			Animation in = AnimationUtils.loadAnimation(this,
 				      R.anim.slide_up_in);
@@ -153,14 +162,18 @@ public class InBuildingActivity extends Activity implements OnTouchListener, OnG
 		else{
 			Log.v("InBuildingActivity", "flung down");
 			if(currIndex == 0) { return false; }
-			((ImageView)findViewById(currIndex)).setImageResource(R.drawable.circle);
+			currDot = (ImageView)findViewById(currIndex);
+			currDot.setImageResource(R.drawable.circle);
+			currDot.setTag(null);
 			currIndex--;
 			Animation in = AnimationUtils.loadAnimation(this,
 				      R.anim.slide_down_in);
 			Animation out = AnimationUtils.loadAnimation(this, R.anim.slide_down_out);
 			animate(in, out);
 		}
-		((ImageView)findViewById(currIndex)).setImageResource(R.drawable.circle_chosen);
+		currDot = (ImageView)findViewById(currIndex); 
+		currDot.setImageResource(R.drawable.circle_chosen);
+		currDot.setTag("highlighted");
 		return true;
 	}
 	
@@ -176,11 +189,13 @@ public class InBuildingActivity extends Activity implements OnTouchListener, OnG
 		}
 		imageSwitcher.setInAnimation(in);
 		imageSwitcher.setOutAnimation(out);
-		int imageCode = getResources().getIdentifier(picNames.get(currIndex), "drawable", getPackageName());
+		currImageName = picNames.get(currIndex);
+		int imageCode = getResources().getIdentifier(currImageName, "drawable", getPackageName());
 		BitmapFactory.Options options=new BitmapFactory.Options();// Create object of bitmapfactory's option method for further option use
         options.inPurgeable = true; // inPurgeable is used to free up memory while required
         Bitmap image = BitmapFactory.decodeResource(getResources(), imageCode, options);
-        BitmapDrawable nextImage = new BitmapDrawable(image);
+        Bitmap image1 = Bitmap.createScaledBitmap(image, image.getWidth(), image.getHeight(), true);
+        BitmapDrawable nextImage = new BitmapDrawable(image1);
 		imageSwitcher.setImageDrawable(nextImage);
 	}
 
@@ -216,15 +231,41 @@ public class InBuildingActivity extends Activity implements OnTouchListener, OnG
 		{
 		    Bitmap b = bd.getBitmap();
 		    b.recycle();
-		}v = (ImageView)imageSwitcher.getNextView(); 
+		}
+		v = (ImageView)imageSwitcher.getNextView(); 
 		bd = (BitmapDrawable) v.getDrawable();
 		if (bd != null) 
 		{
-			Log.v("InBuildingActivity", "recycling");
 		    Bitmap b = bd.getBitmap();
 		    b.recycle();
 		}
 		super.onStop();
 	}
 	
+	@Override
+	protected void onDestroy(){
+		 super.onDestroy();
+	     unbindDrawables(findViewById(R.id.inBuildingLayout));
+	     System.gc();
+	}
+	private void unbindDrawables(View view)
+	{
+	        if (view.getBackground() != null)
+	        {
+	                view.getBackground().setCallback(null);
+	        }
+	        if (view instanceof ViewGroup && !(view instanceof AdapterView))
+	        {
+	                for (int i = 0; i < ((ViewGroup) view).getChildCount(); i++)
+	                {
+	                        unbindDrawables(((ViewGroup) view).getChildAt(i));
+	                }
+	                ((ViewGroup) view).removeAllViews();
+	        }
+	}
+	
+	//for testing
+	public String getImageName(){
+		return currImageName;
+	}
 }

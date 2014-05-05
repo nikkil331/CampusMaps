@@ -32,8 +32,10 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -48,8 +50,10 @@ import android.view.Menu;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -61,7 +65,6 @@ import android.widget.Toast;
 public class MainActivity extends Activity implements OnTouchListener {
 	private List<Building> currResults;
 	private Pin pinMark;
-	//private Marker pin;
 	private GPSTracker current;
 	private LatLng curr;
 	private String format_HTML;
@@ -79,7 +82,6 @@ public class MainActivity extends Activity implements OnTouchListener {
 		setContentView(R.layout.loading);
 		OnStart startTask = new OnStart();
 		startTask.execute(this);
-		Log.v("MainActivity", "created");
 	}
 	
 	private class OnStart extends AsyncTask<MainActivity, Void, Boolean>{
@@ -600,5 +602,27 @@ public class MainActivity extends Activity implements OnTouchListener {
 			}
 		}
 		return false;
+	}
+	
+	@Override
+	protected void onDestroy(){
+		 super.onDestroy();
+	     unbindDrawables(findViewById(R.id.main));
+	     System.gc();
+	}
+	private void unbindDrawables(View view)
+	{
+	        if (view.getBackground() != null)
+	        {
+	                view.getBackground().setCallback(null);
+	        }
+	        if (view instanceof ViewGroup && !(view instanceof AdapterView))
+	        {
+	                for (int i = 0; i < ((ViewGroup) view).getChildCount(); i++)
+	                {
+	                        unbindDrawables(((ViewGroup) view).getChildAt(i));
+	                }
+	                ((ViewGroup) view).removeAllViews();
+	        }
 	}
 }
