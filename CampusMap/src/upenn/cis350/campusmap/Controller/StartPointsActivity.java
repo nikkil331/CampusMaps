@@ -20,6 +20,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -116,10 +117,10 @@ public class StartPointsActivity extends OurActivity implements OnTouchListener 
 		// TODO Auto-generated method stub
 		if(v.equals(findViewById(R.id.doDirectionsButton))){
 			if(e.getAction() == MotionEvent.ACTION_DOWN){
-				((ImageButton) v).setImageResource(R.drawable.swap);
+				((Button) v).setBackgroundResource(R.drawable.swap);
 			}
 			else if (e.getAction() == MotionEvent.ACTION_UP){
-				((ImageButton) v).setImageResource(R.drawable.swap);
+				((Button) v).setBackgroundResource(R.drawable.swap);
 			}
 		}
 		return false;

@@ -93,7 +93,7 @@
 	            android:layout_width="wrap_content"
 	            android:layout_height="match_parent"
 	            android:background="@android:color/white"
-	            android:onClick="addMarkers"
+	            android:onClick="goNavigate"
 	            android:paddingLeft="10dp"
 	            android:paddingRight="10dp"
 	            android:src="@drawable/dir" >

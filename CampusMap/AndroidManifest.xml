@@ -59,6 +59,10 @@
             android:name="upenn.cis350.campusmap.Controller.InBuildingActivity"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name="upenn.cis350.campusmap.Controller.StartPointsActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

@@ -125,6 +125,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 			mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 			mMap.setMyLocationEnabled(true);
 			mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(curr, 15));
+			curr = null;
 		}
 		
 	}
@@ -352,6 +353,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 			if (extras != null) {
 				curr = new LatLng(extras.getDouble("latitude"), extras.getDouble("longitude"));
 			}
+			addMarkers();
 		}
 	}
 
@@ -365,7 +367,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 
 	//    		addMarkers();
 
-	public void addMarkers(View v) 
+	public void addMarkers() 
 	{
 		MarkerOptions start = new MarkerOptions();
 		if(current == null){
@@ -377,7 +379,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 			longitude = current.getLocation().getLongitude();
 			latitude = current.getLocation().getLatitude();
 		}
-		curr = new LatLng (latitude, longitude);
+		if (curr == null) curr = new LatLng (latitude, longitude);
 		start.position(curr).title("You Are Here").icon(BitmapDescriptorFactory
 				.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
 
