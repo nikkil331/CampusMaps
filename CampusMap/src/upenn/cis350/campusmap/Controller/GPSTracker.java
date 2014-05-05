@@ -33,6 +33,8 @@ public final class GPSTracker implements LocationListener {
 
 	// Declaring a Location Manager
 	protected LocationManager locationManager;
+	
+	private static long time = System.currentTimeMillis();
 
 	public GPSTracker(Context context) {
 		this.mContext = context;
@@ -46,6 +48,10 @@ public final class GPSTracker implements LocationListener {
 	 */
 	public Location getLocation() {
 		try {
+			if (System.currentTimeMillis() - time > 10000) {
+				time = System.currentTimeMillis();
+				
+			}
 			locationManager = (LocationManager) mContext
 					.getSystemService(Context.LOCATION_SERVICE);
 			Criteria crit = new Criteria();
