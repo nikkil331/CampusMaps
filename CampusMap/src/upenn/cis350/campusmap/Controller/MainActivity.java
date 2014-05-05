@@ -72,22 +72,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class MainActivity extends OurActivity implements OnTouchListener {
-	private List<Building> currResults;
-	private Pin pinMark;
-	private GPSTracker current;
-	private LatLng curr;
-	private String format_HTML;
-	private GoogleMap mMap;
-	private ArrayList<LatLng> markerPoints;
-	private HashMap<String, String> floorPlans;
-	//for testing
-	public Searcher currSearcher;
-	private final int ResultsActivity_ID = 1;
-	private final int InBuildingActivity_ID = 2;
-	private LocationManager mLocationManager;
-	private Location currLoc;
-	public static Context c;
-	public ImageButton fbButton;
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -308,75 +293,12 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 		}
 	}
 
-	//pins building at index in currResults 
-	private void pinBuilding(int index){
-		mMap.clear();
-		Building b = currResults.get(index);
-		mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
-		LatLng position = new LatLng(b.getLatitude(), b.getLongitude());
-		if (pinMark != null) pinMark.removePin();
-		pinMark = new Pin (mMap, b);
-		mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 16));
-		pinMark.addPin();
-		pinInfoText();
-		mMap.setMyLocationEnabled(true);
-		//addMarkers();
-	}
-
-	private void pinInfoText() {
-		RelativeLayout infoContainer = (RelativeLayout)findViewById(R.id.pinInfo);
-		infoContainer.setVisibility(View.VISIBLE);
-		Building b = pinMark.getBuilding();
-		String name = b.getName();
-		String add = b.getAddress();
-		String desc = name + "\n" + add;
-		SpannableString text = new SpannableString(desc);
-		text.setSpan(new RelativeSizeSpan(1.25f), 0, name.length() + 1,
-	            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-		text.setSpan(new TextAppearanceSpan(this, Typeface.NORMAL, Color.rgb(51,51,51)), 0, name.length() + 1,
-		            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-		text.setSpan(new TextAppearanceSpan(this, Typeface.NORMAL, Color.rgb(90, 90, 90)), name.length() + 1, desc.length(),
-	            Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-		TextView pinText = (TextView)findViewById(R.id.InfoText1);
-		pinText.setText(text);
-	}
 
 	//for testing
 	public Pin getPin(){
 		return pinMark;
 	}
 
-	private void displayDialog(String message){
-		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		builder.setMessage(message);
-		builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-			public void onClick(DialogInterface dialog, int id) {
-				dialog.dismiss();
-			}
-		});
-		Dialog d = builder.create();
-		d.show();
-	}
-
-	private void handleOutOfBounds(){
-		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		builder.setMessage("Your search only returned results outside of Penn's campus."
-				+ "Would you like to be taken to your native maps app?");
-		builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-			public void onClick(DialogInterface dialog, int id) {
-				String uri = "https://maps.google.com/maps?f=d";
-				Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-				startActivity(i);
-			}
-		});
-		builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener(){
-			public void onClick(DialogInterface dialog, int id){
-				dialog.dismiss();
-			}
-		});
-		Dialog d = builder.create();
-		d.show();
-	}
 
 
 	//    		addMarkers();
