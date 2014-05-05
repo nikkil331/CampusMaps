@@ -48,23 +48,23 @@ public class Parser {
 			Document doc;
 			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance()
 					.newDocumentBuilder();
-			URL fileLoc;
-//			if (Internet.hasActiveInternetConnection(MainActivity.c)){
-//				fileLoc = new URL(this.fileLocation);
-			//URLConnection uc = fileLoc.openConnection();
-			//doc = dBuilder.parse(uc.getInputStream());
-//			}
-//			else {
+			URL fileLoc = null;
+			if (Internet.hasActiveInternetConnection(MainActivity.c)){
+				fileLoc = new URL(this.fileLocation);
+			URLConnection uc = fileLoc.openConnection();
+			doc = dBuilder.parse(uc.getInputStream());
+			}
+			else {
 				Log.v("internet error", "There was an internet error");
 				AssetManager manager = MainActivity.c.getAssets();
 				Resources R = MainActivity.c.getResources();
 				doc = dBuilder.parse(R.openRawResource(
 			            R.getIdentifier("raw/buildings",
 			                    "raw", MainActivity.c.getPackageName())));
-//			}
+			}
 
-//			URLConnection uc = fileLoc.openConnection();
-//			doc = dBuilder.parse(uc.getInputStream());
+			URLConnection uc = fileLoc.openConnection();
+			doc = dBuilder.parse(uc.getInputStream());
 			//File file = new File("C:/Users/Max/Documents/GitHub/CampusMaps/buildings.xml");
 
 			
