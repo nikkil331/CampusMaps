@@ -1,4 +1,7 @@
 package upenn.cis350.campusmap.Controller;
+
+import android.util.Log;
+
 public class Event {
 	
 	private String venue;
@@ -60,5 +63,9 @@ public class Event {
 	}
 	public String getId() {
 		return id;
+	}
+	
+	public void print() {
+		Log.v("Event Stuff",name+" "+lat+" "+lng);
 	}
 }
