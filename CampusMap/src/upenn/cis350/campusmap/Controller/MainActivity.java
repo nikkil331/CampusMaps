@@ -73,7 +73,7 @@ import android.widget.TextView;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-public class MainActivity extends OurActivity implements OnTouchListener {
+public class MainActivity extends OurActivity implements OnTouchListener, OnClickListener {
 
 
 	@Override
@@ -81,21 +81,29 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.loading);
 		this.mLocationManager = (LocationManager) this.getSystemService(LOCATION_SERVICE);
-		OnStart startTask = new OnStart();
 		c = this.getApplicationContext();
-		startTask.execute(this);
+		TextView skipFB = (TextView)findViewById(R.id.skip_login_button);
+		skipFB.setOnClickListener(this);
 	}
 	
-	
+	public void onClick(View view){
+		TextView skipFB = (TextView)findViewById(R.id.skip_login_button);
+		if (view.equals(skipFB)){
+			Log.v("MainActivity", "clicking");
+			OnStart startTask = new OnStart();
+			startTask.execute(this);
+		}
+	}
+
 	
 	private class OnStart extends AsyncTask<MainActivity, Void, Boolean>{
 		private MainActivity activity;
 		
 		@Override
 		protected Boolean doInBackground(MainActivity... args) {
+			Log.v("OnStart", "doing in the background");
 			activity = args[0];
 			
-			getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 			current = new GPSTracker(activity);
 			if(current != null && current.getLocation() != null)
 			{
@@ -107,17 +115,12 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 			}
 			activity.markerPoints = new ArrayList<LatLng>();
 			getFloorPlans();
-			//show loading page
-			try {
-				Thread.sleep(7000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
 			return true;
 		}
 		
 		@Override
 		protected void onPostExecute(Boolean b){
+			Log.v("OnStart", "post executing");
 			setContentView(R.layout.activity_main);
 			findViewById(R.id.button1).setOnTouchListener(activity);
 			findViewById(R.id.dirbutton1).setOnTouchListener(activity);
@@ -211,6 +214,12 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 			
 		}  
      }
+	
+	public void onGuestClick(View view){
+		Log.v("MainActivity", "clicking");
+		OnStart startTask = new OnStart();
+		startTask.execute(this);
+	}
 	
 	private void getFloorPlans(){
 		floorPlans = new HashMap<String, String>();
@@ -355,7 +364,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 		if(requestCode == StartPointsActivity_ID){
 			Bundle extras = intent.getExtras();
 			if (extras != null) {
-				boolean b = extras.getBoolean("isCurrLocation");
+				boolean b = extras.getBoolean("currLoc");
 				if (!b) curr = new LatLng(extras.getDouble("latitude"), extras.getDouble("longitude"));
 				else curr = null;
 			}
@@ -402,11 +411,9 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 		LatLng origin = curr;
 		LatLng dest = pinMark.getLatLng();
 		
-		MarkerOptions d = new MarkerOptions();
-		d.position(curr);
-		d.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA));
-		d.draggable(false);
-		mMap.addMarker(d);
+		Pin orig = new Pin(mMap, null);
+		orig.setLatLng(curr);
+		orig.addPin(true);
 		
 		Location endingLocation = new Location("ending point");
 		Location startingLocation = new Location("ending point");
@@ -430,6 +437,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 
 		// Start downloading json data from Google Directions API
 		downloadTask.execute(url);
+
 	}
 
 	//	goInside();

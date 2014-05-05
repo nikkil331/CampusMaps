@@ -120,12 +120,12 @@ public class StartPointsActivity extends OurActivity implements OnTouchListener 
 	public boolean onTouch(View v, MotionEvent e) {
 		// TODO Auto-generated method stub
 		if(v.equals(findViewById(R.id.doDirectionsButton))){
-			if(e.getAction() == MotionEvent.ACTION_DOWN){
+			/*if(e.getAction() == MotionEvent.ACTION_DOWN){
 				((Button) v).setBackgroundResource(R.drawable.buttonclk);
 			}
 			else if (e.getAction() == MotionEvent.ACTION_UP){
 				((Button) v).setBackgroundResource(R.drawable.buttonclk);
-			}
+			}*/
 		}
 		return false;
 	}
