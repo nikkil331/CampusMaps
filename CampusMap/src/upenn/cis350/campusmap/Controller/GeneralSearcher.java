@@ -101,15 +101,28 @@ public class GeneralSearcher extends Searcher {
 					List<Building> no = getBuildingFromCode(y);
 					List<Building> don = new ArrayList<Building>();
 					for (Building n : no) {
-						don.add(new Building(n.getLongitude(), n.getLatitude(),
-								n.getGooglePlaceID(), n.getIconURL(), n.getName(), n.getAddress()));
+						if (!n.getName().contains("Room")) {
+							String hh = (n.getName()
+									+ " : "
+									+ i.substring(i.indexOf(' ') + 1)
+									+ " ( " + out + ")");
+							don.add(new Building(n.getLongitude(), n
+									.getLatitude(), n.getGooglePlaceID(), n
+									.getIconURL(), hh, n
+									.getAddress()));
+						} else {
+							don.add(new Building(n.getLongitude(), n
+									.getLatitude(), n.getGooglePlaceID(), n
+									.getIconURL(), n.getName(), n.getAddress()));
+						}
 					}
 					toReturn.addAll(don);
-				}
+				}/*
 				for (Building b : toReturn) {
-					if (!b.getName().contains("For Class"))
-					b.setName(b.getName() + " - For Class: " + out);
-				}
+					if (!b.getName().contains("Room"))
+						b.setName(b.getName() + " Room: " + +" (Section: "
+								+ out + ")");
+				}*/
 			}
 		} else {
 			toReturn = getBuildingFromCode(query);
