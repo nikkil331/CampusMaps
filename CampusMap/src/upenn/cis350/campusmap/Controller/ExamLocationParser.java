@@ -23,7 +23,7 @@ public class ExamLocationParser {
 		HttpURLConnection urlConnection = null;
 		try {
 			URL url = new URL(strURL);
-			
+
 			// Creating an http connection to communicate with url
 			urlConnection = (HttpURLConnection) url.openConnection();
 
@@ -42,12 +42,13 @@ public class ExamLocationParser {
 			System.out.println("I/O Error: " + e.getMessage());
 		}
 	}
-	
-	protected Map<String,String[]> getMap(){
+
+	protected Map<String, String[]> getMap() {
 		return examLocs;
 	}
 
 	public void parse() {
+
 		try {
 			String line = new String();
 			String[] data = new String[6];
@@ -61,24 +62,32 @@ public class ExamLocationParser {
 				for (int i = 0; i < locations.length; i++) {
 					locations[i] = locations[i].trim();
 				}
+				String[] numberDashes = temp.split("-");
+				if (numberDashes.length > 2) {
+					if (!examLocs
+							.containsKey(numberDashes[0] + numberDashes[1])) {
+						examLocs.put(numberDashes[0] + numberDashes[1],
+								locations);
+					}
+				}
 				examLocs.put(temp, locations);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public String[] removeDuplicates(String[] input) {
 		Set<String> noDuplicates = new HashSet<String>();
-		for (String x:input){
-			if (!noDuplicates.contains(x)){
+		for (String x : input) {
+			if (!noDuplicates.contains(x)) {
 				noDuplicates.add(x);
 			}
 		}
 		String[] toReturn = new String[noDuplicates.size()];
-		int i=0;
-		for (String x:noDuplicates){
-			toReturn[i]=x;
+		int i = 0;
+		for (String x : noDuplicates) {
+			toReturn[i] = x;
 			i++;
 		}
 		return toReturn;
