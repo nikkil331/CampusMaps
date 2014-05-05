@@ -73,7 +73,7 @@ public class GeneralSearcher extends Searcher {
 		} else
 			toReturn.addAll(getBuildingsFromGoogle(clp.getMap().get(
 					query.split(" ")[0])));
-		return toReturn;
+		return toReturn; 
 	}
 
 	private List<Building> getBuildingFromExam(String query) {
