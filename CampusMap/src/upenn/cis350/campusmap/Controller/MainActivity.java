@@ -89,6 +89,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 	
 	
 	
+	
 	private class OnStart extends AsyncTask<MainActivity, Void, Boolean>{
 		private MainActivity activity;
 		
@@ -365,6 +366,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 
 	
 	public void goNavigate(View v) {
+		mMap.clear();
 		Intent i = new Intent(this, StartPointsActivity.class);
 		Bundle b = new Bundle();
 		b.putString("name", pinMark.getBuilding().getName());
