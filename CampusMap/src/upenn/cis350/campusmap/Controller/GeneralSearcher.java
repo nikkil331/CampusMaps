@@ -73,7 +73,7 @@ public class GeneralSearcher extends Searcher {
 		} else
 			toReturn.addAll(getBuildingsFromGoogle(clp.getMap().get(
 					query.split(" ")[0])));
-		return toReturn; 
+		return toReturn;
 	}
 
 	private List<Building> getBuildingFromExam(String query) {
@@ -99,7 +99,13 @@ public class GeneralSearcher extends Searcher {
 					} else {
 						y = i.substring(0, i.indexOf(' '));
 					}
-					toReturn.addAll(getBuildingFromCode(y));
+					List<Building> no = getBuildingFromCode(y);
+					List<Building> don = new ArrayList<Building>();
+					for (Building n : no) {
+						don.add(new Building(n.getLongitude(), n.getLatitude(),
+								n.getGooglePlaceID(), n.getIconURL(), n.getName(), n.getAddress()));
+					}
+					toReturn.addAll(don);
 				}
 				for (Building b : toReturn) {
 					b.setName(b.getName() + " - For Class: " + out);
@@ -236,15 +242,19 @@ public class GeneralSearcher extends Searcher {
 
 	// replaces spaces with "+" signs for api query
 	private String formatQuery(String query) {
-		String[] queryTokens = query.split(" ");
-		StringBuilder sb = new StringBuilder();
-		for (String t : queryTokens) {
-			sb.append(t + "+");
+		if (query == null) {
+			return "";
+		} else {
+			String[] queryTokens = query.split(" ");
+			StringBuilder sb = new StringBuilder();
+			for (String t : queryTokens) {
+				sb.append(t + "+");
+			}
+			// get rid of last plus
+			sb.delete(sb.length() - 1, sb.length());
+			query = sb.toString();
+			return query;
 		}
-		// get rid of last plus
-		sb.delete(sb.length() - 1, sb.length());
-		query = sb.toString();
-		return query;
 	}
 
 	// creates get request url out of given information
