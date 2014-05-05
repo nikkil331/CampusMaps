@@ -107,6 +107,7 @@ public class GeneralSearcher extends Searcher {
 					toReturn.addAll(don);
 				}
 				for (Building b : toReturn) {
+					if (!b.getName().contains("For Class"))
 					b.setName(b.getName() + " - For Class: " + out);
 				}
 			}
