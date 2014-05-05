@@ -19,7 +19,7 @@ public class EventData {
 		a.setVenue("Iron Gate Theatre");
 		events.add(a);
 		
-		Event a1 = new Event("006");
+		Event a1 = new Event("007");
 		a1.setName("CIS 350 Final Project Demo");
 		a1.setDescription("It's time for the final Project Demo!");
 		a1.setTime(plusHours(6), plusHours(7));
