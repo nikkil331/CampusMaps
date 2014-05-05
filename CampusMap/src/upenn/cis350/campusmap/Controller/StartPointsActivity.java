@@ -27,7 +27,7 @@ import android.widget.TextView;
 
 public class StartPointsActivity extends OurActivity implements OnTouchListener {
 	String name;
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -45,8 +45,8 @@ public class StartPointsActivity extends OurActivity implements OnTouchListener 
 		getMenuInflater().inflate(R.menu.start_points, menu);
 		return true;
 	}
-
-
+	
+	
 	private class OnStart extends AsyncTask<StartPointsActivity, Void, Boolean>{
 		private StartPointsActivity activity;
 		@Override
@@ -55,23 +55,23 @@ public class StartPointsActivity extends OurActivity implements OnTouchListener 
 			activity = args[0];
 			return null;
 		}
-
+		
 		@Override
 		protected void onPostExecute(Boolean b){
 			findViewById(R.id.doDirectionsButton).setOnTouchListener(activity);
 		}
 	}
-
+	
 	// function to send back to main activity and draw the route
 	public void f (View v) {
 		Intent i = new Intent();
-		i.putExtra("currloc", true);
+		i.putExtra("isCurrLocation", true);
 		setResult(RESULT_OK, i);
 		finish();
 	}
-
-
-
+	
+	
+	
 	public void onSearchClick(View view){
 		Log.v("StartPointsActivity", "searching...");
 		String text = ((EditText)findViewById(R.id.editTextFrom)).getText().toString();
@@ -95,17 +95,18 @@ public class StartPointsActivity extends OurActivity implements OnTouchListener 
 		}
 	}
 
+	@Override
 	protected void pinBuilding (int index) {
 		Building bi = currResults.get(index);
 		curr = new LatLng(bi.getLatitude(), bi.getLongitude());
 		Intent i = new Intent();
 		i.putExtra("latitude",bi.getLatitude());
 		i.putExtra("longitude",bi.getLongitude());
-		i.putExtra("currloc", false);
+		i.putExtra("isCurrLocation", false);
 		setResult(RESULT_OK, i);
 		finish();
 	}
-
+	
 	@Override
 	public void onBackPressed() {
 		Log.v("StartPointsActivity", "back pressed");
@@ -114,21 +115,21 @@ public class StartPointsActivity extends OurActivity implements OnTouchListener 
 		setResult(RESULT_OK, i);
 		finish();
 	}
-
+	
 	@Override
 	public boolean onTouch(View v, MotionEvent e) {
 		// TODO Auto-generated method stub
 		if(v.equals(findViewById(R.id.doDirectionsButton))){
 			if(e.getAction() == MotionEvent.ACTION_DOWN){
-				((Button) v).setBackgroundResource(R.drawable.swap);
+				((Button) v).setBackgroundResource(R.drawable.buttonclk);
 			}
 			else if (e.getAction() == MotionEvent.ACTION_UP){
-				((Button) v).setBackgroundResource(R.drawable.swap);
+				((Button) v).setBackgroundResource(R.drawable.buttonclk);
 			}
 		}
 		return false;
 	}
-
+	
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent intent){
 		super.onActivityResult(requestCode, resultCode, intent);

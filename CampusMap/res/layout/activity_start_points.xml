@@ -58,7 +58,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight=".10"
                     android:background="@android:color/transparent"
-                    android:onClick="onMyLocationClick"
+                    android:onClick="f"
                     android:src="@drawable/pin" />
             </LinearLayout>
         </FrameLayout>
@@ -90,15 +90,6 @@
 
                     <requestFocus />
                 </EditText>
-
-                <ImageButton
-                    android:id="@+id/buttonSwap"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".10"
-                    android:background="@android:color/transparent"
-                    android:onClick="f"
-                    android:src="@drawable/swap" />
             </LinearLayout>
         </FrameLayout>
         
@@ -108,8 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Show me the way!"
-                    android:onClick="onSearchClick"
-                    android:src="@drawable/swap" />
+                    android:onClick="onSearchClick"/>
     </LinearLayout>
 
 </RelativeLayout>

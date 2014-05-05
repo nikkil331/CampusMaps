@@ -313,7 +313,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 		//don't go to results page if there's only one result
 		if(currResults.size() == 1){
 			Log.v("MainActivity", "pinning building...");
-			pinBuilding(0,true);
+			pinBuilding(0);
 			return;
 		}
 		//create bundle to sent to results view
@@ -349,13 +349,13 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 		if(requestCode == ResultsActivity_ID){
 			Bundle extras = intent.getExtras();
 			if(extras != null){
-				pinBuilding(extras.getInt("listIndex", 0),false);
+				pinBuilding(extras.getInt("listIndex", 0));
 			}
 		}
 		if(requestCode == StartPointsActivity_ID){
 			Bundle extras = intent.getExtras();
 			if (extras != null) {
-				boolean b = extras.getBoolean("currLoc");
+				boolean b = extras.getBoolean("isCurrLocation");
 				if (!b) curr = new LatLng(extras.getDouble("latitude"), extras.getDouble("longitude"));
 				else curr = null;
 			}
@@ -402,9 +402,11 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 		LatLng origin = curr;
 		LatLng dest = pinMark.getLatLng();
 		
-		Pin orig = new Pin(mMap, null);
-		orig.setLatLng(curr);
-		orig.addPin(true);
+		MarkerOptions d = new MarkerOptions();
+		d.position(curr);
+		d.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA));
+		d.draggable(false);
+		mMap.addMarker(d);
 		
 		Location endingLocation = new Location("ending point");
 		Location startingLocation = new Location("ending point");
@@ -428,7 +430,6 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 
 		// Start downloading json data from Google Directions API
 		downloadTask.execute(url);
-
 	}
 
 	//	goInside();

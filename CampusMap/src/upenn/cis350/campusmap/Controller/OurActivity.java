@@ -86,7 +86,7 @@ public class OurActivity extends Activity{
 		//don't go to results page if there's only one result
 		if(currResults.size() == 1){
 			Log.v("MainActivity", "pinning building...");
-			pinBuilding(0, true);
+			pinBuilding(0);
 			return;
 		}
 		//create bundle to sent to results view
@@ -139,7 +139,7 @@ public class OurActivity extends Activity{
 		d.show();
 	}
 	
-	protected void pinBuilding(int index, boolean clear){
+	protected void pinBuilding(int index){
 		mMap.clear();
 		Building b = currResults.get(index);
 		mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
