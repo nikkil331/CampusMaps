@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.json.JSONObject;
 
@@ -167,6 +168,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 				
 			}else if(item.getTitle().equals("Get Events for the next 24 Hours"))
 			{
+				Set<Event> eventsFor24 = events.todayEvents();
 				
 			}
 			Toast.makeText(MainActivity.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();  
@@ -228,6 +230,23 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 		}
 	}
 
+	private boolean isWithinBounds(Building b)
+	{
+		boolean tooNorth = b.getLatitude() > Double.parseDouble(getString(R.string.latitude_north));
+		boolean tooSouth = b.getLatitude() < Double.parseDouble(getString(R.string.latitude_south));
+		boolean tooWest = b.getLongitude() < Double.parseDouble(getString(R.string.longitude_west));
+		boolean tooEast = b.getLongitude() > Double.parseDouble(getString(R.string.longitude_east));
+		return tooNorth || tooSouth || tooWest|| tooEast;
+	}
+	
+	/*private boolean isWithinBounds(Event e)
+	{
+		boolean tooNorth = e.getLatitude() > Double.parseDouble(getString(R.string.latitude_north));
+		boolean tooSouth = e.getLatitude() < Double.parseDouble(getString(R.string.latitude_south));
+		boolean tooWest = e.getLongitude() < Double.parseDouble(getString(R.string.longitude_west));
+		boolean tooEast = e.getLongitude() > Double.parseDouble(getString(R.string.longitude_east));
+		return tooNorth || tooSouth || tooWest|| tooEast;
+	}*/
 
 	public void receiveSearchResults(List<Building> buildings){
 		Log.v("MainActivity", "receiving results...");
@@ -246,11 +265,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 		Iterator<Building> iter = currResults.iterator();
 		while(iter.hasNext()){
 			Building b = iter.next();
-			boolean tooNorth = b.getLatitude() > Double.parseDouble(getString(R.string.latitude_north));
-			boolean tooSouth = b.getLatitude() < Double.parseDouble(getString(R.string.latitude_south));
-			boolean tooWest = b.getLongitude() < Double.parseDouble(getString(R.string.longitude_west));
-			boolean tooEast = b.getLongitude() > Double.parseDouble(getString(R.string.longitude_east));
-			if(tooNorth || tooSouth || tooWest|| tooEast){
+			if(isWithinBounds(b)){
 				iter.remove();
 			}
 		}
