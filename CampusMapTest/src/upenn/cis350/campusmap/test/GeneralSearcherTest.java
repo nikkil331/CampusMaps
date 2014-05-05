@@ -6,7 +6,6 @@ import com.robotium.solo.Solo;
 import android.annotation.SuppressLint;
 import android.os.AsyncTask;
 import android.test.ActivityInstrumentationTestCase2;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import upenn.cis350.campusmap.R;
