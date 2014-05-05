@@ -10,6 +10,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -156,26 +157,24 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 			}else if(item.getTitle().equals("Get Events for the next 24 Hours"))
 			{
 				Set<Event> eventsFor24 = events.todayEvents();
-				Iterator<Event> iter = eventsFor24.iterator();
-				while(iter.hasNext())
+				HashSet<Event> eventInRange = new HashSet<Event>();
+				for(Event e : eventsFor24)
 				{
-					Event e = iter.next();
-					if(isWithinBounds(e)) {
-							iter.remove();
+					if(!isWithinBounds(e)) {
+							eventInRange.add(e);
 					}
 				}
 				
 				List<Building> eventBuilding = new LinkedList<Building>();
 				Building minStartTimeEventLocation = null;
 				long minStartTime = Long.MAX_VALUE;
-				while(iter.hasNext())
+				Log.v("size of e", "" + eventInRange.size());
+				for(Event e : eventInRange)
 				{
-					Event e = iter.next();
 					Building b = new Building(e.getLongitude(),e.getLatitude(),e.getId(),"EVENT",e.getName(),e.getVenue());
 					eventBuilding.add(b);
 					if(e.getStartTime() < minStartTime)
 					{
-						displayDialog("New Min Found!"+b.getName());
 						minStartTime = e.getStartTime();
 						minStartTimeEventLocation = b;
 					}
@@ -193,15 +192,19 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 			mMap.clear();
 			mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 			LatLng position = new LatLng(b.getLatitude(), b.getLongitude());
-			if (pinMark != null) pinMark.removePin();
+			b.revertName();
+			Log.v("mapping error", "building being mapped is " + b.getName() + " with latitude " + b.getLatitude());
 			pinMark = new Pin (mMap, b);
 			mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position, 16));
-			pinMark.addPin();
+			pinMark.addPin(false);
 			pinInfoText();
 			for(Building build : eventBuilding)
 			{
-				Pin buildPin = new Pin(mMap, build);
-				buildPin.addEventPin();
+				if(!build.equalTo(pinMark.getBuilding())){
+					Log.v("gets to the pin", "is pinning");
+					Pin buildPin = new Pin(mMap, build);
+					buildPin.addEventPin();
+				}
 			}
 			mMap.setMyLocationEnabled(true);
 			
@@ -309,7 +312,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 		//don't go to results page if there's only one result
 		if(currResults.size() == 1){
 			Log.v("MainActivity", "pinning building...");
-			pinBuilding(0);
+			pinBuilding(0,true);
 			return;
 		}
 		//create bundle to sent to results view
@@ -345,13 +348,15 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 		if(requestCode == ResultsActivity_ID){
 			Bundle extras = intent.getExtras();
 			if(extras != null){
-				pinBuilding(extras.getInt("listIndex", 0));
+				pinBuilding(extras.getInt("listIndex", 0),false);
 			}
 		}
 		if(requestCode == StartPointsActivity_ID){
 			Bundle extras = intent.getExtras();
 			if (extras != null) {
-				curr = new LatLng(extras.getDouble("latitude"), extras.getDouble("longitude"));
+				boolean b = extras.getBoolean("currLoc");
+				if (!b) curr = new LatLng(extras.getDouble("latitude"), extras.getDouble("longitude"));
+				else curr = null;
 			}
 			addMarkers();
 		}
@@ -395,6 +400,10 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 
 		LatLng origin = curr;
 		LatLng dest = pinMark.getLatLng();
+		
+		Pin orig = new Pin(mMap, null);
+		orig.setLatLng(curr);
+		orig.addPin(true);
 		
 		Location endingLocation = new Location("ending point");
 		Location startingLocation = new Location("ending point");
