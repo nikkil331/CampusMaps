@@ -174,6 +174,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 					eventBuilding.add(b);
 					if(e.getStartTime() < minStartTime)
 					{
+						displayDialog("New Min Found!"+b.getName());
 						minStartTime = e.getStartTime();
 						minStartTimeEventLocation = b;
 					}
@@ -198,7 +199,8 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 			pinInfoText();
 			for(Building build : eventBuilding)
 			{
-				
+				Pin buildPin = new Pin(mMap, build);
+				buildPin.addEventPin();
 			}
 			mMap.setMyLocationEnabled(true);
 			
@@ -343,6 +345,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 	public Pin getPin(){
 		return pinMark;
 	}
+
 
 
 	//    		addMarkers();
