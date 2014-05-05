@@ -162,16 +162,14 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 					}
 				}
 				
-				ArrayList<String> names = new ArrayList<String>();
-				ArrayList<String> addresses = new ArrayList<String>();
-				
+				List<Building> eventBuilding = new LinkedList<Building>();
 				for(Event e : eventInRange)
 				{
-					names.add(e.getName());
-					addresses.add(e.getVenue());
+					Building b = new Building(e.getLongitude(),e.getLatitude(),e.getId(),"EVENT",e.getName(),e.getVenue());
+					eventBuilding.add(b);
 				}	
 				
-				return startIntent(names, addresses);
+				receiveSearchResults(eventBuilding);	
 				
 			}
 			else if(item.getTitle().equals("Get Events for today"))
@@ -202,8 +200,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 				
 				mapAllEvents(minStartTimeEventLocation, eventBuilding);
 				
-			}
-			return true; 
+			}return true; 
 		}
 
 		private void mapAllEvents(Building b,
@@ -229,18 +226,6 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 			
 		}  
      }
-	
-	public boolean startIntent(ArrayList<String> names, ArrayList<String> addresses)
-	{
-		Intent i = new Intent(this, ResultsActivity.class);
-		Bundle bundle = new Bundle();
-		bundle.putStringArrayList("addresses", addresses);
-		bundle.putStringArrayList("names", names);
-		i.putExtras(bundle);
-		startActivityForResult(i, ResultsActivity_ID);
-		return true;
-		
-	}
 	
 	private void getFloorPlans(){
 		floorPlans = new HashMap<String, String>();
