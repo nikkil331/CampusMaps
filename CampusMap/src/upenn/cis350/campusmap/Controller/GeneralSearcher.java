@@ -12,6 +12,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
@@ -33,7 +34,7 @@ public class GeneralSearcher extends Searcher {
 	 * in res/values/strings.xml hasLocationSensor indicates whether or not the
 	 * device has gps sensor
 	 */
-	public GeneralSearcher(MainActivity activity, String apikey,
+	public GeneralSearcher(Activity activity, String apikey,
 			boolean hasLocationSensor, String latitude, String longitude,
 			String radius) {
 		super();
