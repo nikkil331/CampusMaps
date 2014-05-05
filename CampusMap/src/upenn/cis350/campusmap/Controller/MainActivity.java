@@ -51,8 +51,10 @@ import android.text.style.RelativeSizeSpan;
 import android.text.style.TextAppearanceSpan;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -61,6 +63,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.ImageButton;
@@ -82,6 +85,7 @@ public class MainActivity extends Activity implements OnTouchListener {
 	private LocationManager mLocationManager;
 	private Location currLoc;
 	public static Context c;
+	public ImageButton fbButton;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -128,6 +132,27 @@ public class MainActivity extends Activity implements OnTouchListener {
 			findViewById(R.id.button1).setOnTouchListener(activity);
 			findViewById(R.id.dirbutton1).setOnTouchListener(activity);
 			findViewById(R.id.insidebutton1).setOnTouchListener(activity);
+			fbButton = (ImageButton)findViewById(R.id.fbbutton);
+			fbButton.setOnClickListener(new OnClickListener(){
+				@Override  
+		           public void onClick(View v) {  
+		            //Creating the instance of PopupMenu  
+		            PopupMenu popup = new PopupMenu(MainActivity.this, fbButton);  
+		            //Inflating the Popup using xml file  
+		            popup.getMenuInflater().inflate(R.menu.event_menu, popup.getMenu());  
+
+		            //registering popup with OnMenuItemClickListener  
+		            popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {  
+					@Override
+					public boolean onMenuItemClick(MenuItem item) {
+						Toast.makeText(MainActivity.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();  
+			              return true; 
+					}  
+		            });  
+
+		            popup.show();//showing popup menu  
+		           }  
+			});
 			mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 			mMap.setMyLocationEnabled(true);
 			mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(curr, 15));

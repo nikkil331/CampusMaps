@@ -32,7 +32,7 @@ public class ClassLocationParser {
 			Log.v("internet error", "There was an internet error");
 			Resources R = MainActivity.c.getResources();
 			is = (R.openRawResource(
-		            R.getIdentifier("raw/buildings",
+		            R.getIdentifier("raw/class_locations",
 		                    "raw", MainActivity.c.getPackageName())));
 //		}
 		classToLocation = new HashMap<String, String>();
