@@ -1,114 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
-    
-    <FrameLayout 
-    	android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentTop="true"
-	    android:background="@android:color/transparent"
-	    android:weightSum="1.0" >
 
-		<LinearLayout
-	    	android:layout_width="match_parent"
-	    	android:layout_height="match_parent"
-	    	android:layout_margin="8dp"
-	    	android:background="@drawable/round_rect"
-	    	android:weightSum="1.0" >
-
-			<EditText
-		    	android:id="@+id/editText1"
-		    	android:layout_width="wrap_content"
-		    	android:layout_height="match_parent"
-		    	android:layout_weight=".80"
-		    	android:background="@android:color/transparent"
-		    	android:ems="10"
-		    	android:hint="Search"
-		    	android:padding="8dp"
-		    	android:textSize="20dp" />
-			
-			<ImageButton
-		    	android:id="@+id/fbbutton"
-		    	android:layout_width="wrap_content"
-		    	android:layout_height="match_parent"
-		    	android:layout_weight=".10"
-		    	android:background="@android:color/transparent"
-		    	android:onClick="onFBClick"
-		    	android:src="@drawable/fbbutton" />
-
-			<ImageButton
-		    	android:id="@+id/button1"
-		    	android:layout_width="wrap_content"
-		    	android:layout_height="match_parent"
-		    	android:layout_weight=".10"
-		    	android:background="@android:color/transparent"
-		    	android:onClick="onSearchClick"
-		    	android:src="@drawable/search" />
-			
-	
-    	</LinearLayout>
-    </FrameLayout>
-    
-	<RelativeLayout
-	    android:id="@+id/pinInfo"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentBottom="true"
-	    android:visibility="gone"
-	    android:background="@drawable/shadow" >
-
-	    <TextView
-	        android:id="@+id/InfoText1"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_alignParentLeft="true"
-	        android:maxLines="5"
-	        android:maxWidth="200dp"
-	        android:padding="10dp"
-	        android:scrollbarAlwaysDrawVerticalTrack="false"
-	        android:text="Really Really Really long Title \n 101 S. 39th St, Philadelphia PA, 19104"
-	        android:textSize="14sp" >
-
-	    </TextView>
-
-	    <LinearLayout
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_alignParentRight="true"
-	        android:layout_centerVertical="true"
-	        android:divider="@drawable/vert_line"
-	        android:orientation="horizontal"
-	        android:showDividers="middle" >
-
-	        <ImageButton
-	            android:id="@+id/dirbutton1"
-	            android:layout_width="wrap_content"
-	            android:layout_height="match_parent"
-	            android:background="@android:color/white"
-	            android:onClick="addMarkers"
-	            android:paddingLeft="10dp"
-	            android:paddingRight="10dp"
-	            android:src="@drawable/dir" >
-	        </ImageButton>
-			
-	        <ImageButton
-	            android:id="@+id/insidebutton1"
-	            android:layout_width="wrap_content"
-	            android:layout_height="match_parent"
-	            android:background="@android:color/white"
-	            android:onClick="goInside"
-	            android:paddingLeft="10dp"
-	            android:paddingRight="10dp"
-	            android:src="@drawable/door" >
-	        </ImageButton>
-	    </LinearLayout>
-	</RelativeLayout>
-
-</RelativeLayout>
--->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/navFrame"
@@ -199,15 +90,6 @@
 
                     <requestFocus />
                 </EditText>
-
-                <ImageButton
-                    android:id="@+id/buttonSwap"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".10"
-                    android:background="@android:color/transparent"
-                    android:onClick="onSwapClick"
-                    android:src="@drawable/swap" />
             </LinearLayout>
         </FrameLayout>
         
@@ -217,8 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Show me the way!"
-                    android:onClick="onDirection"
-                    android:src="@drawable/swap" />
+                    android:onClick="onDirection" />
     </LinearLayout>
 
 </RelativeLayout>

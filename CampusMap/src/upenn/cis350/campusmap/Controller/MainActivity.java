@@ -87,6 +87,7 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 	}
 	
 	
+	
 	private class OnStart extends AsyncTask<MainActivity, Void, Boolean>{
 		private MainActivity activity;
 		
