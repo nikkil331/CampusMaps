@@ -58,7 +58,7 @@ public class ClassLocationParser {
 			if (x.length() > 20) test = x.substring(0, 20).contains("-");
 		}
 		String subject = x.substring(0, x.indexOf('-')+4);
-		subject = subject.replaceAll("-", " ");
+		subject = subject.replace(" ", "");
 		if (!r.ready()) return;
 		while(individParse(subject, r.readLine()));
 		if (!r.ready()) return;
@@ -92,10 +92,11 @@ public class ClassLocationParser {
 			else return false;
 		}
 		String [] arr = nextLine.split(" ");
-		add += " " + arr[1];
+		add += "-" + arr[1];
 		if (arr[1].equals("000")) return true;
 		if (arr[1].length() < 2) return true;
-
+		if (arr[5].contains("TBA")) return true;
+		
 		if (arr[5].length() > 0) this.classToLocation.put(add, arr[5]);
 
 		return true;
