@@ -26,10 +26,10 @@ public final class GPSTracker implements LocationListener {
 	private Location location; // location
 
 	// The minimum distance to change Updates in meters
-	private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 1; // 10 meters
+	private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 0; // 10 meters
 
 	// The minimum time between updates in milliseconds
-	private static final long MIN_TIME_BW_UPDATES = 10000; // 1 minute
+	private static final long MIN_TIME_BW_UPDATES = 0; // 1 minute
 
 	// Declaring a Location Manager
 	protected LocationManager locationManager;
