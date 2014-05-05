@@ -25,16 +25,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:onClick="onInvalid"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="30dp" />
 
-        <TextView
+        <Button
             android:id="@+id/skip_login_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Continue as Guest"
             android:textSize="15sp"
+            android:onClick="onSkipClick"
             android:textColor="#EAFEA7"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"

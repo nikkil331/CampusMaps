@@ -75,6 +75,7 @@ import android.widget.Toast;
 
 public class MainActivity extends OurActivity implements OnTouchListener {
 
+	private boolean skipLogin = false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -109,7 +110,9 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 			getFloorPlans();
 			//show loading page
 			try {
-				Thread.sleep(7000);
+				while(!skipLogin) {
+				Thread.sleep(50);
+				}
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -131,6 +134,17 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 		}
 		
 	}
+	
+	public void onInvalid(View v)
+	{
+		return;
+	}
+	
+	public void onSkipClick(View v)
+	{
+		skipLogin = true;
+	}
+	
 	
 	private class EventsMenuListener implements OnClickListener {
 		@Override  
