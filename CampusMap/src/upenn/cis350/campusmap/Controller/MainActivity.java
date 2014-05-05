@@ -133,32 +133,36 @@ public class MainActivity extends Activity implements OnTouchListener {
 			findViewById(R.id.dirbutton1).setOnTouchListener(activity);
 			findViewById(R.id.insidebutton1).setOnTouchListener(activity);
 			fbButton = (ImageButton)findViewById(R.id.fbbutton);
-			fbButton.setOnClickListener(new OnClickListener(){
-				@Override  
-		           public void onClick(View v) {  
-		            //Creating the instance of PopupMenu  
-		            PopupMenu popup = new PopupMenu(MainActivity.this, fbButton);  
-		            //Inflating the Popup using xml file  
-		            popup.getMenuInflater().inflate(R.menu.event_menu, popup.getMenu());  
-
-		            //registering popup with OnMenuItemClickListener  
-		            popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {  
-					@Override
-					public boolean onMenuItemClick(MenuItem item) {
-						Toast.makeText(MainActivity.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();  
-			              return true; 
-					}  
-		            });  
-
-		            popup.show();//showing popup menu  
-		           }  
-			});
+			fbButton.setOnClickListener(new EventsMenuListener());
 			mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 			mMap.setMyLocationEnabled(true);
 			mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(curr, 15));
 		}
 		
 	}
+	
+	private class EventsMenuListener implements OnClickListener {
+		@Override  
+        public void onClick(View v) {  
+         //Creating the instance of PopupMenu  
+         PopupMenu popup = new PopupMenu(MainActivity.this, fbButton);  
+         //Inflating the Popup using xml file  
+         popup.getMenuInflater().inflate(R.menu.event_menu, popup.getMenu());  
+
+         //registering popup with OnMenuItemClickListener  
+         popup.setOnMenuItemClickListener(new EventsMenuItemClickListener());  
+
+         popup.show();//showing popup menu  
+        }  
+	}
+	
+	private class EventsMenuItemClickListener implements PopupMenu.OnMenuItemClickListener {  
+		@Override
+		public boolean onMenuItemClick(MenuItem item) {
+			Toast.makeText(MainActivity.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();  
+              return true; 
+		}  
+     }
 	
 	private void getFloorPlans(){
 		floorPlans = new HashMap<String, String>();
