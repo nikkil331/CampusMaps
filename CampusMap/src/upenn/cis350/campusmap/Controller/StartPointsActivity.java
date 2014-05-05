@@ -64,7 +64,10 @@ public class StartPointsActivity extends OurActivity implements OnTouchListener 
 	
 	// function to send back to main activity and draw the route
 	public void f (View v) {
-		
+		Intent i = new Intent();
+		i.putExtra("isCurrLocation", true);
+		setResult(RESULT_OK, i);
+		finish();
 	}
 	
 	
@@ -99,6 +102,7 @@ public class StartPointsActivity extends OurActivity implements OnTouchListener 
 		Intent i = new Intent();
 		i.putExtra("latitude",bi.getLatitude());
 		i.putExtra("longitude",bi.getLongitude());
+		i.putExtra("isCurrLocation", false);
 		setResult(RESULT_OK, i);
 		finish();
 	}
