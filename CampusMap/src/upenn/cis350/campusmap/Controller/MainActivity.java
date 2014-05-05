@@ -81,6 +81,7 @@ public class MainActivity extends Activity implements OnTouchListener {
 	private final int InBuildingActivity_ID = 2;
 	private LocationManager mLocationManager;
 	private Location currLoc;
+	public static Context c;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -88,6 +89,7 @@ public class MainActivity extends Activity implements OnTouchListener {
 		setContentView(R.layout.loading);
 		this.mLocationManager = (LocationManager) this.getSystemService(LOCATION_SERVICE);
 		OnStart startTask = new OnStart();
+		c = this.getApplicationContext();
 		startTask.execute(this);
 	}
 	
