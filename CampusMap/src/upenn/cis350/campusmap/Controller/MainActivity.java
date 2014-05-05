@@ -345,7 +345,6 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 	}
 
 
-
 	//    		addMarkers();
 
 	public void addMarkers(View v) 

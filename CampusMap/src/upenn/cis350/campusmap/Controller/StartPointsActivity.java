@@ -1,5 +1,7 @@
 package upenn.cis350.campusmap.Controller;
 
+import com.google.android.gms.maps.model.LatLng;
+
 import upenn.cis350.campusmap.R;
 import upenn.cis350.campusmap.R.layout;
 import upenn.cis350.campusmap.R.menu;
@@ -10,6 +12,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.util.Log;
 import android.view.Menu;
@@ -19,15 +22,18 @@ import android.view.View.OnTouchListener;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class StartPointsActivity extends OurActivity implements OnTouchListener {
-
-	public Searcher currSearcher;
+	String name;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_start_points);
+		name = getIntent().getStringExtra("name");
+		EditText e = (EditText)findViewById(R.id.editTextTo);
+		e.setText(name);
 		OnStart startTask = new OnStart();
 		startTask.execute(this);
 	}
@@ -63,7 +69,7 @@ public class StartPointsActivity extends OurActivity implements OnTouchListener 
 	
 	
 	public void onSearchClick(View view){
-		Log.v("MainActivity", "searching...");
+		Log.v("StartPointsActivity", "searching...");
 		String text = ((EditText)findViewById(R.id.editTextFrom)).getText().toString();
 		String apikey = getString(R.string.api_key);
 		String lattitude = getString(R.string.latitude_center);
@@ -86,6 +92,26 @@ public class StartPointsActivity extends OurActivity implements OnTouchListener 
 	}
 
 	@Override
+	protected void pinBuilding (int index) {
+		Building bi = currResults.get(index);
+		curr = new LatLng(bi.getLatitude(), bi.getLongitude());
+		Intent i = new Intent();
+		i.putExtra("latitude",bi.getLatitude());
+		i.putExtra("longitude",bi.getLongitude());
+		setResult(RESULT_OK, i);
+		finish();
+	}
+	
+	@Override
+	public void onBackPressed() {
+		Log.v("StartPointsActivity", "back pressed");
+		Intent i = new Intent(this,MainActivity.class);
+		i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		setResult(RESULT_OK, i);
+		finish();
+	}
+	
+	@Override
 	public boolean onTouch(View v, MotionEvent e) {
 		// TODO Auto-generated method stub
 		if(v.equals(findViewById(R.id.doDirectionsButton))){
@@ -99,5 +125,23 @@ public class StartPointsActivity extends OurActivity implements OnTouchListener 
 		return false;
 	}
 	
+	public void goNavigate(View v) {
+		Intent i = new Intent(this, StartPointsActivity.class);
+		Bundle b = new Bundle();
+		b.putString("name", pinMark.getBuilding().getName());
+		i.putExtras(b);
+		startActivityForResult(i, StartPointsActivity_ID);
+	}
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent intent){
+		super.onActivityResult(requestCode, resultCode, intent);
+		if(requestCode == ResultsActivity_ID){
+			Bundle extras = intent.getExtras();
+			if(extras != null){
+				pinBuilding(extras.getInt("listIndex", 0));
+			}
+		}
+	}
 
 }

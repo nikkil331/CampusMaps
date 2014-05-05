@@ -47,6 +47,7 @@ public class OurActivity extends Activity{
 	public Searcher currSearcher;
 	protected final int ResultsActivity_ID = 1;
 	protected final int InBuildingActivity_ID = 2;
+	protected final int StartPointsActivity_ID = 3;
 	protected LocationManager mLocationManager;
 	protected Location currLoc;
 	public static Context c;
