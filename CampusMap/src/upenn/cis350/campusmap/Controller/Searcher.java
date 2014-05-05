@@ -7,7 +7,7 @@ import android.app.Activity;
 import android.os.AsyncTask;
 
 public abstract class Searcher extends AsyncTask<String, Void, List<Building>> {
-	protected Activity activity;
+	protected OurActivity activity;
 	protected Parser p;
 	protected ExamLocationParser pp;
 	protected ClassLocationParser clp;

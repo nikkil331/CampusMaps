@@ -34,7 +34,7 @@ public class GeneralSearcher extends Searcher {
 	 * in res/values/strings.xml hasLocationSensor indicates whether or not the
 	 * device has gps sensor
 	 */
-	public GeneralSearcher(Activity activity, String apikey,
+	public GeneralSearcher(OurActivity activity, String apikey,
 			boolean hasLocationSensor, String latitude, String longitude,
 			String radius) {
 		super();

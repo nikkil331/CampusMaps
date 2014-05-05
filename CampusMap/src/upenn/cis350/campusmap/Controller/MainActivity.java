@@ -69,7 +69,7 @@ import android.widget.TextView;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-public class MainActivity extends Activity implements OnTouchListener {
+public class MainActivity extends OurActivity implements OnTouchListener {
 	private List<Building> currResults;
 	private Pin pinMark;
 	private GPSTracker current;
