@@ -3,6 +3,7 @@ import java.io.*;
 import java.net.*;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.ResourceBundle;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -14,7 +15,12 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
+import upenn.cis350.campusmap.R;
+
+import android.content.res.AssetManager;
+import android.content.res.Resources;
 import android.util.Log;
+import android.content.res.Resources;
 
 public class Parser {
 	private HashSet<Building> buildings;
@@ -45,14 +51,20 @@ public class Parser {
 			URL fileLoc;
 //			if (Internet.hasActiveInternetConnection(MainActivity.c)){
 //				fileLoc = new URL(this.fileLocation);
+			//URLConnection uc = fileLoc.openConnection();
+			//doc = dBuilder.parse(uc.getInputStream());
 //			}
 //			else {
 				Log.v("internet error", "There was an internet error");
-				fileLoc = new URL("file:///android_asset/buildings.xml");
+				AssetManager manager = MainActivity.c.getAssets();
+				Resources R = MainActivity.c.getResources();
+				doc = dBuilder.parse(R.openRawResource(
+			            R.getIdentifier("raw/buildings",
+			                    "raw", MainActivity.c.getPackageName())));
 //			}
 
-			URLConnection uc = fileLoc.openConnection();
-			doc = dBuilder.parse(uc.getInputStream());
+//			URLConnection uc = fileLoc.openConnection();
+//			doc = dBuilder.parse(uc.getInputStream());
 			//File file = new File("C:/Users/Max/Documents/GitHub/CampusMaps/buildings.xml");
 
 			
