@@ -16,6 +16,7 @@ import java.util.List;
 import org.json.JSONObject;
 
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -159,6 +160,15 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 	private class EventsMenuItemClickListener implements PopupMenu.OnMenuItemClickListener {  
 		@Override
 		public boolean onMenuItemClick(MenuItem item) {
+			GetEvents events = new GetEvents("708959602495764");
+			if(item.getTitle().equals("Get All Events"))
+			{
+				
+				
+			}else if(item.getTitle().equals("Get Events for the next 24 Hours"))
+			{
+				
+			}
 			Toast.makeText(MainActivity.this,"You Clicked : " + item.getTitle(),Toast.LENGTH_SHORT).show();  
               return true; 
 		}  
@@ -384,6 +394,21 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 
 		LatLng origin = curr;
 		LatLng dest = pinMark.getLatLng();
+		
+		Location endingLocation = new Location("ending point");
+		Location startingLocation = new Location("ending point");
+		startingLocation.setLatitude(curr.latitude);
+		startingLocation.setLongitude(curr.longitude);
+		endingLocation.setLatitude(dest.latitude);
+		endingLocation.setLongitude(dest.longitude);
+		// Find the Bearing from current location to next location
+		float targetBearing = startingLocation.bearingTo(endingLocation);
+		
+		mMap.moveCamera(CameraUpdateFactory.newCameraPosition(new CameraPosition.Builder()
+		  .target(mMap.getCameraPosition().target)
+		  .zoom(mMap.getCameraPosition().zoom)
+		  .bearing(targetBearing)
+		  .build()));
 
 		// Getting URL to the Google Directions API
 		String url = getDirectionsUrl(origin, dest);
