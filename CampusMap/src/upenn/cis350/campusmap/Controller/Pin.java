@@ -42,6 +42,12 @@ public class Pin {
 		this.build = b;
 	}
 	
+	public void setLatLng (LatLng x) {
+		this.loc = x;
+		this.latitude = x.latitude;
+		this.longitude = x.longitude;
+	}
+	
 	public LatLng getLatLng() {
 		return this.loc;
 	}
@@ -62,20 +68,25 @@ public class Pin {
 		this.isOpen = o;
 	}
 	
-	private void setColor () {
+	private void setColor (boolean b) {
+		if (b) {
+			m.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA));
+		}
 		if (isOpen) m.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
 		else m.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
+		
 	}
 	
-	public void addPin() {
+	public void addPin(boolean b) {
 		if (m != null) {
 			m.visible(false);
 		}
 		m = new MarkerOptions();
 		m.position(new LatLng(latitude, longitude));
 		m.title(title);
-		this.setColor();
+		this.setColor(b);
 		m.draggable(false);
+		if (b) m.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA));
 		mark = nMap.addMarker(m);
 	}
 	
@@ -86,7 +97,7 @@ public class Pin {
 		m = new MarkerOptions();
 		m.position(new LatLng(latitude, longitude));
 		m.title(title);
-		this.setColor();
+		this.setColor(false);
 		m.icon(BitmapDescriptorFactory.fromResource(R.drawable.event));
 		m.draggable(false);
 		mark = nMap.addMarker(m);
