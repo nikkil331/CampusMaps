@@ -105,7 +105,7 @@ public class MainActivity extends Activity implements OnTouchListener {
 			getFloorPlans();
 			//show loading page
 			try {
-				Thread.sleep(2000);
+				Thread.sleep(7000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
