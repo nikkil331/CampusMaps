@@ -20,13 +20,15 @@
     		android:padding="50dp"
     		android:src="@drawable/ic_launcher_cmlarge_web"/>
 
-        <com.facebook.widget.LoginButton
+        <ImageButton
             android:id="@+id/fblogin_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp" />
+            android:onClick="onFBLoginClick"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/fblogin" />
 
         <Button
             android:id="@+id/skip_login_button"

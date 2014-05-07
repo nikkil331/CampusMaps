@@ -76,6 +76,7 @@ import android.widget.Toast;
 public class MainActivity extends OurActivity implements OnTouchListener {
 
 	private boolean skipLogin = false;
+	private boolean fbLogin = false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -127,7 +128,14 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 			findViewById(R.id.dirbutton1).setOnTouchListener(activity);
 			findViewById(R.id.insidebutton1).setOnTouchListener(activity);
 			fbButton = (ImageButton)findViewById(R.id.fbbutton);
-			fbButton.setOnClickListener(new EventsMenuListener());
+			if(fbLogin)
+			{
+				fbButton.setImageResource(R.drawable.fbbuttongray);	
+				fbButton.setOnClickListener(new FBLoginListener());
+			} else
+			{
+				fbButton.setOnClickListener(new EventsMenuListener());
+			}
 			mMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
 			mMap.setMyLocationEnabled(true);
 			mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(curr, 15));
@@ -136,14 +144,23 @@ public class MainActivity extends OurActivity implements OnTouchListener {
 		
 	}
 	
-	public void onInvalid(View v)
+	public void onFBLoginClick(View v)
 	{
-		return;
+		skipLogin = true;
 	}
 	
 	public void onSkipClick(View v)
 	{
+		fbLogin = true;
 		skipLogin = true;
+		
+	}
+	
+	private class FBLoginListener implements OnClickListener {
+		@Override  
+        public void onClick(View v) {  
+         displayDialog("To use Facebook features please login using your Facebook Account");
+        }  
 	}
 	
 	
